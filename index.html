@@ -18,21 +18,90 @@
 <div class="w-full h-[50px] bg-[#323232]">
   <div class="container h-full">
     <div class="w-full h-full flex items-center justify-between">
-      <div class="text-white flex-js-c gap-2">
+      <div class="text-white flex-js-c gap-2 cursor-pointer">
         г. Москва
-        <img src="images/icons/down.svg" alt="">
+        <img src="img/icons/down.svg" alt="">
       </div>
 
-      <div class="flex-je-c gap-4">
+      <div class="flex-je-c gap-6">
         <span class="text-white">Контакты</span>
         <div class="text-white flex-js-c gap-2">Покупателям
-          <img src="images/icons/down.svg" alt="">
+          <img src="img/icons/down.svg" alt="">
         </div>
-        <span class="text-white cursor-pointer">Регистрация и вход</span>
+        <div class="text-white cursor-pointer flex-js-c gap-2">
+          <img src="img/icons/user-white.svg" alt="user-white.svg">
+          Регистрация и вход</div>
       </div>
     </div>
   </div>
 </div>
+
+
+<div class="w-full py-4">
+  <div class="container">
+   <div class="w-full flex-jsb-c gap-4">
+     <a href="/index.html">
+       <img src="img/logo-header.svg" alt="logo" class="w-full max-w-[273px]">
+     </a>
+
+     <div class="flex-jsb-c gap-4">
+       <button class="bg-blue rounded-[8px] px-6 h-[50px] flex-jsb-c gap-3 text-white hover:bg-blue/80 transition">
+         <img src="img/icons/menu-catalog.svg" alt="menu-catalog">
+         Каталог
+       </button>
+       <form action="#" class="w-[486px] bg-blue rounded-[8px] flex-jsb-c h-[50px] p-[2px]">
+         <label class="w-full h-full bg-white rounded-[6px] overflow-hidden">
+           <input type="text" class="w-full h-full pl-3 placeholder:text-black/80" placeholder="Поиск по сайту">
+         </label>
+         <button class="w-[80px] h-[50px] bg-transparent flex-jc-c" type="submit">
+           <img src="img/icons/search-white.svg" alt="search-white">
+         </button>
+       </form>
+     </div>
+
+
+     <div class="flex-jsb-c gap-8">
+       <div class="flex-js-c gap-4">
+         <div class="flex-js-c gap-4">
+           <img src="img/icons/call-blue.svg" alt="call-blue">
+         </div>
+         <div>
+           <div>
+             <a href="tel: 8 921 903 53 50" class="text-[20px] text-black font-bold">8 921 903 53 50</a>
+           </div>
+           <div class="mt-[-4px]">
+             <a href="#" class="text-blue underline">
+               Обратный звонок
+             </a>
+           </div>
+         </div>
+       </div>
+
+       <a href="#" class="flex-js-c gap-4 text-[18px] text-black text-medium">
+         <img src="img/icons/heard-blue.svg" alt="heard-blue">
+         Избранное
+       </a>
+
+       <a href="#" class="flex-js-c gap-4 text-[18px] text-black text-medium">
+         <img src="img/icons/rows-block.svg" alt="rows-block">
+         Сравнения
+       </a>
+
+       <div class="flex-js-c gap-4 text-[18px] text-black text-medium">
+         <div class="relative w-10 h-10 flex-jc-c">
+           <img src="img/icons/card-blue.svg" alt="card-blue">
+           <span class="w-4 h-4 bg-[#CF301B] rounded-full flex-jc-c absolute top-0 right-0 text-[12px] text-white">2</span>
+         </div>
+         Корзина
+       </div>
+
+     </div>
+
+   </div>
+
+  </div>
+</div>
+
 
 <script src="js/script.js"></script>
 </body>

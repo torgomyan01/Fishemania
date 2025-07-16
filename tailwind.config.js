@@ -74,9 +74,9 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         'white': '#FFF',
-        'black': '#11181C',
+        'black': '#323232',
         'gray': '#687076',
-        'blue': '#1150CB',
+        'blue': '#009FFF',
         'orange': '#FF7A00',
         'purple': '#6A8AFF',
         'borderColor': '#D7DBDF',
