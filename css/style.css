@@ -15,7 +15,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: white;
+  background: #ffff;
 }
 
 /* Handle */
@@ -44,6 +44,8 @@
 
 a {
   text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
 }
 
 .container {
@@ -56,14 +58,20 @@ a {
   }
 }
 
-.swiperProductItems .swiper-pagination-bullet {
-  transition: 0.3s;
-}
-.swiperProductItems .swiper-pagination-bullet-active {
-  width: 20px;
-  border-radius: 10px;
+.swiper-pagination {
+  display: none;
 }
 
+@media (max-width: 768px) {
+  .swiper-button-next,
+.swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-pagination {
+    display: block;
+  }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

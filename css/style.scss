@@ -49,6 +49,8 @@
 
 a {
   text-decoration: none;
+  transition: .3s;
+  display: inline-block;
 }
 
 .container {
@@ -59,7 +61,7 @@ a {
   }
 }
 
-//
+// 1rem = 16px | 1rem = 15px
 //@media (max-width: 1024px) {
 //  html {
 //    font-size: 15px;
@@ -87,6 +89,22 @@ a {
     border-radius: 10px;
   }
 }
+
+.swiper-pagination {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-pagination {
+    display: block;
+  }
+}
+
 
 @tailwind base;
 @tailwind components;
