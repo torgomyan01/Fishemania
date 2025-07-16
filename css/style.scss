@@ -78,6 +78,16 @@ a {
 //  }
 //}
 
+.swiperProductItems{
+  .swiper-pagination-bullet{
+    transition: 0.3s;
+  }
+  .swiper-pagination-bullet-active{
+    width: 20px;
+    border-radius: 10px;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
