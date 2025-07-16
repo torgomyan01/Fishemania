@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+@font-face {
+  font-family: lena;
+  src: url(../fonts/lena.ttf);
+}
+.font-lena {
+  font-family: lena;
+}
+
 ::-webkit-scrollbar {
   width: 3px;
   height: 8px;

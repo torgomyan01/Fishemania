@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 
+@font-face {
+  font-family: lena;
+
+  src: url(../fonts/lena.ttf);
+}
+
+.font-lena {
+  font-family: lena;
+}
+
 ::-webkit-scrollbar {
   width: 3px;
   height: 8px;
@@ -681,6 +691,11 @@ video {
   top: 0px;
 }
 
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mt-\[-4px\]{
   margin-top: -4px;
 }
@@ -697,8 +712,20 @@ video {
   height: 1rem;
 }
 
+.h-\[27px\]{
+  height: 27px;
+}
+
 .h-\[50px\]{
   height: 50px;
+}
+
+.h-\[570px\]{
+  height: 570px;
+}
+
+.h-\[67px\]{
+  height: 67px;
 }
 
 .h-full{
@@ -713,8 +740,20 @@ video {
   width: 1rem;
 }
 
-.w-\[652px\]{
-  width: 652px;
+.w-\[1px\]{
+  width: 1px;
+}
+
+.w-\[40\%\]{
+  width: 40%;
+}
+
+.w-\[486px\]{
+  width: 486px;
+}
+
+.w-\[60\%\]{
+  width: 60%;
 }
 
 .w-\[80px\]{
@@ -725,8 +764,8 @@ video {
   width: 100%;
 }
 
-.w-\[486px\]{
-  width: 486px;
+.min-w-\[1px\]{
+  min-width: 1px;
 }
 
 .max-w-\[273px\]{
@@ -743,6 +782,10 @@ video {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.gap-16{
+  gap: 4rem;
 }
 
 .gap-2{
@@ -769,6 +812,14 @@ video {
   overflow: hidden;
 }
 
+.rounded-\[16px\]{
+  border-radius: 16px;
+}
+
+.rounded-\[24px\]{
+  border-radius: 24px;
+}
+
 .rounded-\[6px\]{
   border-radius: 6px;
 }
@@ -786,9 +837,19 @@ video {
   background-color: rgb(50 50 50 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#CACACA\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 202 202 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#CF301B\]{
   --tw-bg-opacity: 1;
   background-color: rgb(207 48 27 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#F4F4F4\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 244 / var(--tw-bg-opacity, 1));
 }
 
 .bg-blue{
@@ -814,6 +875,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -837,6 +903,10 @@ video {
 
 .font-bold{
   font-weight: 700;
+}
+
+.font-medium{
+  font-weight: 500;
 }
 
 .text-black{
