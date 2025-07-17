@@ -931,6 +931,14 @@ video {
   height: 100%;
 }
 
+.h-\[150px\]{
+  height: 150px;
+}
+
+.h-\[52px\]{
+  height: 52px;
+}
+
 .min-h-\[420px\]{
   min-height: 420px;
 }
@@ -1087,6 +1095,10 @@ video {
   overflow: hidden;
 }
 
+.text-nowrap{
+  text-wrap: nowrap;
+}
+
 .rounded-\[16px\]{
   border-radius: 16px;
 }
@@ -1109,6 +1121,10 @@ video {
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.rounded-\[30px\]{
+  border-radius: 30px;
 }
 
 .border{
@@ -1244,6 +1260,16 @@ video {
 .py-\[50px\]{
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pl-3{

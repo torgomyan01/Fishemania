@@ -96,6 +96,17 @@ const swiperHero = new Swiper('.swiperHero', {
 });
 
 
+const swiperPartners = new Swiper('.swiperPartners', {
+  loop: true,
+  slidesPerView: 7,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.swiper-button-next.brand',
+    prevEl: '.swiper-button-prev.brand',
+  },
+});
+
+
 const swiperProduct = new Swiper('.swiperHeroProduct', {
   loop: true,
   slidesPerView: 5,
