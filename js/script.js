@@ -106,6 +106,16 @@ const swiperPartners = new Swiper('.swiperPartners', {
   },
 });
 
+const swiperNews = new Swiper('.swiperNews', {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.swiper-button-next.news',
+    prevEl: '.swiper-button-prev.news',
+  },
+});
+
 
 const swiperProduct = new Swiper('.swiperHeroProduct', {
   loop: true,
