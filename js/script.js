@@ -144,5 +144,25 @@ document.querySelectorAll('.swiperProductItems').forEach((innerEl) => {
   });
 });
 
+const tabs = document.querySelectorAll(".tab-btn");
+const contents = document.querySelectorAll(".tab-content");
+
+function clearTabs() {
+  tabs.forEach((tab) => {
+    tab.style.backgroundColor = "#F2F2F2";
+    tab.style.color = "#000";
+  });
+  contents.forEach((c) => c.classList.add("hidden"));
+}
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    clearTabs();
+    tab.style.backgroundColor = "#009FFF";
+    tab.style.color = "#fff";
+    const id = tab.getAttribute("data-tab");
+    document.getElementById(id).classList.remove("hidden");
+  });
+});
 
 
