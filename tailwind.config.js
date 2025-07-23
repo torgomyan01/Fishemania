@@ -93,6 +93,7 @@ module.exports = {
     display: ['show'],
   },
   plugins: [
+    require('@tailwindcss/forms'),
     function ({ addComponents }) {
 
       addComponents(flexClasses);

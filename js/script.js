@@ -6,6 +6,10 @@ function $el(target) {
   return document.querySelector(target);
 }
 
+const getCom = $el('com-header');
+
+console.log(getCom)
+
 AOS.init({
   duration: 1000
 })
