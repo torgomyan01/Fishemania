@@ -146,6 +146,13 @@ a {
     display: block;
   }
 }
+.product-item-slider .swiper-slide {
+  opacity: 0.6;
+}
+.product-item-slider .swiper-slide-active {
+  opacity: 1 !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

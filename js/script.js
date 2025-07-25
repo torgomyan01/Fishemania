@@ -132,6 +132,34 @@ const swiperProduct = new Swiper('.swiperHeroProduct', {
   },
 });
 
+const productItemSlider = new Swiper('.product-item-slider', {
+  loop: true,
+  direction: "vertical",
+  slidesPerView: 4,
+  spaceBetween: 8,
+  navigation: {
+    nextEl: '#product-items-next',
+    prevEl: '#product-items-prev',
+  },
+  on: {
+    slideChange: function () {
+      const activeIndex = this.realIndex; // loop enabled => real index
+      const activeSlide = this.slides[this.activeIndex];
+
+      const findImagePath = activeSlide.querySelector('img')?.getAttribute('src');
+
+      $el('#fullImagePath').setAttribute('src', findImagePath);
+    }
+  }
+});
+
+
+$('.product-item-slider .swiper-slide').forEach((item, index) => {
+  item.addEventListener('click', function () {
+    productItemSlider.slideToLoop(index);
+  })
+})
+
 document.querySelectorAll('.swiperProductItems').forEach((innerEl) => {
   new Swiper(innerEl, {
     loop: true,

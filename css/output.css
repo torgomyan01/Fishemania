@@ -165,6 +165,14 @@ a {
   }
 }
 
+.product-item-slider .swiper-slide {
+  opacity: 0.6;
+}
+
+.product-item-slider .swiper-slide-active {
+  opacity: 1 !important;
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1084,6 +1092,14 @@ select{
   top: 50%;
 }
 
+.left-1\/2{
+  left: 50%;
+}
+
+.top-1\/2{
+  top: 50%;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -1329,6 +1345,54 @@ select{
   margin-top: 70px;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mr-5{
+  margin-right: 1.25rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+
+.mb-\[-2px\]{
+  margin-bottom: -2px;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.mb-\[-4px\]{
+  margin-bottom: -4px;
+}
+
+.mb-\[-8px\]{
+  margin-bottom: -8px;
+}
+
+.mt-\[-10px\]{
+  margin-top: -10px;
+}
+
+.mt-\[-50px\]{
+  margin-top: -50px;
+}
+
+.mt-\[-80px\]{
+  margin-top: -80px;
+}
+
+.mt-\[-90px\]{
+  margin-top: -90px;
+}
+
 .block{
   display: block;
 }
@@ -1461,12 +1525,36 @@ select{
   height: 740px;
 }
 
+.h-\[762px\]{
+  height: 762px;
+}
+
 .h-auto{
   height: auto;
 }
 
 .h-full{
   height: 100%;
+}
+
+.h-\[869px\]{
+  height: 869px;
+}
+
+.h-\[28px\]{
+  height: 28px;
+}
+
+.h-\[96px\]{
+  height: 96px;
+}
+
+.h-\[36px\]{
+  height: 36px;
+}
+
+.h-\[40px\]{
+  height: 40px;
 }
 
 .min-h-\[420px\]{
@@ -1483,6 +1571,10 @@ select{
 
 .w-\[110px\]{
   width: 110px;
+}
+
+.w-\[183px\]{
+  width: 183px;
 }
 
 .w-\[18px\]{
@@ -1545,8 +1637,24 @@ select{
   width: 100%;
 }
 
+.w-\[58px\]{
+  width: 58px;
+}
+
+.w-auto{
+  width: auto;
+}
+
+.w-\[24px\]{
+  width: 24px;
+}
+
 .min-w-10{
   min-width: 2.5rem;
+}
+
+.min-w-\[183px\]{
+  min-width: 183px;
 }
 
 .min-w-\[1px\]{
@@ -1619,6 +1727,11 @@ select{
 
 .translate-y-\[-50\%\]{
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-180{
+  --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1939,6 +2052,15 @@ select{
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-\[\#B1EDD5\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(177 237 213 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[linear-gradient\(101deg\2c _\#587AFF_-5\.69\%\2c _\#7144F5_44\.08\%\2c _\#D426FF_111\.99\%\)\]{
+  background-image: linear-gradient(101deg, #587AFF -5.69%, #7144F5 44.08%, #D426FF 111.99%);
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -1963,6 +2085,10 @@ select{
 
 .p-4{
   padding: 1rem;
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .p-\[20px\]{
@@ -2150,6 +2276,10 @@ select{
   line-height: 1.25rem;
 }
 
+.text-\[42px\]{
+  font-size: 42px;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -2188,6 +2318,10 @@ select{
 
 .leading-\[auto\]{
   line-height: auto;
+}
+
+.leading-\[32px\]{
+  line-height: 32px;
 }
 
 .tracking-\[-0\.16px\]{
@@ -2270,6 +2404,15 @@ select{
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\]{
+  color: ;
+}
+
+.text-\[\#0C6C38\]{
+  --tw-text-opacity: 1;
+  color: rgb(12 108 56 / var(--tw-text-opacity, 1));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -2344,6 +2487,11 @@ select{
   border-color: rgb(50 50 50 / var(--tw-border-opacity, 1));
 }
 
+.hover\:border-blue:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 159 255 / var(--tw-border-opacity, 1));
+}
+
 .hover\:bg-\[\#009FFF\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(0 159 255 / var(--tw-bg-opacity, 1));
@@ -2375,9 +2523,18 @@ select{
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.hover\:opacity-100:hover{
+  opacity: 1;
+}
+
 .hover\:brightness-0:hover{
   --tw-brightness: brightness(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.active\:border-blue:active{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 159 255 / var(--tw-border-opacity, 1));
 }
 
 .group:hover .group-hover\:scale-\[1\.05\]{

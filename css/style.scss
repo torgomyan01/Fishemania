@@ -193,6 +193,15 @@ a {
   }
 }
 
+.product-item-slider {
+  .swiper-slide{
+    opacity: 0.6;
+  }
+  .swiper-slide-active{
+    opacity: 1 !important;
+  }
+}
+
 
 @tailwind base;
 @tailwind components;
