@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/nouislider.min.css">
+  <link rel="stylesheet" href="css/output.css">
+
+  <script src="js/aos.js"></script>
+  <script src="js/nouislider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <title>Catalog</title>
+</head>
+<body>
+
+
+<div class="w-full h-[50px] bg-[#323232]">
+  <div class="container h-full">
+    <div class="w-full h-full flex items-center justify-between">
+      <div class="text-white flex-js-c gap-2 cursor-pointer">
+        г. Москва
+        <img src="img/icons/down.svg" alt="">
+      </div>
+
+      <div class="flex-je-c gap-6">
+        <span class="text-white">Контакты</span>
+        <div class="text-white flex-js-c gap-2">Покупателям
+          <img src="img/icons/down.svg" alt="">
+        </div>
+        <div class="text-white cursor-pointer flex-js-c gap-2">
+          <img src="img/icons/user-white.svg" alt="user-white.svg">
+          Регистрация и вход
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w-full py-4">
+  <div class="container">
+    <div class="w-full flex-jsb-c gap-4">
+      <a href="/index.html">
+        <img src="img/logo-header.svg" alt="logo" class="w-full max-w-[273px]">
+      </a>
+
+      <div class="flex-jsb-c gap-4">
+        <button class="bg-blue rounded-[8px] px-6 h-[50px] flex-jsb-c gap-3 text-white hover:bg-blue/80 transition">
+          <img src="img/icons/menu-catalog.svg" alt="menu-catalog">
+          Каталог
+        </button>
+        <form action="#" class="w-[486px] bg-blue rounded-[8px] flex-jsb-c h-[50px] p-[2px]">
+          <label class="w-full h-full bg-white rounded-[6px] overflow-hidden">
+            <input type="text" class="w-full h-full pl-3 placeholder:text-black/80" placeholder="Поиск по сайту">
+          </label>
+          <button class="w-[80px] h-[50px] bg-transparent flex-jc-c" type="submit">
+            <img src="img/icons/search-white.svg" alt="search-white">
+          </button>
+        </form>
+      </div>
+
+
+      <div class="flex-jsb-c gap-8">
+        <div class="flex-js-c gap-4">
+          <div class="flex-js-c gap-4">
+            <img src="img/icons/call-blue.svg" alt="call-blue">
+          </div>
+          <div>
+            <div>
+              <a href="tel: 8 921 903 53 50" class="text-[20px] text-black font-bold">8 921 903 53 50</a>
+            </div>
+            <div class="mt-[-4px]">
+              <a href="#" class="text-blue underline">
+                Обратный звонок
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="flex-js-c gap-4 text-[18px] text-black text-medium">
+          <img src="img/icons/heard-blue.svg" alt="heard-blue">
+          Избранное
+        </a>
+
+        <a href="#" class="flex-js-c gap-4 text-[18px] text-black text-medium">
+          <img src="img/icons/rows-block.svg" alt="rows-block">
+          Сравнения
+        </a>
+
+        <div class="flex-js-c gap-4 text-[18px] text-black text-medium">
+          <div class="relative w-10 h-10 flex-jc-c">
+            <img src="img/icons/card-blue.svg" alt="card-blue">
+            <span
+                class="w-4 h-4 bg-[#CF301B] rounded-full flex-jc-c absolute top-0 right-0 text-[12px] text-white">2</span>
+          </div>
+          Корзина
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="container w-full">
+
+  <div class="w-full h-[67px] bg-[#F4F4F4] rounded-[16px] px-8 flex-jsb-c gap-16">
+    <div class="flex-jsb-c gap-6 h-full w-[40%]">
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        <img src="img/icons/like-blue.svg" alt="like-blue.svg">
+        Подарочные сертификаты
+      </a>
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        <img src="img/icons/percent.svg" alt="percent">
+        Скидки
+      </a>
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        <img src="img/icons/star-lik.svg" alt="star-lik">
+        Новинки
+      </a>
+    </div>
+
+    <div class="min-w-[1px] w-[1px] h-[27px] bg-[#CACACA] mx-8"></div>
+    <div class="flex-jsb-c gap-6 h-full w-[60%]">
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        Удилища
+      </a>
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        Катушки
+      </a>
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        Приманки
+      </a>
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        Аксессуары
+      </a>
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        Оснастка
+      </a>
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        Экипировка
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="container mt-4">
+
+
+  <ul class="flex-js-c gap-1 mb-7">
+    <li>
+      <a href="index.html" class="text-[15px] text-[#6E6E6E]">Главная</a>
+    </li>
+    <li class="text-[15px] text-[#6E6E6E]">
+      •
+    </li>
+    <li>
+      <a href="catalog.html" class="text-[15px] text-[#6E6E6E]">Избранное</a>
+    </li>
+  </ul>
+
+  <h2 class="font-medium text-[#212121] text-[32px] mb-[30px]">Избранное</h2>
+
+  <div class="flex items-center mb-[30px]">
+    <span class="mr-[16px] text-[#6E6E6E] text-[16px]">Сортировать</span>
+    <select class="bg-[#F4F4F4] border-[none] border-0 
+    cursor-pointer focus:outline-none focus:border-0">
+        <option value="1">Хиты продаж</option>
+        <option value="2">Хиты продаж 2</option>
+        <option value="3">Хиты продаж 3</option>
+    </select>
+    <span class="mr-[16px] ml-[24px] inline-block text-[#6E6E6E] text-[16px]">Показывать</span>
+    <div class="flex">
+        <a href="#" class="py-[10px] rounded-[40px] px-[16px] mr-[4px] text-[#6E6E6E] border 
+        border-[rgba(110,110,110,0.25)]">Акции</a>
+        <a href="#" class="py-[10px] rounded-[40px] px-[16px] mr-[4px] text-[#6E6E6E] border
+         border-[rgba(110,110,110,0.25)]">Новинки</a>
+        <a href="#" class="py-[10px] rounded-[40px] px-[16px] mr-[4px] text-[#6E6E6E] 
+        border border-[rgba(110,110,110,0.25)]">Хиты</a>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-5 gap-[20px]">
+    <div class="w-full">
+        <div class="w-full h-[427px] border rounded-[16px] relative">
+          <div class="absolute top-2 right-2 flex-je-c gap-2">
+            <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+              <img src="img/icons/heard-gray.svg" alt="heard-gray">
+            </div>
+            <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+              <img src="img/icons/rating-gray.svg" alt="rating-gray">
+            </div>
+          </div>
+
+          <div class="swiper swiperProductItems h-full relative">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide px-6 flex-jc-c">
+                <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
+              </div>
+              <div class="swiper-slide px-6 flex-jc-c">
+                <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
+              </div>
+              <div class="swiper-slide px-6 flex-jc-c">
+                <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
+              </div>
+            </div>
+            <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
+          </div>
+
+
+        </div>
+        <div class="w-full p-4">
+          <div class="flex-jsb-c">
+            <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
+              <img src="img/icons/star-yellow.svg" alt="star-yellow">
+              4.2
+              <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
+              29 отзывов
+            </div>
+            <span class="text-[#6E6E6E]">арт. 234 345</span>
+          </div>
+
+          <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
+
+
+          <div class="flex-js-c gap-2 text-[#707070]">
+            Производитель
+            <span class="text-[#323232] font-bold">Daiwa</span>
+          </div>
+
+
+          <div class="flex-js-c gap-1 mt-2">
+            <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
+            <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+          </div>
+
+
+          <div class="flex-jsb-c mt-2">
+            <h4 class="text-[24px] font-semibold">3 200 ₽</h4>
+            <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
+              В корзину
+              <img src="img/icons/basket-white.svg" alt="">
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="w-full">
+        <div class="w-full h-[427px] border rounded-[16px] relative">
+          <div class="absolute top-2 right-2 flex-je-c gap-2">
+            <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+              <img src="img/icons/heard-gray.svg" alt="heard-gray">
+            </div>
+            <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+              <img src="img/icons/rating-gray.svg" alt="rating-gray">
+            </div>
+          </div>
+
+          <div class="swiper swiperProductItems h-full relative">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide px-6 flex-jc-c">
+                <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
+              </div>
+              <div class="swiper-slide px-6 flex-jc-c">
+                <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
+              </div>
+              <div class="swiper-slide px-6 flex-jc-c">
+                <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
+              </div>
+            </div>
+            <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
+          </div>
+
+
+        </div>
+        <div class="w-full p-4">
+          <div class="flex-jsb-c">
+            <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
+              <img src="img/icons/star-yellow.svg" alt="star-yellow">
+              4.2
+              <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
+              29 отзывов
+            </div>
+            <span class="text-[#6E6E6E]">арт. 234 345</span>
+          </div>
+
+          <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
+
+
+          <div class="flex-js-c gap-2 text-[#707070]">
+            Производитель
+            <span class="text-[#323232] font-bold">Daiwa</span>
+          </div>
+
+
+          <div class="flex-js-c gap-1 mt-2">
+            <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
+            <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+          </div>
+
+
+          <div class="flex-jsb-c mt-2">
+            <h4 class="text-[24px] font-semibold">3 200 ₽</h4>
+            <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
+              В корзину
+              <img src="img/icons/basket-white.svg" alt="">
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="w-full">
+        <div class="w-full h-[427px] border rounded-[16px] relative">
+          <div class="absolute top-2 right-2 flex-je-c gap-2">
+            <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+              <img src="img/icons/heard-gray.svg" alt="heard-gray">
+            </div>
+            <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+              <img src="img/icons/rating-gray.svg" alt="rating-gray">
+            </div>
+          </div>
+
+          <div class="swiper swiperProductItems h-full relative">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide px-6 flex-jc-c">
+                <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
+              </div>
+              <div class="swiper-slide px-6 flex-jc-c">
+                <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
+              </div>
+              <div class="swiper-slide px-6 flex-jc-c">
+                <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
+              </div>
+            </div>
+            <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
+          </div>
+
+
+        </div>
+        <div class="w-full p-4">
+          <div class="flex-jsb-c">
+            <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
+              <img src="img/icons/star-yellow.svg" alt="star-yellow">
+              4.2
+              <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
+              29 отзывов
+            </div>
+            <span class="text-[#6E6E6E]">арт. 234 345</span>
+          </div>
+
+          <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
+
+
+          <div class="flex-js-c gap-2 text-[#707070]">
+            Производитель
+            <span class="text-[#323232] font-bold">Daiwa</span>
+          </div>
+
+
+          <div class="flex-js-c gap-1 mt-2">
+            <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
+            <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+          </div>
+
+
+          <div class="flex-jsb-c mt-2">
+            <h4 class="text-[24px] font-semibold">3 200 ₽</h4>
+            <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
+              В корзину
+              <img src="img/icons/basket-white.svg" alt="">
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<footer class="bg-[#262626] mt-[250px]">
+  <div class="container">
+    <div class="w-full h-[320px] relative transform translate-y-[-50%]">
+      <img src="img/contact-me-bg.png" alt="contact-me-bg" class="w-full h-full object-cover rounded-[16px]">
+      <img src="img/message-ilustriator.png" alt="message-ilustriator" class="absolute left-[17%] top-[-100px]">
+      <div class="absolute top-[50%] right-[70px] transform translate-y-[-50%]">
+        <h3 class="font-light text-[64px] text-white">Подпишись на рассылку</h3>
+        <p class="text-white">Получай наши новости, акции, советы и рекомендации экспертов</p>
+        <form action="#" class="w-full flex-jsb-c gap-4 mt-4">
+          <label class="w-full h-[54px] bg-white overflow-hidden rounded-[8px]">
+            <input type="text" placeholder="Ваша почта" class="w-full h-full pl-6 border-none">
+          </label>
+          <button
+              class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
+            Подписаться
+          </button>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="w-full grid grid-cols-12 gap-10 mt-[-60px]">
+      <div class="col-span-2">
+        <img src="img/logo-footer.svg" alt="logo-footer" class="mt-[-20px]">
+        <div class="flex-js-c gap-2 text-white mt-4">
+          Ваш город
+          <img src="img/icons/location.svg" alt="location">
+          <div class="text-white flex-js-c gap-2 cursor-pointer">
+            г. Москва
+            <img src="img/icons/down.svg" alt="">
+          </div>
+        </div>
+        <div class="flex-js-c gap-4 mt-4">
+          <a href="#">
+            <img src="img/icons/whats-app.svg" alt="whats-app">
+          </a>
+          <a href="#">
+            <img src="img/icons/tg.svg" alt="tg">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-span-4">
+        <h4 class="text-white text-[20px] mb-4">Каталог</h4>
+        <div class="flex-jsb-s gap-[60px]">
+          <ul>
+            <li>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Удилища
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Катушки
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Приманки
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Оснастка
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Зимняя рыбалка
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Одежда и обувь
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Электроника
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Аксессуары
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Туризм
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Скидки
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Сертификаты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-span-2">
+        <h4 class="text-white text-[20px] mb-4">Сервис</h4>
+        <div class="flex-jsb-s gap-[60px]">
+          <ul>
+            <li>
+              <a href="#" class="text-white opacity-80 mb-2">
+                О магазине
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Доставка и оплата
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Подарочные карты
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Скидки
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Новости
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Сервис и гарантии
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="col-span-2">
+
+        <ul>
+          <li>
+            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
+              <img src="img/icons/favorite.svg" alt="favorite" class="mr-2">
+              Избранное
+            </a>
+            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
+              <img src="img/icons/rows-white.svg" alt="rows-white" class="mr-2">
+              Сравнения
+            </a>
+            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
+              <img src="img/icons/basket-white.svg" alt="basket-white" class="mr-2">
+              Корзина
+            </a>
+            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
+              <img src="img/icons/login-account.svg" alt="login-account" class="mr-2">
+              Регистрация и вход
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+
+      <div class="col-span-2">
+        <h4 class="text-white text-[20px] mb-4">Контакты</h4>
+
+        <a href="tel: 8 (800) 101-86-53" class="text-white font-bold">
+          8 (800) 101-86-53
+        </a>
+        <a href="tel: 8 (800) 101-86-53" class="text-white font-bold mb-4">
+          8 (921) 903-53-50
+        </a>
+
+        <button
+            class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2 mb-4">
+          Обратный звонок
+        </button>
+
+        <a href="mailto: fishemania777@yandex.ru" class="text-blue underline mb-4">
+          fishemania777@yandex.ru
+        </a>
+
+        <p class="text-[14px] text-white opacity-80">
+          пн-пт, 10:00 - 20:00, прием заказов на сайте круглосуточно
+        </p>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <div class="w-full h-[1px] bg-white mt-6"></div>
+
+  <div class="container">
+    <div class="w-full h-[54px] flex-jsb-c">
+      <p class="text-[14px] text-white opacity-80">Информация, размещенная на сайте, не является публичной офертой.</p>
+      <p class="text-[14px] text-white opacity-80">© 2005–2025. Все права защищены</p>
+    </div>
+  </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
