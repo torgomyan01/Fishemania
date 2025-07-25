@@ -80,6 +80,94 @@ a {
 //  }
 //}
 
+
+.noUi-horizontal{
+  height: 6px;
+  border: none;
+}
+
+.noUi-connect{
+  background: #009FFF;
+}
+
+.noUi-horizontal .noUi-handle{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: -9px;
+  right: -13px;
+  border: 4px solid #fff;
+  background: #009FFF;
+  cursor: pointer;
+  transition: 0.1s;
+  transform: scale(1);
+
+  &:hover{
+    border: 3.5px solid #fff;
+  }
+  &:active{
+    transform: scale(0.90);
+  }
+
+  &:before, &:after{
+    display: none;
+  }
+}
+
+.def-checkbox{
+
+
+  input{
+    display: none;
+  }
+
+  input:checked ~ span{
+    border: 2px solid #009FFF;
+    background: #009FFF;
+  }
+
+  input:checked ~ span:after{
+    opacity: 1;
+  }
+
+
+  &.brand{
+    span{
+      width: 58px;
+      height: 32px;
+      padding: 4px;
+      img{
+        width: 100%;
+      }
+    }
+
+    input:checked ~ span{
+      border: 2px solid #009FFF;
+      background: #fff;
+    }
+  }
+
+  span{
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    gap: 8px;
+    border-radius: 4px;
+    background: #fff;
+    border: 2px solid #DBDBDB;
+    @include flex('c', 'c');
+    transition: 0.3s;
+
+
+    //&:after{
+    //  content: "";
+    //  width: 100%;
+    //  height: 100%;
+    //  background: url("../img/icons/check.svg") no-repeat center center;
+    //}
+  }
+}
+
 .swiperProductItems{
   .swiper-pagination-bullet{
     transition: 0.3s;

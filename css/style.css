@@ -15,7 +15,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #ffff;
+  background: white;
 }
 
 /* Handle */
@@ -58,6 +58,73 @@ a {
   }
 }
 
+.noUi-horizontal {
+  height: 6px;
+  border: none;
+}
+
+.noUi-connect {
+  background: #009FFF;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: -9px;
+  right: -13px;
+  border: 4px solid #fff;
+  background: #009FFF;
+  cursor: pointer;
+  transition: 0.1s;
+  transform: scale(1);
+}
+.noUi-horizontal .noUi-handle:hover {
+  border: 3.5px solid #fff;
+}
+.noUi-horizontal .noUi-handle:active {
+  transform: scale(0.9);
+}
+.noUi-horizontal .noUi-handle:before, .noUi-horizontal .noUi-handle:after {
+  display: none;
+}
+
+.def-checkbox input {
+  display: none;
+}
+.def-checkbox input:checked ~ span {
+  border: 2px solid #009FFF;
+  background: #009FFF;
+}
+.def-checkbox input:checked ~ span:after {
+  opacity: 1;
+}
+.def-checkbox.brand span {
+  width: 58px;
+  height: 32px;
+  padding: 4px;
+}
+.def-checkbox.brand span img {
+  width: 100%;
+}
+.def-checkbox.brand input:checked ~ span {
+  border: 2px solid #009FFF;
+  background: #fff;
+}
+.def-checkbox span {
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  gap: 8px;
+  border-radius: 4px;
+  background: #fff;
+  border: 2px solid #DBDBDB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
 .swiperProductItems .swiper-pagination-bullet {
   transition: 0.3s;
 }
@@ -72,10 +139,9 @@ a {
 
 @media (max-width: 768px) {
   .swiper-button-next,
-.swiper-button-prev {
+  .swiper-button-prev {
     display: none;
   }
-
   .swiper-pagination {
     display: block;
   }

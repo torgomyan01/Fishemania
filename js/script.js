@@ -144,5 +144,28 @@ document.querySelectorAll('.swiperProductItems').forEach((innerEl) => {
   });
 });
 
+const rangeDay = $('.range-day');
 
+rangeDay.forEach((item) => {
+  noUiSlider.create(item, {
+    start: [25, 800],
+    connect: true,
+    step: 15,
+    range: {
+      'min': 0,
+      'max': 1000
+    },
+  });
+
+  item.noUiSlider.on('update', function (values, handle) {
+    const hourStart = (+values[0]).toFixed(0).replace(/.00/, '');
+    const hourEnd = (+values[1]).toFixed(0).replace(/.00/, '');
+
+
+    $el('#priceMin').value = hourStart;
+    $el('#priceMax').value = hourEnd;
+
+  });
+
+})
 
