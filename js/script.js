@@ -217,3 +217,26 @@ rangeDay.forEach((item) => {
 
 })
 
+function switchTab(tab) {
+  const loginTab = document.getElementById('tab-login');
+  const registerTab = document.getElementById('tab-register');
+  const loginForm = document.getElementById('login-form');
+  const registerForm = document.getElementById('register-form');
+  const bg = $el(".bg");
+
+  if (tab === 'login') {
+    bg.style.backgroundImage = 'url(img/Union.png)';
+    loginTab.className = 'flex-1 text-center text-[32px]  font-bold tab-rounded  text-[#009FFF]';
+    registerTab.className = 'flex-1 text-center text-[32px]  font-bold tab-rounded  text-black';
+
+    loginForm.classList.remove('hidden');
+    registerForm.classList.add('hidden');
+  } else {
+    bg.style.backgroundImage = 'url(img/Union2.png)';
+    registerTab.className = 'flex-1 text-center text-[32px]  font-bold tab-rounded  text-[#009FFF]';
+    loginTab.className = 'flex-1 text-center text-[32px]  font-bold tab-rounded  text-black';
+
+    registerForm.classList.remove('hidden');
+    loginForm.classList.add('hidden');
+  }
+}
