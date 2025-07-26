@@ -159,6 +159,12 @@ a {
   opacity: 1 !important;
 }
 
+.bg {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .slider-v3 {
   position: relative;
   display: block;
