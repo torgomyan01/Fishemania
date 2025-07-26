@@ -64,6 +64,11 @@ const flexClasses = {
     justifyContent: 'end',
     alignItems: 'center',
   },
+  '.flex-je-s': {
+    display: 'flex',
+    justifyContent: 'end',
+    alignItems: 'start',
+  },
 }
 
 module.exports = {
