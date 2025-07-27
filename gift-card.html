@@ -163,79 +163,211 @@
       •
     </li>
     <li>
-      <a href="catalog.html" class="text-[15px] text-[#6E6E6E]">Регистрация и вход</a>
+      <a href="catalog.html" class="text-[15px] text-[#6E6E6E]"> Электронная подарочная карта</a>
     </li>
   </ul>
 
+  <h2 class="font-medium text-[#212121] text-[32px] mb-[30px]">Электронная подарочная карта</h2>
 
-  <div class=" w-full mt-[100px] mb-[100px]" >
-    <div class="bg-white rounded-lg w-full mx-auto bg max-w-[520px]" style="background-image: url(img/Union.png)">
-
-        <!-- Табы -->
-        <div class="flex space-x-2 pt-[15px]">
-          <button id="tab-login"
-            class="flex-1 text-center font-bold text-[32px] tab-rounded text-[#009FFF]"
-            onclick="switchTab('login')">
-            Вход
-          </button>
-          <button id="tab-register"
-            class="flex-1 text-center font-bold text-[32px] tab-rounded  text-black"
-            onclick="switchTab('register')">
-            Регистрация
-          </button>
-        </div>
-    
-        <!-- Контент -->
-        <div id="login-form" class="p-[30px] w-full  flex flex-col" style="border-color: #D9D9D9;">
-            <span class="text-[14px] text-[#323232] mb-[6px] block">Ваша почта</span>
-          <input type="email" placeholder="Введите почту" class="h-[54px] w-full mb-4 p-2 border rounded"  style="border-color: #D9D9D9;"/>
-          <span class="text-[14px] text-[#323232] mb-[6px] block">Пароль</span>
-          <input type="password" placeholder="Пароль" class="h-[54px] w-full mb-4 p-2 border rounded"  style="border-color: #D9D9D9;"/>
-          <a href="#" class="text-[#009FFF] self-start mb-[20px] border-b border-[#009FFF] leading-none">Забыли пароль</a>
-          <button class="w-full max-w-[210px] font-bold text-white py-4 rounded" style="background-color: #CF301B;">Войти</button>
-        </div>
-    
-        <div id="register-form" class="p-6 w-full hidden " style="border-color: #D9D9D9;">
-            <span class="text-[14px] text-[#323232] mb-[6px] block">Ваша имя</span>
-          <input type="text" placeholder="Введите имя" class="h-[54px] w-full mb-4 p-2 border rounded" 
-          style="border-color: #D9D9D9;"/>
-          <span class="text-[14px] text-[#323232] mb-[6px] block">Ваша почта</span>
-          <input type="email" placeholder="Введите почту" class="h-[54px] w-full mb-4 p-2 border rounded" 
-          style="border-color: #D9D9D9;"/>
-          <span class="text-[14px] text-[#323232] mb-[6px] block">Ваш пароль</span>
-          <input type="password" placeholder="Ваш пароль" class="h-[54px] w-full mb-4 p-2 border rounded" 
-          style="border-color: #D9D9D9;"/>
-          <span class="text-[14px] text-[#323232] mb-[6px] block">Подтвердите пароль</span>
-          <input type="password" placeholder="Подтвердите пароль" class="h-[54px] w-full mb-4 p-2 border rounded"
-           style="border-color: #D9D9D9;"/>
-           <span class="text-[14px] text-[#323232] mb-[6px] block">Введите защитную капчу</span>
-           <div class="grid grid-cols-2 gap-2.5 mb-[20px]">
-                <div class="flex border rounded-[8px] border-[rgba(110,110,110,0.25)] p-[8px]">
-                    <img src="img/kod-img.png" alt="" class="max-w-[100%] max-h-[100%] mr-[10px]">
-                    <img src="img/kod-icon.svg" alt="" class="max-w-[100%] min-w-[24px] max-h-[100%]">
-                </div>
-                <div class="border rounded-[8px] py-[15px] px-[20px]  border-[rgba(110,110,110,0.25)]">
-                    <span class="text-[#6E6E6E] text-[16px]">Код капчи</span>
-                </div>
-           </div>
-           <div class="flex items-center">
-            <button class="w-full text-white py-3 rounded" style="background-color: #CF301B;">Регистрация</button>
-            <div class="check-wrap text-[14px] text-[#6E6E6E]  ml-[16px] leading-none">
-                <input type="checkbox">
-                Принимаю правила обработки персональных данных и пользовательское соглашение
+  <div class="flex">
+    <div class="">
+        <h4 class="text-[#323232] text-[24px] mb-[16px] font-medium">Кому отправить</h4>
+        <div class="w-full">
+            <!-- Tabs -->
+            <div class="flex gap-2">
+              <button
+                  class="tab-btn rounded-full px-5 py-2 text-sm transition-all"
+                  data-tab="tab1"
+                  style="background-color: #009FFF; color: #fff"
+              >
+              Другу
+              </button>
+              <button
+                  class="tab-btn rounded-full px-5 py-2 text-sm transition-all"
+                  data-tab="tab2"
+                  style="background-color: #F2F2F2; color: #000"
+              >
+              Себе
+              </button>
             </div>
-           </div>
+      
+            <!-- Content -->
+            <div class="mt-[30px] space-y-4 max-w-[1300px] w-full">
+              <div class="tab-content" id="tab1">
+                  <div class="max-w-[500px] w-full">
+                    <span class="text-[#323232] mb-[15px]">Куда отправить</span>
+                    <div class="flex space-x-4 my-[20px]">
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                        <input
+                        checked
+                            type="radio"
+                            name="option"
+                            value="1"
+                            class="appearance-none w-4 h-4 rounded-full border border-gray-400 checked:bg-blue-500 checked:border-blue-500 transition"
+                        />
+                        <span>На телефон</span>
+                        </label>
+                    
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="option"
+                            value="2"
+                            class="appearance-none w-4 h-4 rounded-full border border-gray-400 checked:bg-blue-500 checked:border-blue-500 transition"
+                        />
+                        <span>На e-mail с поздравлением</span>
+                        </label>
+                    </div>
+                    <span class="text-[#323232] mb-[5px]">Телефон получателя *</span>
+                    <input type="tel" placeholder="+7 000 000 000" class="mb-[5px] w-full h-[54px] rounded-[8px]
+                    border border-[rgba(110,110,110,0.25)]">
+                    <p class="text-[#707070] mb-[20px] mt-[5px] leading-[110%]">Отправим СМС
+                        со ссылкой на карту, информацией <br> и ПИН-кодом</p>
+                    <div class="flex flex-center p-[16px] rounded-[16px] bg-[rgba(207,48,27,0.10)] mb-[40px]">
+                        <img src="img/error-icon.svg" alt="" class="mr-[12px]">
+                        <span class="text-[#CF301B] leading-[110%]">Проверьте правильность данных. Изменить их после
+                            покупки можно только через поддержку</span>
+                    </div>
+                    <h4 class="text-[#323232] text-[24px] mb-[16px] font-medium">Кто отправляет</h4>
+                    <span class="text-[#323232] mb-[5px]">E‑mail *</span>
+                    <input type="email" placeholder="Введите почту отправителя" class="mb-[5px] w-full h-[54px] rounded-[8px]
+                    border border-[rgba(110,110,110,0.25)]">
+                    <p class="text-[#707070] mb-[20px] mt-[5px] leading-[110%]">Отправим чек на почту</p>
+                    <h4 class="text-[#323232] text-[24px] mb-[16px] font-medium">Когда отправить</h4>
+                    <div class="flex space-x-4 my-[20px]">
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                        <input
+                        checked
+                            type="radio"
+                            name="option2"
+                            value="1"
+                            class="appearance-none w-4 h-4 rounded-full border border-gray-400 checked:bg-blue-500 checked:border-blue-500 transition"
+                        />
+                        <span>На телефон</span>
+                        </label>
+                    
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="option2"
+                            value="2"
+                            class="appearance-none w-4 h-4 rounded-full border border-gray-400 checked:bg-blue-500 checked:border-blue-500 transition"
+                        />
+                        <span>На e-mail с поздравлением</span>
+                        </label>
+                    </div>
+                    <div class="flex justify-between items-center border-t
+                     border-t-[rgba(110,110,110,0.25)] pt-[24px]">
+                        <div class="">
+                            <span class="block text-[16px] text-[#323232] mb-[1px]">Номинал карты:</span>
+                            <b class="text-[#323232] text-[24px] font-medium lending-[100%]">3 000 ₽</b>
+                        </div>
+                        <a href="#"
+                        class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
+                            Добавить в заказ
+                        </a>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-content hidden" id="tab2">
+                <div class="max-w-[500px] w-full">
+                    <span class="text-[#323232] mb-[15px]">Куда отправить 2</span>
+                    <div class="flex space-x-4 my-[20px]">
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                        <input
+                        checked
+                            type="radio"
+                            name="option3"
+                            value="1"
+                            class="appearance-none w-4 h-4 rounded-full border border-gray-400 checked:bg-blue-500 checked:border-blue-500 transition"
+                        />
+                        <span>На телефон</span>
+                        </label>
+                    
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="option3"
+                            value="2"
+                            class="appearance-none w-4 h-4 rounded-full border border-gray-400 checked:bg-blue-500 checked:border-blue-500 transition"
+                        />
+                        <span>На e-mail с поздравлением</span>
+                        </label>
+                    </div>
+                    <span class="text-[#323232] mb-[5px]">Телефон получателя *</span>
+                    <input type="tel" placeholder="+7 000 000 000" class="mb-[5px] w-full h-[54px] rounded-[8px]
+                    border border-[rgba(110,110,110,0.25)]">
+                    <p class="text-[#707070] mb-[20px] mt-[5px] leading-[110%]">Отправим СМС
+                        со ссылкой на карту, информацией <br> и ПИН-кодом</p>
+                    <div class="flex flex-center p-[16px] rounded-[16px] bg-[rgba(207,48,27,0.10)] mb-[40px]">
+                        <img src="img/error-icon.svg" alt="" class="mr-[12px]">
+                        <span class="text-[#CF301B] leading-[110%]">Проверьте правильность данных. Изменить их после
+                            покупки можно только через поддержку</span>
+                    </div>
+                    <h4 class="text-[#323232] text-[24px] mb-[16px] font-medium">Кто отправляет 2</h4>
+                    <span class="text-[#323232] mb-[5px]">E‑mail *</span>
+                    <input type="email" placeholder="Введите почту отправителя" class="mb-[5px] w-full h-[54px] rounded-[8px]
+                    border border-[rgba(110,110,110,0.25)]">
+                    <p class="text-[#707070] mb-[20px] mt-[5px] leading-[110%]">Отправим чек на почту</p>
+                    <h4 class="text-[#323232] text-[24px] mb-[16px] font-medium">Когда отправить 2</h4>
+                    <div class="flex space-x-4 my-[20px]">
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                        <input
+                        checked
+                            type="radio"
+                            name="option4"
+                            value="1"
+                            class="appearance-none w-4 h-4 rounded-full border border-gray-400 checked:bg-blue-500 checked:border-blue-500 transition"
+                        />
+                        <span>На телефон</span>
+                        </label>
+                    
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="option4"
+                            value="2"
+                            class="appearance-none w-4 h-4 rounded-full border border-gray-400 checked:bg-blue-500 checked:border-blue-500 transition"
+                        />
+                        <span>На e-mail с поздравлением</span>
+                        </label>
+                    </div>
+                    <div class="flex justify-between items-center border-t
+                     border-t-[rgba(110,110,110,0.25)] pt-[24px]">
+                        <div class="">
+                            <span class="block text-[16px] text-[#323232] mb-[1px]">Номинал карты:</span>
+                            <b class="text-[#323232] text-[24px] font-medium lending-[100%]">3 000 ₽</b>
+                        </div>
+                        <a href="#"
+                        class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
+                            Добавить в заказ
+                        </a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="max-w-[470px] w-full ml-[200px]">
+        <h4 class="text-[#323232] text-[24px] mb-[16px] font-medium">Номинал</h4>
+        <span class="text-[#323232] block mb-[5px]">Введите номинал</span>
+        <input type="text" placeholder="3 000 ₽" class="mb-[5px] w-full h-[54px] rounded-[8px]
+         border border-[rgba(110,110,110,0.25)]">
+         <p class="text-[#707070] mb-[32px] leading-[110%]">Введите сумму,
+             на которую вы хотите оформить электронную подарочную карту</p>
+             <div class="bg-no-repeat flex flex-col bg-cover bg-center rounded-[32px] h-[270px] py-[32px] 
+             px-[24px]" style="background-image: url(img/card-bg.png)">
+                <img src="img/card-logo.svg" alt="" class="self-start">
+                <b class="block mt-[auto] mb-[12px] font-medium text-[white] text-[24px]">Подарочная карта</b>
+                <span class="block font-medium text-[white] text-[44px] leading-[100%]">3 000 ₽</span>
+             </div>
+    </div>
+  </div>
 
-        </div>
-  
-  
-  
-</div>
-</div>
 </div>
 
 
-<footer class="bg-[#262626] mt-[250px] w-full">
+<footer class="bg-[#262626] mt-[250px]">
   <div class="container">
     <div class="w-full h-[320px] relative transform translate-y-[-50%]">
       <img src="img/contact-me-bg.png" alt="contact-me-bg" class="w-full h-full object-cover rounded-[16px]">
