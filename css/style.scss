@@ -47,6 +47,8 @@
   letter-spacing: -0.5px;
 }
 
+
+
 a {
   text-decoration: none;
   transition: .3s;
@@ -243,6 +245,13 @@ input:checked + .slider-v3::after {
   left: 20px;
   background: #009FFF;
   box-shadow: 0 0 0 0 #f2f2f2 inset;
+}
+
+
+.bottom-scroll-none{
+  &::-webkit-scrollbar {
+    height: 0 !important;
+  }
 }
 
 
