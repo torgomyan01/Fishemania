@@ -1241,6 +1241,10 @@ select{
   z-index: 100;
 }
 
+.col-span-12{
+  grid-column: span 12 / span 12;
+}
+
 .col-span-2{
   grid-column: span 2 / span 2;
 }
@@ -1823,6 +1827,10 @@ select{
   height: 60px;
 }
 
+.h-\[65px\]{
+  height: 65px;
+}
+
 .h-\[67px\]{
   height: 67px;
 }
@@ -1867,10 +1875,6 @@ select{
   height: 100%;
 }
 
-.h-\[65px\]{
-  height: 65px;
-}
-
 .max-h-\[100\%\]{
   max-height: 100%;
 }
@@ -1913,6 +1917,10 @@ select{
 
 .w-\[116px\]{
   width: 116px;
+}
+
+.w-\[122px\]{
+  width: 122px;
 }
 
 .w-\[183px\]{
@@ -2025,10 +2033,6 @@ select{
 
 .w-full{
   width: 100%;
-}
-
-.w-\[122px\]{
-  width: 122px;
 }
 
 .min-w-10{
@@ -2413,6 +2417,10 @@ select{
   border-radius: 0.25rem;
 }
 
+.rounded-\[0_0_16px_16px\]{
+  border-radius: 0 0 16px 16px;
+}
+
 .rounded-\[12px\]{
   border-radius: 12px;
 }
@@ -2467,10 +2475,6 @@ select{
 
 .rounded-lg{
   border-radius: 0.5rem;
-}
-
-.rounded-\[0_0_16px_16px\]{
-  border-radius: 0 0 16px 16px;
 }
 
 .border{
@@ -2711,6 +2715,11 @@ select{
 
 .bg-white\/50{
   background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-red-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[linear-gradient\(101deg\2c _\#587AFF_-5\.69\%\2c _\#7144F5_44\.08\%\2c _\#D426FF_111\.99\%\)\]{
@@ -3414,12 +3423,12 @@ select{
 }
 
 @media (min-width: 640px){
-  .sm\:block{
-    display: block;
-  }
-
   .sm\:\!block{
     display: block !important;
+  }
+
+  .sm\:block{
+    display: block;
   }
 
   .sm\:flex{
@@ -3429,15 +3438,39 @@ select{
   .sm\:hidden{
     display: none;
   }
+
+  .sm\:w-\[300px\]{
+    width: 300px;
+  }
+
+  .sm\:w-\[350px\]{
+    width: 350px;
+  }
 }
 
 @media (min-width: 768px){
+  .md\:col-span-5{
+    grid-column: span 5 / span 5;
+  }
+
+  .md\:col-span-7{
+    grid-column: span 7 / span 7;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1024px){
+  .lg\:col-span-5{
+    grid-column: span 5 / span 5;
+  }
+
+  .lg\:col-span-7{
+    grid-column: span 7 / span 7;
+  }
+
   .lg\:block{
     display: block;
   }
