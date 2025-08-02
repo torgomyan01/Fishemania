@@ -452,33 +452,31 @@
   </div>
 
 
-  <div class="">
     <div class="w-full mx-auto mt-[30px] mb-[30px]">
-      <!-- Tabs -->
-      <div class="flex gap-2">
+      <div class="flex gap-2 max-[767px]:overflow-x-auto overflow-x-auto custom-scrollbar">
         <button
-            class="tab-btn rounded-full px-5 py-2 text-sm transition-all"
+            class="whitespace-nowrap tab-btn rounded-full px-5 py-2 text-sm transition-all"
             data-tab="tab1"
             style="background-color: #009FFF; color: #fff"
         >
           Описание
         </button>
         <button
-            class="tab-btn rounded-full px-5 py-2 text-sm transition-all"
+            class="whitespace-nowrap tab-btn rounded-full px-5 py-2 text-sm transition-all"
             data-tab="tab2"
             style="background-color: #F2F2F2; color: #000"
         >
           Характеристики
         </button>
         <button
-            class="tab-btn rounded-full px-5 py-2 text-sm transition-all"
+            class="whitespace-nowrap tab-btn rounded-full px-5 py-2 text-sm transition-all"
             data-tab="tab3"
             style="background-color: #F2F2F2; color: #000"
         >
           О бренде
         </button>
         <button
-            class="tab-btn rounded-full px-5 py-2 text-sm transition-all"
+            class="whitespace-nowrap tab-btn rounded-full px-5 py-2 text-sm transition-all"
             data-tab="tab4"
             style="background-color: #F2F2F2; color: #000"
         >
@@ -486,7 +484,6 @@
         </button>
       </div>
 
-      <!-- Content -->
       <div class="mt-[30px] space-y-4 max-w-[1300px] w-full">
         <div class="tab-content" id="tab1">
           <p class="mb-[20px] max-w-[1100px]">
@@ -504,7 +501,7 @@
           <a href="#" class="text-[#009FFF] text-sm font-medium border-b-[1px] border-[#009FFF]">Читать далее</a>
         </div>
         <div class="tab-content hidden" id="tab2">
-          <div class="grid grid-cols-2 gap-[30px]">
+          <div class="grid grid-cols-2 gap-[30px] max-[767px]:grid-cols-1">
             <ul>
               <li class="flex flex-js mb-[8px]">
                 <span class="text-[#323232]">Вид ловли:</span>
@@ -600,8 +597,8 @@
             публикации сведениях</p>
         </div>
         <div class="tab-content hidden" id="tab3">
-          <div class="flex">
-            <img src="img/jaxon.png" alt="" class="mr-[45px] self-start">
+          <div class="flex max-[767px]:flex-col">
+            <img src="img/jaxon.png" alt="" class="mr-[45px] self-start max-[767px]:mb-[20px]">
             <div class="">
               <p class="text-[#323232] mb-[15px]">Спиннинг телескопический Jaxon Tenesa Tele Travel — это универсальное
                 удилище, идеально подходящее для рыболовов, ценящих компактность и
@@ -632,7 +629,7 @@
           </div>
         </div>
         <div class="tab-content hidden" id="tab4">
-          <div class="p-[24px] mb-[12px] rounded-[24px] border border-[rgba(33,33,33,0.2)]">
+          <div class="p-[24px] max-[767px]:p-[16px] mb-[12px] rounded-[24px] border border-[rgba(33,33,33,0.2)]">
             <div class="flex flex-jcc">
               <span class="text-[16px] font-semibold text-[#323232] mr-[8px]">Александр</span>
               <span class="text-[14px] mr-[8px]">7 мая 2024</span>
@@ -645,7 +642,7 @@
               <img src="img/star.svg" alt="" class="mr-[5px]">
               <span class="text-[#323232] mt-[3px]">5</span>
             </div>
-            <p class="text-[18px] text-[#323232]">
+            <p class="text-[18px] text-[#323232] max-[767px]:text-[15px]">
               Спиннинг телескопический Jaxon Tenesa Tele Travel — это универсальное
               удилище, идеально подходящее для рыболовов, ценящих компактность и удобство
               в транспортировке. Благодаря своей телескопической конструкции, данная
@@ -666,7 +663,7 @@
               <img src="img/star-grey.svg" alt="" class="mr-[5px]">
               <span class="text-[#323232] mt-[3px]">3</span>
             </div>
-            <p class="text-[18px] text-[#323232]">
+            <p class="text-[18px] text-[#323232] max-[767px]:text-[15px]">
               Спиннинг телескопический Jaxon Tenesa Tele Travel — это универсальное
               удилище, идеально подходящее для рыболовов, ценящих компактность и удобство
               в транспортировке. Благодаря своей телескопической конструкции, данная
@@ -692,7 +689,7 @@
               <img src="img/star.svg" alt="" class="mr-[5px]">
               <span class="text-[#323232] mt-[3px]">5</span>
             </div>
-            <p class="text-[18px] text-[#323232]">
+            <p class="text-[18px] text-[#323232] max-[767px]:text-[15px]">
               Спиннинг телескопический Jaxon Tenesa Tele Travel — это универсальное
               удилище, идеально подходящее для рыболовов, ценящих компактность и удобство
               в транспортировке. Благодаря своей телескопической конструкции, данная
@@ -711,9 +708,6 @@
         </div>
       </div>
     </div>
-
-
-  </div>
 
   <div class="w-full h-auto mt-[70px] mb-[60px]">
 
@@ -1172,7 +1166,7 @@
 
   <div class="w-full mb-[70px]">
     <div class="w-full flex-jsb-c mb-[25px]">
-      <h4 class="font-medium text-[32px] text-[#212121]">Популярные выды рыбалки</h4>
+      <h4 class="font-medium text-[32px] text-[#212121] max-[767px]:text-[25px]">Популярные выды рыбалки</h4>
       <div class="popular-navigation flex-je-c relative gap-2">
         <div class="swiper-button-prev after:text-[20px] after:text-black after:content-['prev']
         w-[42px] h-[42px] rounded-[8px] transition border border-[#6E6E6E]/25 static hover:border-black"></div>
@@ -1182,57 +1176,51 @@
     </div>
     <div class="swiper popularSwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <a href="#" class="w-full group h-[378px] rounded-[8px] overflow-hidden relative">
-            <img src="img/popular-img1.png" alt=""
-                 class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
+        <div class="swiper-slide max-w[1600px]">
+          <a href="#" class="w-full group h-[378px] max-[767px]:h-[290px] rounded-[8px] overflow-hidden relative">
+            <img src="img/popular-img1.png" alt="" class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
             <div class="absolute top-0 left-0 w-full h-full bg-black/50 flex-jc-c rounded-[8px]">
-              <span class="absolute text-white text-[40px] z-10 font-lena">Ультралайт</span>
+              <span class="absolute text-white text-[40px] max-[767px]:text-[24px] z-10 font-lena ">Ультралайт</span>
             </div>
           </a>
         </div>
-        <div class="swiper-slide">
-          <a href="#" class="w-full group h-[378px] rounded-[8px] overflow-hidden relative">
-            <img src="img/popular-img2.png" alt=""
-                 class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
+        <div class="swiper-slide max-w[1600px]">
+          <a href="#" class="w-full group h-[378px] max-[767px]:h-[290px] rounded-[8px] overflow-hidden relative">
+            <img src="img/popular-img2.png" alt="" class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
             <div class="absolute top-0 left-0 w-full h-full bg-black/50 flex-jc-c rounded-[8px]">
-              <span class="absolute text-white text-[40px] z-10 font-lena">На джиг</span>
+              <span class="absolute text-white text-[40px] max-[767px]:text-[24px] z-10 font-lena">На джиг</span>
             </div>
           </a>
         </div>
-        <div class="swiper-slide">
-          <a href="#" class="w-full group h-[378px] rounded-[8px] overflow-hidden relative">
-            <img src="img/popular-img3.png" alt=""
-                 class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
+        <div class="swiper-slide max-w[1600px]">
+          <a href="#" class="w-full group h-[378px] max-[767px]:h-[290px] rounded-[8px] overflow-hidden relative">
+            <img src="img/popular-img3.png" alt="" class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
             <div class="absolute top-0 left-0 w-full h-full bg-black/50 flex-jc-c rounded-[8px]">
-              <span class="absolute text-white text-[40px] z-10 font-lena">Троллинг</span>
+              <span class="absolute text-white text-[40px] max-[767px]:text-[24px] z-10 font-lena">Троллинг</span>
             </div>
           </a>
         </div>
-        <div class="swiper-slide">
-          <a href="#" class="w-full group h-[378px] rounded-[8px] overflow-hidden relative">
-            <img src="img/popular-img4.png" alt=""
-                 class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
+        <div class="swiper-slide max-w[1600px]">
+          <a href="#" class="w-full group h-[378px] max-[767px]:h-[290px] rounded-[8px] overflow-hidden relative">
+            <img src="img/popular-img4.png" alt="" class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
             <div class="absolute top-0 left-0 w-full h-full bg-black/50 flex-jc-c rounded-[8px]">
-              <span class="absolute text-white text-[40px] z-10 font-lena">На поплавок</span>
+              <span class="absolute text-white text-[40px] max-[767px]:text-[24px] z-10 font-lena">На поплавок</span>
             </div>
           </a>
         </div>
-        <div class="swiper-slide">
-          <a href="#" class="w-full group h-[378px] rounded-[8px] overflow-hidden relative">
-            <img src="img/popular-img5.png" alt=""
-                 class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
+        <div class="swiper-slide max-w[1600px]">
+          <a href="#" class="w-full group h-[378px] max-[767px]:h-[290px] rounded-[8px] overflow-hidden relative">
+            <img src="img/popular-img5.png" alt="" class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
             <div class="absolute top-0 left-0 w-full h-full bg-black/50 flex-jc-c rounded-[8px]">
-              <span class="absolute text-white text-[40px] z-10 font-lena">Фидер</span>
+              <span class="absolute text-white text-[40px] max-[767px]:text-[24px] z-10 font-lena">Фидер</span>
             </div>
           </a>
         </div>
-        <div class="swiper-slide">
-          <a href="#" class="w-full group h-[378px] rounded-[8px] overflow-hidden relative">
-            <img src="img/popular-img1.png" alt=""
-                 class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
+        <div class="swiper-slide max-w[1600px]">
+          <a href="#" class="w-full group h-[378px] max-[767px]:h-[290px] rounded-[8px] overflow-hidden relative">
+            <img src="img/popular-img1.png" alt="" class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
             <div class="absolute top-0 left-0 w-full h-full bg-black/50 flex-jc-c rounded-[8px]">
-              <span class="absolute text-white text-[40px] z-10 font-lena">Фидер</span>
+              <span class="absolute text-white text-[40px] max-[767px]:text-[24px] z-10 font-lena">Фидер</span>
             </div>
           </a>
         </div>

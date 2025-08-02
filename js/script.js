@@ -26,14 +26,16 @@ const swiper = new Swiper(".popularSwiper", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 1.2,
+      slidesPerView: 'auto',
+      spaceBetween: 0,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 'auto',
+      spaceBetween: 0,
     },
-    1024: {
-      slidesPerView: 5,
-      spaceBetween: 30
+    1600: {
+      slidesPerView: 5, // ключевой момент!
+      spaceBetween: 30,
     },
   },
 });
@@ -50,14 +52,16 @@ const swiper2 = new Swiper(".categoriesSwiper", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 1.2,
+      slidesPerView: 'auto',
+      spaceBetween: 0,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 'auto',
+      spaceBetween: 0,
     },
-    1024: {
-      slidesPerView: 5,
-      spaceBetween: 30
+    1500: {
+      slidesPerView: 5, // ключевой момент!
+      spaceBetween: 30,
     },
   },
 });
@@ -74,10 +78,10 @@ const swiper3 = new Swiper(".infoSwiper", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 1.2,
+      slidesPerView: 1,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 1,
     },
     1024: {
       slidesPerView: 2,
@@ -107,6 +111,23 @@ const swiperPartners = new Swiper('.swiperPartners', {
   navigation: {
     nextEl: '.swiper-button-next.brand',
     prevEl: '.swiper-button-prev.brand',
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: "auto",
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1300: {
+      slidesPerView: 7,
+      spaceBetween: 30
+    },
   },
 });
 
