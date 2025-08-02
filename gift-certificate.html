@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/nouislider.min.css">
+  <link rel="stylesheet" href="css/output.css">
+
+  <script src="js/aos.js"></script>
+  <script src="js/nouislider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <title>Catalog</title>
+</head>
+<body>
+
+
+<div class="w-full h-[50px] bg-[#323232]">
+  <div class="container h-full">
+    <div class="w-full h-full flex items-center justify-between">
+      <div class="text-white flex-js-c gap-2 cursor-pointer">
+        г. Москва
+        <img src="img/icons/down.svg" alt="">
+      </div>
+
+      <div class="flex-je-c gap-6">
+        <span class="text-white">Контакты</span>
+        <div class="text-white flex-js-c gap-2">Покупателям
+          <img src="img/icons/down.svg" alt="">
+        </div>
+        <div class="text-white cursor-pointer flex-js-c gap-2">
+          <img src="img/icons/user-white.svg" alt="user-white.svg">
+          Регистрация и вход
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w-full py-4">
+  <div class="container">
+    <div class="w-full flex-jsb-c gap-4">
+      <a href="/index.html">
+        <img src="img/logo-header.svg" alt="logo" class="w-full max-w-[273px]">
+      </a>
+
+      <div class="flex-jsb-c gap-4">
+        <button class="bg-blue rounded-[8px] px-6 h-[50px] flex-jsb-c gap-3 text-white hover:bg-blue/80 transition">
+          <img src="img/icons/menu-catalog.svg" alt="menu-catalog">
+          Каталог
+        </button>
+        <form action="#" class="w-[486px] bg-blue rounded-[8px] flex-jsb-c h-[50px] p-[2px]">
+          <label class="w-full h-full bg-white rounded-[6px] overflow-hidden">
+            <input type="text" class="w-full h-full pl-3 placeholder:text-black/80" placeholder="Поиск по сайту">
+          </label>
+          <button class="w-[80px] h-[50px] bg-transparent flex-jc-c" type="submit">
+            <img src="img/icons/search-white.svg" alt="search-white">
+          </button>
+        </form>
+      </div>
+
+
+      <div class="flex-jsb-c gap-8">
+        <div class="flex-js-c gap-4">
+          <div class="flex-js-c gap-4">
+            <img src="img/icons/call-blue.svg" alt="call-blue">
+          </div>
+          <div>
+            <div>
+              <a href="tel: 8 921 903 53 50" class="text-[20px] text-black font-bold">8 921 903 53 50</a>
+            </div>
+            <div class="mt-[-4px]">
+              <a href="#" class="text-blue underline">
+                Обратный звонок
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="flex-js-c gap-4 text-[18px] text-black text-medium">
+          <img src="img/icons/heard-blue.svg" alt="heard-blue">
+          Избранное
+        </a>
+
+        <a href="#" class="flex-js-c gap-4 text-[18px] text-black text-medium">
+          <img src="img/icons/rows-block.svg" alt="rows-block">
+          Сравнения
+        </a>
+
+        <div class="flex-js-c gap-4 text-[18px] text-black text-medium">
+          <div class="relative w-10 h-10 flex-jc-c">
+            <img src="img/icons/card-blue.svg" alt="card-blue">
+            <span
+                class="w-4 h-4 bg-[#CF301B] rounded-full flex-jc-c absolute top-0 right-0 text-[12px] text-white">2</span>
+          </div>
+          Корзина
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="container w-full">
+
+  <div class="w-full h-[67px] bg-[#F4F4F4] rounded-[16px] px-8 flex-jsb-c gap-16">
+    <div class="flex-jsb-c gap-6 h-full w-[40%]">
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        <img src="img/icons/like-blue.svg" alt="like-blue.svg">
+        Подарочные сертификаты
+      </a>
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        <img src="img/icons/percent.svg" alt="percent">
+        Скидки
+      </a>
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        <img src="img/icons/star-lik.svg" alt="star-lik">
+        Новинки
+      </a>
+    </div>
+
+    <div class="min-w-[1px] w-[1px] h-[27px] bg-[#CACACA] mx-8"></div>
+    <div class="flex-jsb-c gap-6 h-full w-[60%]">
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        Удилища
+      </a>
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        Катушки
+      </a>
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        Приманки
+      </a>
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        Аксессуары
+      </a>
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        Оснастка
+      </a>
+      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
+        Экипировка
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="container mt-4">
+
+
+<div class="bg-[#F4F4F4] relative z-[0] overflow-hidden flex items-center rounded-[24px] mb-[60px] mt-[20px] p-[90px]">
+    <div class="flex flex-col items-start">
+        <h2 class="max-w-[840px] font-lena mb-[30px] uppercase text-[#009FFF]
+        text-[80px] leading-[100%]">Лучший подарок- снасти для рыбалки!</h2>
+        <p class="max-w-[500px] text-[#323232] text-[16px] mb-[40px]">Вы хотите подарить что-то связанное 
+        со спортом, со здоровым образом жизни, но сомневаетесь, что выбрать?
+         Для таких случаев есть Подарочная карта!</p>
+         <div class="flex">
+            <a href="#" class="flex items-center mr-[40px]">
+                <img src="img/Inform.svg" alt="" class="mr-[6px] mt-[2px]">
+                <span class="border-b border-[#009FFF] text-[#009FFF]">Как работают подарочные карты?</span>
+            </a>
+            <a href="#" class="flex">
+                <span class="border-b border-[#009FFF] text-[#009FFF]">Правила</span>
+            </a>
+         </div>
+    </div>
+    <img src="img/gift-image.png" alt="" class="absolute top-0 right-0 z-[-1] h-[100%]">
+</div>
+
+<div class="flex mt-[40px] mb-[100px]">
+    <div class="max-w-[680px] mr-[30px]">
+        <h3 class="font-lena mb-[24px] text-[60px] leading-[100%]
+         text-[#212121] font-normal">Электронная подарочная карта</h3>
+         <p class="text-[20px] text-[#323232]">Незаменима, чтобы поздравить на расстоянии</p>
+    </div>
+    <div>
+        <div class="grid grid-cols-2 gap-[50px]">
+            <div>
+                <span class="rounded-[16px] w-[60px] h-[60px] mb-[20px] flex bg-[#1A9BEA]">
+                    <img src="img/gift-card-icon1.svg" alt="" class="m-auto">
+                </span>
+                <span class="text-[#323232] text-[16px]">Электронной Подарочной картой можно оплачивать
+                     покупки и в розничном магазине и на сайте </span>
+            </div>
+            <div>
+                <span class="rounded-[16px] w-[60px] h-[60px] mb-[20px] flex bg-[#1A9BEA]">
+                    <img src="img/gift-card-icon2.svg" alt="" class="m-auto">
+                </span>
+                <span class="text-[#323232] text-[16px]">Отправляйте подарок сразу или в конкретную дату,
+                     а можно распечатать и подарить лично.</span>
+            </div>
+            <div>
+                <span class="rounded-[16px] w-[60px] h-[60px] mb-[20px] flex bg-[#1A9BEA]">
+                    <img src="img/gift-card-icon3.svg" alt="" class="m-auto">
+                </span>
+                <span class="text-[#323232] text-[16px]">Любой номинал от 500 до 150 000 рублей.</span>
+            </div>
+            <div>
+                <span class="rounded-[16px] w-[60px] h-[60px] mb-[20px] flex bg-[#1A9BEA]">
+                    <img src="img/gift-card-icon4.svg" alt="" class="m-auto">
+                </span>
+                <span class="text-[#323232] text-[16px]">Действует целый год с момента покупки,
+                     а об окончании срока действия мы напомним.</span>
+            </div>
+        </div>
+        <button
+        class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px]
+         text-white text-nowrap font-bold flex-jc-c gap-2 mt-[50px]">
+            Оформить электронную карту
+        </button>
+    </div>
+</div>
+  
+
+
+</div>
+
+<div class="bg-[#F4F4F4] pt-[80px] pb-[80px]">
+    <div class="container text-center">
+        <h3 class="max-w-[750px] w-full text-[#212121] text-[64px] 
+        leading-[100%] text-center mx-auto my-0 font-lena mb-[20px]">Пластиковая подарочная карта</h3>
+        <p class="text-[20px] text-[#323232] mb-[40px]">Универсальный подарок</p>
+        <div class="grid grid-cols-4 gap-[30px] max-w-[1300px] w-full mx-auto my-0">
+            <div class="text-center">
+                <span class="rounded-[16px] w-[60px] h-[60px] mb-[20px] mx-auto my-0 flex bg-[#1A9BEA]">
+                    <img src="img/gift-card-icon6.svg" alt="" class="m-auto">
+                </span>
+                <span class="text-[#323232] text-[16px]">Резервируйте на сайте и забирайте в розничном магазине, а можете заказать на доставку.*</span>
+            </div>
+            <div>
+                <span class="rounded-[16px] w-[60px] h-[60px] mb-[20px] mx-auto my-0 flex bg-[#1A9BEA]">
+                    <img src="img/gift-card-icon7.svg" alt="" class="m-auto">
+                </span>
+                <span class="text-[#323232] text-[16px]">Подарок рыбаку на любой праздник !</span>
+            </div>
+            <div>
+                <span class="rounded-[16px] w-[60px] h-[60px] mb-[20px] mx-auto my-0 flex bg-[#1A9BEA]">
+                    <img src="img/gift-card-icon8.svg" alt="" class="m-auto">
+                </span>
+                <span class="text-[#323232] text-[16px]">Пластиковые карты на 500, 1 000, 2 000, 3 000 и 5 000 рублей.</span>
+            </div>
+            <div>
+                <span class="rounded-[16px] w-[60px] h-[60px] mb-[20px] mx-auto my-0 flex bg-[#1A9BEA]">
+                    <img src="img/gift-card-icon9.svg" alt="" class="m-auto">
+                </span>
+                <span class="text-[#323232] text-[16px]">Действует один год с момента активации.</span>
+            </div>
+        </div>
+        <button
+            class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px]
+            text-white text-nowrap font-bold flex-jc-c gap-2 mt-[50px]  mx-auto my-0">
+            Оформить пластиковую карту
+        </button>
+    </div>
+</div>
+
+<footer class="bg-[#262626] pt-[110px]">
+  <div class="container">
+
+
+    <div class="w-full grid grid-cols-12 gap-10 mt-[-60px]">
+      <div class="col-span-2">
+        <img src="img/logo-footer.svg" alt="logo-footer" class="mt-[-20px]">
+        <div class="flex-js-c gap-2 text-white mt-4">
+          Ваш город
+          <img src="img/icons/location.svg" alt="location">
+          <div class="text-white flex-js-c gap-2 cursor-pointer">
+            г. Москва
+            <img src="img/icons/down.svg" alt="">
+          </div>
+        </div>
+        <div class="flex-js-c gap-4 mt-4">
+          <a href="#">
+            <img src="img/icons/whats-app.svg" alt="whats-app">
+          </a>
+          <a href="#">
+            <img src="img/icons/tg.svg" alt="tg">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-span-4">
+        <h4 class="text-white text-[20px] mb-4">Каталог</h4>
+        <div class="flex-jsb-s gap-[60px]">
+          <ul>
+            <li>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Удилища
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Катушки
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Приманки
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Оснастка
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Зимняя рыбалка
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Одежда и обувь
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Электроника
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Аксессуары
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Туризм
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Скидки
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Сертификаты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-span-2">
+        <h4 class="text-white text-[20px] mb-4">Сервис</h4>
+        <div class="flex-jsb-s gap-[60px]">
+          <ul>
+            <li>
+              <a href="#" class="text-white opacity-80 mb-2">
+                О магазине
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Доставка и оплата
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Подарочные карты
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Скидки
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Новости
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Сервис и гарантии
+              </a>
+              <a href="#" class="text-white opacity-80 mb-2">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="col-span-2">
+
+        <ul>
+          <li>
+            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
+              <img src="img/icons/favorite.svg" alt="favorite" class="mr-2">
+              Избранное
+            </a>
+            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
+              <img src="img/icons/rows-white.svg" alt="rows-white" class="mr-2">
+              Сравнения
+            </a>
+            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
+              <img src="img/icons/basket-white.svg" alt="basket-white" class="mr-2">
+              Корзина
+            </a>
+            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
+              <img src="img/icons/login-account.svg" alt="login-account" class="mr-2">
+              Регистрация и вход
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+
+      <div class="col-span-2">
+        <h4 class="text-white text-[20px] mb-4">Контакты</h4>
+
+        <a href="tel: 8 (800) 101-86-53" class="text-white font-bold">
+          8 (800) 101-86-53
+        </a>
+        <a href="tel: 8 (800) 101-86-53" class="text-white font-bold mb-4">
+          8 (921) 903-53-50
+        </a>
+
+        <button
+            class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2 mb-4">
+          Обратный звонок
+        </button>
+
+        <a href="mailto: fishemania777@yandex.ru" class="text-blue underline mb-4">
+          fishemania777@yandex.ru
+        </a>
+
+        <p class="text-[14px] text-white opacity-80">
+          пн-пт, 10:00 - 20:00, прием заказов на сайте круглосуточно
+        </p>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <div class="w-full h-[1px] bg-white mt-6"></div>
+
+  <div class="container">
+    <div class="w-full h-[54px] flex-jsb-c">
+      <p class="text-[14px] text-white opacity-80">Информация, размещенная на сайте, не является публичной офертой.</p>
+      <p class="text-[14px] text-white opacity-80">© 2005–2025. Все права защищены</p>
+    </div>
+  </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
