@@ -359,6 +359,15 @@ input:checked + .slider-v3::after {
   }
 }
 
+.swiper-pagination-bullet{
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active{
+  width: 15px;
+  border-radius: 5px;
+}
+
 
 @tailwind base;
 @tailwind components;

@@ -18,7 +18,7 @@
 <body>
 
 
-<div class="w-full h-[50px] bg-[#323232]">
+<div class="w-full h-[50px] bg-[#323232] hidden sm:block">
   <div class="container h-full">
     <div class="w-full h-full flex items-center justify-between">
       <div class="text-white flex-js-c gap-2 cursor-pointer">
@@ -41,21 +41,32 @@
 </div>
 
 
-<div class="w-full py-4">
+<div class="w-full py-4 hidden sm:!block">
   <div class="container">
     <div class="w-full flex-jsb-c gap-4">
-      <a href="/index.html">
-        <img src="img/logo-header.svg" alt="logo" class="w-full max-w-[273px]">
-      </a>
+      <div class="flex-js-c gap-4">
+        <a href="/index.html">
+          <img src="img/logo-header.svg" alt="logo" class="w-full max-w-[273px] hidden min-[1433px]:block">
+          <img src="img/icons/fish-min-logo.svg" alt="logo" class="w-full min-w-[50px] block min-[1433px]:hidden">
+        </a>
 
-      <div class="flex-jsb-c gap-4">
-        <button class="bg-blue rounded-[8px] px-6 h-[50px] flex-jsb-c gap-3 text-white hover:bg-blue/80 transition">
+        <button
+            class="bg-blue rounded-[8px] px-6 h-[50px] flex-js-c min-w-[915pox]:flex-jsb-c gap-3 text-white hover:bg-blue/80 transition flex min-[915px]:hidden">
           <img src="img/icons/menu-catalog.svg" alt="menu-catalog">
           Каталог
         </button>
-        <form action="#" class="w-[486px] bg-blue rounded-[8px] flex-jsb-c h-[50px] p-[2px]">
+      </div>
+
+      <div class="flex-jsb-c gap-4 hidden min-[915px]:flex">
+        <button
+            class="bg-blue rounded-[8px] px-6 h-[50px] flex-js-c min-w-[915pox]:flex-jsb-c gap-3 text-white hover:bg-blue/80 transition">
+          <img src="img/icons/menu-catalog.svg" alt="menu-catalog">
+          Каталог
+        </button>
+        <form action="#" class="w-[300px] min-[1328px]:w-[486px] bg-blue rounded-[8px] flex-jsb-c h-[50px] p-[2px]">
           <label class="w-full h-full bg-white rounded-[6px] overflow-hidden">
-            <input type="text" class="w-full h-full pl-3 placeholder:text-black/80" placeholder="Поиск по сайту">
+            <input type="text" class="w-full h-full pl-3 placeholder:text-black/80 rounded-[6px] border-none"
+                   placeholder="Поиск по сайту">
           </label>
           <button class="w-[80px] h-[50px] bg-transparent flex-jc-c" type="submit">
             <img src="img/icons/search-white.svg" alt="search-white">
@@ -71,7 +82,7 @@
           </div>
           <div>
             <div>
-              <a href="tel: 8 921 903 53 50" class="text-[20px] text-black font-bold">8 921 903 53 50</a>
+              <a href="tel: 8 921 903 53 50" class="text-[20px] text-black font-bold text-nowrap">8 921 903 53 50</a>
             </div>
             <div class="mt-[-4px]">
               <a href="#" class="text-blue underline">
@@ -83,21 +94,21 @@
 
         <a href="#" class="flex-js-c gap-4 text-[18px] text-black text-medium">
           <img src="img/icons/heard-blue.svg" alt="heard-blue">
-          Избранное
+          <span class="hidden min-[1150px]:inline-block">Избранное</span>
         </a>
 
         <a href="#" class="flex-js-c gap-4 text-[18px] text-black text-medium">
           <img src="img/icons/rows-block.svg" alt="rows-block">
-          Сравнения
+          <span class="hidden min-[1150px]:inline-block">Сравнения</span>
         </a>
 
         <div class="flex-js-c gap-4 text-[18px] text-black text-medium">
           <div class="relative w-10 h-10 flex-jc-c">
-            <img src="img/icons/card-blue.svg" alt="card-blue">
+            <img src="img/icons/shop.svg" alt="card-blue">
             <span
                 class="w-4 h-4 bg-[#CF301B] rounded-full flex-jc-c absolute top-0 right-0 text-[12px] text-white">2</span>
           </div>
-          Корзина
+          <span class="hidden min-[1150px]:inline-block">Корзина</span>
         </div>
 
       </div>
@@ -107,47 +118,80 @@
   </div>
 </div>
 
+<div
+    class="w-full fixed top-0 left-0 bg-[#F4F4F4] rounded-[0_0_16px_16px] h-[65px] px-4 flex-jsb-c flex sm:hidden z-10">
+  <a href="index.html">
+    <img src="img/logo-header.svg" alt="" class="w-[122px]">
+  </a>
+
+  <div class="flex-jsb-c gap-1">
+    <a href="#" class="flex-js-c gap-4 text-[18px] text-black text-medium">
+      <img src="img/icons/heard-blue.svg" alt="heard-blue" width="24" height="24">
+    </a>
+
+    <a href="#" class="flex-js-c gap-4 text-[18px] text-black text-medium">
+      <img src="img/icons/rows-block.svg" alt="rows-block" width="24" height="24">
+    </a>
+
+    <div class="flex-js-c gap-4 text-[18px] text-black text-medium">
+      <div class="relative w-10 h-10 flex-jc-c">
+        <img src="img/icons/shop.svg" alt="card-blue" width="26" height="26">
+        <span class="w-4 h-4 bg-[#CF301B] rounded-full flex-jc-c absolute top-0 right-0 text-[12px] text-white">2</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="flex-je-c gap-1">
+    Меню
+    <img src="img/icons/mobile-menu.svg" alt="mobile-menu">
+  </div>
+
+</div>
+
 
 <div class="container w-full">
 
-  <div class="w-full h-[67px] bg-[#F4F4F4] rounded-[16px] px-8 flex-jsb-c gap-16">
-    <div class="flex-jsb-c gap-6 h-full w-[40%]">
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        <img src="img/icons/like-blue.svg" alt="like-blue.svg">
-        Подарочные сертификаты
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        <img src="img/icons/percent.svg" alt="percent">
-        Скидки
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        <img src="img/icons/star-lik.svg" alt="star-lik">
-        Новинки
-      </a>
-    </div>
+  <div
+      class="w-full h-[67px] bg-[#F4F4F4] rounded-[16px] px-8 flex-jsb-c min-w-[1400px]:gap-16 overflow-x-auto bottom-scroll-none hidden sm:flex">
+    <div class="w-full flex-jsb-c min-w-[1300px]">
+      <div class="flex-jsb-c gap-6 h-full w-[40%]">
+        <a href="#" class="flex-js-c gap-2 text-black min-w-[1290px]:text-[18px] font-medium">
+          <img src="img/icons/like-blue.svg" alt="like-blue.svg">
+          Подарочные сертификаты
+        </a>
+        <a href="#" class="flex-js-c gap-2 text-black min-w-[1290px]:text-[18px] font-medium">
+          <img src="img/icons/percent.svg" alt="percent">
+          Скидки
+        </a>
+        <a href="#" class="flex-js-c gap-2 text-black min-w-[1290px]:text-[18px] font-medium">
+          <img src="img/icons/star-lik.svg" alt="star-lik">
+          Новинки
+        </a>
+      </div>
 
-    <div class="min-w-[1px] w-[1px] h-[27px] bg-[#CACACA] mx-8"></div>
-    <div class="flex-jsb-c gap-6 h-full w-[60%]">
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Удилища
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Катушки
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Приманки
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Аксессуары
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Оснастка
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Экипировка
-      </a>
+      <div class="min-w-[1px] w-[1px] h-[27px] bg-[#CACACA] mx-8"></div>
+      <div class="flex-jsb-c gap-6 h-full w-[60%]">
+        <a href="#" class="flex-js-c gap-2 text-black min-w-[1290px]:text-[18px] font-medium">
+          Удилища
+        </a>
+        <a href="#" class="flex-js-c gap-2 text-black min-w-[1290px]:text-[18px] font-medium">
+          Катушки
+        </a>
+        <a href="#" class="flex-js-c gap-2 text-black min-w-[1290px]:text-[18px] font-medium">
+          Приманки
+        </a>
+        <a href="#" class="flex-js-c gap-2 text-black min-w-[1290px]:text-[18px] font-medium">
+          Аксессуары
+        </a>
+        <a href="#" class="flex-js-c gap-2 text-black min-w-[1290px]:text-[18px] font-medium">
+          Оснастка
+        </a>
+        <a href="#" class="flex-js-c gap-2 text-black min-w-[1290px]:text-[18px] font-medium">
+          Экипировка
+        </a>
+      </div>
     </div>
-
   </div>
 
 </div>
@@ -1689,13 +1733,16 @@
 
 <footer class="bg-[#262626] mt-[250px]">
   <div class="container">
-    <div class="w-full h-[320px] relative transform translate-y-[-50%]">
-      <img src="img/contact-me-bg.png" alt="contact-me-bg" class="w-full h-full object-cover rounded-[16px]">
-      <img src="img/message-ilustriator.png" alt="message-ilustriator" class="absolute left-[17%] top-[-100px]">
-      <div class="absolute top-[50%] right-[70px] transform translate-y-[-50%]">
-        <h3 class="font-light text-[64px] text-white">Подпишись на рассылку</h3>
+    <div class="w-full h-[360px] min-[500px]:h-[320px] relative transform translate-y-[-50%] bg-blue rounded-[12px]">
+      <img src="img/contact-me-bg.png" alt="contact-me-bg" class="w-full h-full object-cover  rounded-[16px]">
+      <img src="img/message-ilustriator.png" alt="message-illustrator"
+           class="absolute left-[2%] min-[1350px]:left-[10%] min-[1450px]:left-[17%] top-[-140px] min-[350px]:top-[-180px] min-[500px]:top-[-230px] min-[1256px]:top-[-100px] transform max-[500px]:!scale-50 max-[1240px]:!scale-75">
+      <div
+          class="absolute top-0 min-[890px]:top-[50%] max-[890px]:bottom-0 min-[890px]:right-[70px] transform min-[890px]:translate-y-[-50%] max-[576px]:pr-4 max-[576px]:pl-4 max-[890px]:pl-10 max-[431px]:pt-[50px] max-[890px]:pt-[100px]">
+        <h3 class="font-light max-[890px]:mb-2 max-[890px]:leading-[32px] text-[32px] min-[890px]:text-[64px] text-white">
+          Подпишись на рассылку</h3>
         <p class="text-white">Получай наши новости, акции, советы и рекомендации экспертов</p>
-        <form action="#" class="w-full flex-jsb-c gap-4 mt-4">
+        <form action="#" class="w-full flex-jsb-c max-[431px]:flex-col gap-4 mt-4">
           <label class="w-full h-[54px] bg-white overflow-hidden rounded-[8px]">
             <input type="text" placeholder="Ваша почта" class="w-full h-full pl-6">
           </label>
@@ -1708,13 +1755,13 @@
     </div>
 
 
-    <div class="w-full grid grid-cols-12 gap-10 mt-[-60px]">
-      <div class="col-span-2">
+    <div class="w-full grid-cols-12 gap-10 mt-[-60px] hidden min-[850px]:grid">
+      <div class="col-span-4 min-[1300px]:col-span-2">
         <img src="img/logo-footer.svg" alt="logo-footer" class="mt-[-20px]">
         <div class="flex-js-c gap-2 text-white mt-4">
           Ваш город
           <img src="img/icons/location.svg" alt="location">
-          <div class="text-white flex-js-c gap-2 cursor-pointer">
+          <div class="text-white flex-js-c gap-2 cursor-pointer text-nowrap">
             г. Москва
             <img src="img/icons/down.svg" alt="">
           </div>
@@ -1729,26 +1776,36 @@
         </div>
       </div>
 
-      <div class="col-span-4">
+      <div class="col-span-2 min-[1300px]:col-span-4">
         <h4 class="text-white text-[20px] mb-4">Каталог</h4>
-        <div class="flex-jsb-s gap-[60px]">
+        <div class="flex-jsb-s min-[1300px]:gap-[60px] max-[1300px]:flex-col">
           <ul>
             <li>
               <a href="#" class="text-white opacity-80 mb-2">
                 Удилища
               </a>
+            </li>
+            <li>
               <a href="#" class="text-white opacity-80 mb-2">
                 Катушки
               </a>
+            </li>
+            <li>
               <a href="#" class="text-white opacity-80 mb-2">
                 Приманки
               </a>
+            </li>
+            <li>
               <a href="#" class="text-white opacity-80 mb-2">
                 Оснастка
               </a>
+            </li>
+            <li>
               <a href="#" class="text-white opacity-80 mb-2">
                 Зимняя рыбалка
               </a>
+            </li>
+            <li>
               <a href="#" class="text-white opacity-80 mb-2">
                 Одежда и обувь
               </a>
@@ -1759,15 +1816,23 @@
               <a href="#" class="text-white opacity-80 mb-2">
                 Электроника
               </a>
+            </li>
+            <li>
               <a href="#" class="text-white opacity-80 mb-2">
                 Аксессуары
               </a>
+            </li>
+            <li>
               <a href="#" class="text-white opacity-80 mb-2">
                 Туризм
               </a>
+            </li>
+            <li>
               <a href="#" class="text-white opacity-80 mb-2">
                 Скидки
               </a>
+            </li>
+            <li>
               <a href="#" class="text-white opacity-80 mb-2">
                 Сертификаты
               </a>
@@ -1808,7 +1873,31 @@
       </div>
 
 
-      <div class="col-span-2">
+      <div class="col-span-4 min-[1200px]:col-span-2">
+        <div class="block min-[1200px]:hidden mb-4">
+          <h4 class="text-white text-[20px] mb-4">Контакты</h4>
+
+          <a href="tel: 8 (800) 101-86-53" class="text-white font-bold block">
+            8 (800) 101-86-53
+          </a>
+          <a href="tel: 8 (800) 101-86-53" class="text-white font-bold mb-4">
+            8 (921) 903-53-50
+          </a>
+
+          <button
+              class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2 mb-4">
+            Обратный звонок
+          </button>
+
+          <a href="mailto: fishemania777@yandex.ru" class="text-blue underline mb-4">
+            fishemania777@yandex.ru
+          </a>
+
+          <p class="text-[14px] text-white opacity-80">
+            пн-пт, 10:00 - 20:00, прием заказов на сайте круглосуточно
+          </p>
+        </div>
+
 
         <ul>
           <li>
@@ -1834,7 +1923,7 @@
       </div>
 
 
-      <div class="col-span-2">
+      <div class="col-span-2 hidden min-[1200px]:block">
         <h4 class="text-white text-[20px] mb-4">Контакты</h4>
 
         <a href="tel: 8 (800) 101-86-53" class="text-white font-bold">
@@ -1862,12 +1951,86 @@
     </div>
 
 
+    <div class="w-full block min-[850px]:hidden mt-[-150px]">
+
+      <div class="w-full flex-jsb-c border-b pb-6 border-white/20">
+        <a href="index.html">
+          <img src="img/logo-footer.svg" alt="logo-footer" class="w-[170px]">
+        </a>
+        <div class="flex-js-c gap-4 mt-4">
+          <a href="#">
+            <img src="img/icons/whats-app.svg" alt="whats-app" width="24px">
+          </a>
+          <a href="#">
+            <img src="img/icons/tg.svg" alt="tg" width="24px">
+          </a>
+        </div>
+      </div>
+
+
+      <ul class="w-full grid grid-cols-2 mt-4">
+        <li>
+          <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
+            <img src="img/icons/favorite.svg" alt="favorite" class="mr-2">
+            Избранное
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
+            <img src="img/icons/rows-white.svg" alt="rows-white" class="mr-2">
+            Сравнения
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
+            <img src="img/icons/basket-white.svg" alt="basket-white" class="mr-2">
+            Корзина
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
+            <img src="img/icons/login-account.svg" alt="login-account" class="mr-2">
+            Регистрация и вход
+          </a>
+        </li>
+      </ul>
+
+      <div class="mb-4 w-full grid grid-cols-2 mt-4">
+
+        <div>
+          <a href="tel: 8 (800) 101-86-53" class="text-white font-bold block">
+            8 (800) 101-86-53
+          </a>
+          <a href="tel: 8 (800) 101-86-53" class="text-white font-bold mb-4">
+            8 (921) 903-53-50
+          </a>
+        </div>
+
+        <button
+            class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2 mb-4">
+          Обратный звонок
+        </button>
+
+        <div>
+          <a href="mailto: fishemania777@yandex.ru" class="text-blue underline">
+            fishemania777@yandex.ru
+          </a>
+
+          <p class="text-[14px] text-white opacity-80">
+            пн-пт, 10:00 - 20:00, прием заказов на сайте круглосуточно
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
   </div>
 
-  <div class="w-full h-[1px] bg-white mt-6"></div>
+  <div class="w-full h-[1px] bg-white/20 mt-6 mb-2"></div>
 
-  <div class="container">
-    <div class="w-full h-[54px] flex-jsb-c">
+  <div class="container pb-4">
+    <div class="w-full min-[420px]:h-[54px] flex-js-s gap-3 min-[420px]:flex-jsb-c max-[420px]:flex-col">
       <p class="text-[14px] text-white opacity-80">Информация, размещенная на сайте, не является публичной офертой.</p>
       <p class="text-[14px] text-white opacity-80">© 2005–2025. Все права защищены</p>
     </div>
