@@ -264,6 +264,13 @@ a {
       bottom: 0px;
     }
   }
+  .bg-none{
+    background: none !important;
+  }
+  #tab-login, #tab-register{
+    font-size: 20px !important;
+    padding: 12px !important;
+  }
 }
 
 .custom-scrollbar::-webkit-scrollbar {

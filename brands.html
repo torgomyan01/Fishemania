@@ -220,7 +220,7 @@
 
   <h2 class="font-medium text-[#212121] text-[32px] mb-[30px]">Бренды</h2>
 
-  <div class="flex items-center">
+  <div class="flex items-center max-[767px]:overflow-x-auto" style="scrollbar-width: none; -ms-overflow-style: none;">
     <span>А</span>
     <span class="w-[6px] h-[6px] rounded-[50%] bg-[#6E6E6E] mx-[6px]"></span>
     <span>B</span>
@@ -278,7 +278,8 @@
   <h3 class="font-medium text-[#323232] mt-[30px] text-[24px] mb-[24px]">Популярные бренды</h3>
 
 
-  <div class="grid grid-cols-7 gap-[30px]">
+  <div class="grid grid-cols-7 gap-[30px] max-[1300px]:grid-cols-5
+  max-[1024px]:grid-cols-3 max-[650px]:grid-cols-2 max-[650px]:gap-[12px]">
     <div class="px-[24px] py-[24px] flex h-[155px] rounded-[16px] border border-[rgba(110,110,110,0.25)]">
         <img src="img/brand-img1.png" alt="" class="m-[auto] max-w-[100%] max-h-[100%]">
     </div>
@@ -348,7 +349,7 @@
 
   <div class="block mb-[16px] text-[#6E6E6E] text-[24px]">A</div>
 
-  <div class="flex justify-between">
+  <div class="flex justify-between max-[767px]:flex-col max-[767px]:mb-[30px]">
     <div class="">
         <span class="text-[#212121] text-[18px] block">AquaWave</span>
         <span class="text-[#212121] text-[18px] block">AeroTech</span>

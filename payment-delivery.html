@@ -19,7 +19,6 @@
 </head>
 <body>
 
-
 <div class="w-full h-[50px] bg-[#323232] hidden sm:block">
   <div class="container h-full">
     <div class="w-full h-full flex items-center justify-between">
@@ -151,7 +150,7 @@
 
 </div>
 
-<div class="container w-full">
+<div class="container w-full mt-[90px] sm:mt-0">
 
   <div
       class="w-full h-[67px] bg-[#F4F4F4] rounded-[16px] px-8 flex-jsb-c min-w-[1400px]:gap-16 overflow-x-auto bottom-scroll-none hidden sm:flex">
@@ -222,25 +221,26 @@
 
 
   <div class="">
-    <div class="w-full mx-auto mt-[30px] mb-[30px]">
+    <div class="w-full mx-auto mt-[30px] mb-[30px] ">
       <!-- Tabs -->
-      <div class="flex gap-2">
+      <div class="flex gap-2 max-[767px]:overflow-x-auto " 
+      style="scrollbar-width: none; -ms-overflow-style: none;">
         <button
-            class="tab-btn rounded-full px-5 py-2 text-sm transition-all"
+            class="tab-btn whitespace-nowrap rounded-full px-5 py-2 text-sm transition-all"
             data-tab="tab1"
             style="background-color: #009FFF; color: #fff"
         >
         Доставка
         </button>
         <button
-            class="tab-btn rounded-full px-5 py-2 text-sm transition-all"
+            class="tab-btn whitespace-nowrap rounded-full px-5 py-2 text-sm transition-all"
             data-tab="tab2"
             style="background-color: #F2F2F2; color: #000"
         >
         Оплата
         </button>
         <button
-            class="tab-btn rounded-full px-5 py-2 text-sm transition-all"
+            class="tab-btn whitespace-nowrap rounded-full px-5 py-2 text-sm transition-all"
             data-tab="tab3"
             style="background-color: #F2F2F2; color: #000"
         >
@@ -249,19 +249,21 @@
       </div>
 
       <!-- Content -->
-      <div class="mt-[30px] space-y-4 max-w-[1300px] w-full">
-        <div class="tab-content" id="tab1">
-            <div class="inline-flex border-b-2 max-w-[600px] mb-[32px]" style="border-color: #F0F0F0">
-                <div class="mr-[12px] text-[#009FFF] text-[16px] pb-[6px] border-b-2 "
+      <div class="mt-[30px] space-y-4 max-w-[1300px] w-full" style="scrollbar-width: none; -ms-overflow-style: none;">
+        <div class="tab-content overflow-hidden" id="tab1">
+            <div class="flex border-b-2 max-w-[600px] max-[767px]:overflow-x-auto
+             mb-[32px]" style="border-color: #F0F0F0; scrollbar-width: none; -ms-overflow-style: none;">
+                <div class="mr-[12px] max-[767px]:whitespace-nowrap text-[#009FFF] text-[16px] pb-[6px] border-b-2 "
                 style="border-color: #009FFF;">Санкт-Петербург</div>
-                <div class="mr-[12px] text-[#323232] text-[16px] pb-[6px] border-b-2 "
+                <div class="mr-[12px] max-[767px]:whitespace-nowrap text-[#323232] text-[16px] pb-[6px] border-b-2 "
                 style="border-color: transparent;">Регионы</div>
-                <div class="mr-[12px] text-[#323232] text-[16px] pb-[6px] border-b-2 "
+                <div class="mr-[12px] max-[767px]:whitespace-nowrap text-[#323232] text-[16px] pb-[6px] border-b-2 "
                 style="border-color: transparent;">Как сделать заказ</div>
-                <div class="text-[#323232] text-[16px] pb-[6px] border-b-2 "
+                <div class="text-[#323232] max-[767px]:whitespace-nowrap text-[16px] pb-[6px] border-b-2 "
                 style="border-color: transparent;">Срок хранения заказа</div>
             </div>
-            <h4 class="mb-[16px] text-[24px] text-[#323232] font-medium">Доставка и самовывоз</h4>
+            <div class="max-[767px]:overflow-x-hidden">
+              <h4 class="mb-[16px] text-[24px] text-[#323232] font-medium">Доставка и самовывоз</h4>
             <b class="text-[#323232] block font-bold mb-[8px] text-[16px]">Условия самовывоза в СПб</b>
             <p class="text-[#323232] text-[16px] mb-[20px] max-w-[680px]">
                 В случае самовывоза можно воспользоваться одним из двух пунктов,
@@ -297,8 +299,8 @@
                 <li>EMS</li>
             </ul>
             <h4 class="my-[30px] text-[24px] text-[#323232] font-medium">Как совершить покупку</h4>
-            <div class="flex">
-                <div class="mr-[12px] max-w-[170px] flex flex-col items-center">
+            <div class="flex max-[767px]:flex-wrap">
+                <div class="mr-[12px] max-[767px]:mr-[0] max-[767px]:mb-[20px] max-w-[170px] flex flex-col max-[767px]:w-[49%] max-[767px]:max-w-[100%] items-center">
                     <div class="relative w-[100px] h-[100px] rounded-[50%] mb-[12px] flex" style="background: rgba(0, 159, 255, 0.10)">
                         <span class="m-[auto] text-[#009FFF] text-[32px]">1</span>
                         <span class="absolute left-[-5px] bottom-[-5px] w-[32px] h-[32px] bg-[#009FFF] rounded-[50%] flex">
@@ -308,7 +310,7 @@
                     <b class="block mb-[4px] text-[16px] text-center font-bold text-[#323232]">Оформите заказ</b>
                     <span class="text-[14px] text-[#6E6E6E] text-center">через сайт, приложение или по телефону</span>
                 </div>
-                <div class="mr-[12px] max-w-[170px] flex flex-col justify-center items-center">
+                <div class="mr-[12px] max-[767px]:mr-[0] max-[767px]:mb-[20px] max-w-[170px] flex flex-col max-[767px]:w-[49%] max-[767px]:max-w-[100%] justify-center items-center">
                     <div class="relative w-[100px] h-[100px] rounded-[50%] mb-[12px] flex" style="background: rgba(0, 159, 255, 0.10)">
                         <span class="m-[auto] text-[#009FFF] text-[32px]">2</span>
                         <span class="absolute left-[-5px] bottom-[-5px] w-[32px] h-[32px] bg-[#009FFF] rounded-[50%] flex">
@@ -318,7 +320,7 @@
                     <b class="block mb-[4px] text-[16px] text-center font-bold text-[#323232]">Дождитесь подтверждения</b>
                     <span class="text-[14px] text-[#6E6E6E] text-center">через сайт, приложение или по телефону</span>
                 </div>
-                <div class="mr-[12px] max-w-[170px] flex flex-col justify-center items-center">
+                <div class="mr-[12px] max-[767px]:mr-[0] max-[767px]:mb-[20px] max-w-[170px] flex flex-col max-[767px]:w-[49%] max-[767px]:max-w-[100%] justify-center items-center">
                     <div class="relative w-[100px] h-[100px] rounded-[50%] mb-[12px] flex" style="background: rgba(0, 159, 255, 0.10)">
                         <span class="m-[auto] text-[#009FFF] text-[32px]">3</span>
                         <span class="absolute left-[-5px] bottom-[-5px] w-[32px] h-[32px] bg-[#009FFF] rounded-[50%] flex">
@@ -328,7 +330,7 @@
                     <b class="block mb-[4px] text-[16px] text-center font-bold text-[#323232]">Ждите звонка курьера</b>
                     <span class="text-[14px] text-[#6E6E6E] text-center">через сайт, приложение или по телефону</span>
                 </div>
-                <div class="mr-[12px] max-w-[170px] flex flex-col justify-center items-center">
+                <div class="mr-[12px] max-[767px]:mr-[0] max-[767px]:mb-[20px] max-w-[170px] flex flex-col max-[767px]:w-[49%] max-[767px]:max-w-[100%] justify-center items-center">
                     <div class="relative w-[100px] h-[100px] rounded-[50%] mb-[12px] flex" style="background: rgba(0, 159, 255, 0.10)">
                         <span class="m-[auto] text-[#009FFF] text-[32px]">4</span>
                         <span class="absolute left-[-5px] bottom-[-5px] w-[32px] h-[32px] bg-[#009FFF] rounded-[50%] flex">
@@ -338,6 +340,7 @@
                     <b class="block mb-[4px] text-[16px] text-center font-bold text-[#323232]">Получите ваше заказ</b>
                     <span class="text-[14px] text-[#6E6E6E] text-center">через сайт, приложение или по телефону</span>
                 </div>
+            </div>
             </div>
         </div>
         <div class="tab-content hidden" id="tab2">
@@ -355,7 +358,6 @@
   
   
 </div>
-
 
 <footer class="bg-[#262626] mt-[250px]">
   <div class="container">
