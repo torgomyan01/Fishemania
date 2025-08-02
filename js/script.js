@@ -123,13 +123,28 @@ const swiperNews = new Swiper('.swiperNews', {
 
 const swiperProduct = new Swiper('.swiperHeroProduct', {
   loop: true,
-  slidesPerView: 5,
+  slidesPerView: 1,
   spaceBetween: 30,
   nested: true,
   navigation: {
     nextEl: '.swiper-button-next.product',
     prevEl: '.swiper-button-prev.product',
   },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    }
+  }
+
 });
 
 const productItemSlider = new Swiper('.product-item-slider', {
