@@ -168,25 +168,28 @@
   </ul>
 
 
-  <div class=" w-full mt-[100px] mb-[100px]" >
-    <div class="bg-white rounded-lg w-full mx-auto bg max-w-[520px]" style="background-image: url(img/Union.png)">
+  <div class=" w-full mt-[100px] mb-[100px] max-[767px]:my-[50px]" >
+    <div class="bg-white bg-none rounded-lg w-full mx-auto bg max-w-[520px]" 
+    style="background-image: url(img/Union.png)">
 
         <!-- Табы -->
         <div class="flex space-x-2 pt-[15px]">
           <button id="tab-login"
-            class="flex-1 text-center font-bold text-[32px] tab-rounded text-[#009FFF]"
+            class="flex-1 text-center font-bold text-[32px] tab-rounded text-[#009FFF] 
+            max-[767px]:p-[12px] max-[767px]:text-[20px]"
             onclick="switchTab('login')">
             Вход
           </button>
           <button id="tab-register"
-            class="flex-1 text-center font-bold text-[32px] tab-rounded  text-black"
+            class="flex-1 text-center font-bold text-[32px] tab-rounded  text-black 
+            max-[767px]:p-[12px] max-[767px]:text-[20px]"
             onclick="switchTab('register')">
             Регистрация
           </button>
         </div>
     
         <!-- Контент -->
-        <div id="login-form" class="p-[30px] w-full  flex flex-col" style="border-color: #D9D9D9;">
+        <div id="login-form" class="p-[30px] w-full max-[767px]:p-[0]  flex flex-col" style="border-color: #D9D9D9;">
             <span class="text-[14px] text-[#323232] mb-[6px] block">Ваша почта</span>
           <input type="email" placeholder="Введите почту" class="h-[54px] w-full mb-4 p-2 border rounded"  style="border-color: #D9D9D9;"/>
           <span class="text-[14px] text-[#323232] mb-[6px] block">Пароль</span>
@@ -195,7 +198,7 @@
           <button class="w-full max-w-[210px] font-bold text-white py-4 rounded" style="background-color: #CF301B;">Войти</button>
         </div>
     
-        <div id="register-form" class="p-6 w-full hidden " style="border-color: #D9D9D9;">
+        <div id="register-form" class="p-6 w-full hidden max-[767px]:p-[0]" style="border-color: #D9D9D9;">
             <span class="text-[14px] text-[#323232] mb-[6px] block">Ваша имя</span>
           <input type="text" placeholder="Введите имя" class="h-[54px] w-full mb-4 p-2 border rounded" 
           style="border-color: #D9D9D9;"/>
@@ -211,16 +214,17 @@
            <span class="text-[14px] text-[#323232] mb-[6px] block">Введите защитную капчу</span>
            <div class="grid grid-cols-2 gap-2.5 mb-[20px]">
                 <div class="flex border rounded-[8px] border-[rgba(110,110,110,0.25)] p-[8px]">
-                    <img src="img/kod-img.png" alt="" class="max-w-[100%] max-h-[100%] mr-[10px]">
+                    <img src="img/kod-img.png" alt="" class="max-w-[100%] max-h-[100%] mr-[10px] max-[767px]:w-[70%]">
                     <img src="img/kod-icon.svg" alt="" class="max-w-[100%] min-w-[24px] max-h-[100%]">
                 </div>
                 <div class="border rounded-[8px] py-[15px] px-[20px]  border-[rgba(110,110,110,0.25)]">
                     <span class="text-[#6E6E6E] text-[16px]">Код капчи</span>
                 </div>
            </div>
-           <div class="flex items-center">
+           <div class="flex items-center max-[767px]:flex-col max-[767px]:items-start">
             <button class="w-full text-white py-3 rounded" style="background-color: #CF301B;">Регистрация</button>
-            <div class="check-wrap text-[14px] text-[#6E6E6E]  ml-[16px] leading-none">
+            <div class="check-wrap text-[14px] text-[#6E6E6E]  ml-[16px] leading-none 
+            max-[767px]:ml-[0] max-[767px]:mt-[12px]">
                 <input type="checkbox">
                 Принимаю правила обработки персональных данных и пользовательское соглашение
             </div>

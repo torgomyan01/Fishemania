@@ -169,15 +169,16 @@
 
   <h2 class="font-medium text-[#212121] text-[32px] mb-[30px]">Избранное</h2>
 
-  <div class="flex items-center mb-[30px]">
-    <span class="mr-[16px] text-[#6E6E6E] text-[16px]">Сортировать</span>
+  <div class="flex items-center mb-[30px] max-[767px]:flex-col max-[767px]:items-start">
+    <span class="mr-[16px] text-[#6E6E6E] text-[16px] max-[767px]:mb-[12px]">Сортировать</span>
     <select class="bg-[#F4F4F4] border-[none] border-0 
-    cursor-pointer focus:outline-none focus:border-0">
+    cursor-pointer focus:outline-none focus:border-0 max-[767px]:mb-[12px]">
         <option value="1">Хиты продаж</option>
         <option value="2">Хиты продаж 2</option>
         <option value="3">Хиты продаж 3</option>
     </select>
-    <span class="mr-[16px] ml-[24px] inline-block text-[#6E6E6E] text-[16px]">Показывать</span>
+    <span class="mr-[16px] ml-[24px] inline-block text-[#6E6E6E] text-[16px] max-[767px]:ml-0 
+    max-[767px]:mb-[12px]">Показывать</span>
     <div class="flex">
         <a href="#" class="py-[10px] rounded-[40px] px-[16px] mr-[4px] text-[#6E6E6E] border 
         border-[rgba(110,110,110,0.25)]">Акции</a>
@@ -188,7 +189,8 @@
     </div>
   </div>
 
-  <div class="grid grid-cols-5 gap-[20px]">
+  <div class="grid grid-cols-5 gap-[20px] max-[1600px]:grid-cols-4 max-[1300px]:grid-cols-3 
+  max-[1024px]:grid-cols-2 max-[650px]:grid-cols-1">
     <div class="w-full">
         <div class="w-full h-[427px] border rounded-[16px] relative">
           <div class="absolute top-2 right-2 flex-je-c gap-2">

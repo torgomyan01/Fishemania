@@ -251,6 +251,15 @@ a {
   .infoSwiper .swiper-pagination {
     bottom: 0px;
   }
+
+  .bg-none {
+    background: none !important;
+  }
+
+  #tab-login, #tab-register {
+    font-size: 20px !important;
+    padding: 12px !important;
+  }
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -2864,6 +2873,10 @@ select{
   background-image: linear-gradient(101deg, #587AFF -5.69%, #7144F5 44.08%, #D426FF 111.99%);
 }
 
+.bg-none{
+  background-image: none;
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -3584,6 +3597,12 @@ select{
   background-color: rgb(0 159 255 / var(--tw-bg-opacity, 1));
 }
 
+@media (max-width: 1600px){
+  .max-\[1600px\]\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 1500px){
   .max-\[1500px\]\:right-\[0px\]{
     right: 0px;
@@ -3603,6 +3622,74 @@ select{
 
   .max-\[1500px\]\:max-w-\[100\%\]{
     max-width: 100%;
+  }
+}
+
+@media (max-width: 1400px){
+  .max-\[1400px\]\:mb-\[20px\]{
+    margin-bottom: 20px;
+  }
+
+  .max-\[1400px\]\:mr-\[0\]{
+    margin-right: 0;
+  }
+
+  .max-\[1400px\]\:w-full{
+    width: 100%;
+  }
+
+  .max-\[1400px\]\:max-w-\[100\%\]{
+    max-width: 100%;
+  }
+
+  .max-\[1400px\]\:flex-col{
+    flex-direction: column;
+  }
+
+  .max-\[1400px\]\:flex-col-reverse{
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 1300px){
+  .max-\[1300px\]\:mb-\[12px\]{
+    margin-bottom: 12px;
+  }
+
+  .max-\[1300px\]\:mr-\[0\]{
+    margin-right: 0;
+  }
+
+  .max-\[1300px\]\:ml-\[50px\]{
+    margin-left: 50px;
+  }
+
+  .max-\[1300px\]\:hidden{
+    display: none;
+  }
+
+  .max-\[1300px\]\:max-w-\[100\%\]{
+    max-width: 100%;
+  }
+
+  .max-\[1300px\]\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .max-\[1300px\]\:grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .max-\[1300px\]\:flex-col{
+    flex-direction: column;
+  }
+
+  .max-\[1300px\]\:p-\[40px\]{
+    padding: 40px;
+  }
+
+  .max-\[1300px\]\:text-\[44px\]{
+    font-size: 44px;
   }
 }
 
@@ -3635,8 +3722,20 @@ select{
     margin-top: 24px;
   }
 
+  .max-\[1024px\]\:mt-\[30px\]{
+    margin-top: 30px;
+  }
+
   .max-\[1024px\]\:mt-\[auto\]{
     margin-top: auto;
+  }
+
+  .max-\[1024px\]\:ml-\[0\]{
+    margin-left: 0;
+  }
+
+  .max-\[1024px\]\:mt-\[20px\]{
+    margin-top: 20px;
   }
 
   .max-\[1024px\]\:flex{
@@ -3659,12 +3758,24 @@ select{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .max-\[1024px\]\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .max-\[1024px\]\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .max-\[1024px\]\:flex-col{
     flex-direction: column;
   }
 
   .max-\[1024px\]\:items-start{
     align-items: flex-start;
+  }
+
+  .max-\[1024px\]\:gap-\[12px\]{
+    gap: 12px;
   }
 
   .max-\[1024px\]\:p-\[0px\]{
@@ -3695,22 +3806,72 @@ select{
     font-size: 16px;
   }
 
+  .max-\[1024px\]\:text-\[20px\]{
+    font-size: 20px;
+  }
+
   .max-\[1024px\]\:text-\[32px\]{
     font-size: 32px;
+  }
+
+  .max-\[1024px\]\:text-\[24px\]{
+    font-size: 24px;
   }
 }
 
 @media (max-width: 767px){
+  .max-\[767px\]\:my-\[50px\]{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .max-\[767px\]\:my-\[40px\]{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
   .max-\[767px\]\:mb-\[10px\]{
     margin-bottom: 10px;
+  }
+
+  .max-\[767px\]\:mb-\[12px\]{
+    margin-bottom: 12px;
   }
 
   .max-\[767px\]\:mb-\[20px\]{
     margin-bottom: 20px;
   }
 
+  .max-\[767px\]\:ml-0{
+    margin-left: 0px;
+  }
+
+  .max-\[767px\]\:ml-\[0\]{
+    margin-left: 0;
+  }
+
+  .max-\[767px\]\:mt-\[12px\]{
+    margin-top: 12px;
+  }
+
   .max-\[767px\]\:mt-\[20px\]{
     margin-top: 20px;
+  }
+
+  .max-\[767px\]\:mr-\[0\]{
+    margin-right: 0;
+  }
+
+  .max-\[767px\]\:mb-\[30px\]{
+    margin-bottom: 30px;
+  }
+
+  .max-\[767px\]\:mt-\[10px\]{
+    margin-top: 10px;
+  }
+
+  .max-\[767px\]\:mt-\[30px\]{
+    margin-top: 30px;
   }
 
   .max-\[767px\]\:h-\[290px\]{
@@ -3729,6 +3890,14 @@ select{
     width: 60vw;
   }
 
+  .max-\[767px\]\:w-\[70\%\]{
+    width: 70%;
+  }
+
+  .max-\[767px\]\:w-\[49\%\]{
+    width: 49%;
+  }
+
   .max-\[767px\]\:max-w-\[300px\]{
     max-width: 300px;
   }
@@ -3737,12 +3906,24 @@ select{
     max-width: 80px;
   }
 
+  .max-\[767px\]\:max-w-\[100\%\]{
+    max-width: 100%;
+  }
+
   .max-\[767px\]\:grid-cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .max-\[767px\]\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .max-\[767px\]\:flex-col{
     flex-direction: column;
+  }
+
+  .max-\[767px\]\:flex-wrap{
+    flex-wrap: wrap;
   }
 
   .max-\[767px\]\:items-start{
@@ -3753,12 +3934,48 @@ select{
     gap: 20px;
   }
 
+  .max-\[767px\]\:space-x-0 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0px * var(--tw-space-x-reverse));
+    margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .max-\[767px\]\:overflow-x-auto{
     overflow-x: auto;
   }
 
+  .max-\[767px\]\:overflow-x-hidden{
+    overflow-x: hidden;
+  }
+
+  .max-\[767px\]\:whitespace-nowrap{
+    white-space: nowrap;
+  }
+
+  .max-\[767px\]\:p-\[0\]{
+    padding: 0;
+  }
+
+  .max-\[767px\]\:p-\[12px\]{
+    padding: 12px;
+  }
+
   .max-\[767px\]\:p-\[16px\]{
     padding: 16px;
+  }
+
+  .max-\[767px\]\:p-\[20px\]{
+    padding: 20px;
+  }
+
+  .max-\[767px\]\:px-\[16px\]{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .max-\[767px\]\:py-\[20px\]{
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .max-\[767px\]\:py-\[32px\]{
@@ -3771,12 +3988,25 @@ select{
     padding-bottom: 40px;
   }
 
+  .max-\[767px\]\:px-\[20px\]{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .max-\[767px\]\:pl-\[24px\]{
     padding-left: 24px;
   }
 
+  .max-\[767px\]\:text-\[15px\]{
+    font-size: 15px;
+  }
+
   .max-\[767px\]\:text-\[18px\]{
     font-size: 18px;
+  }
+
+  .max-\[767px\]\:text-\[20px\]{
+    font-size: 20px;
   }
 
   .max-\[767px\]\:text-\[24px\]{
@@ -3791,8 +4021,22 @@ select{
     font-size: 32px;
   }
 
-  .max-\[767px\]\:text-\[15px\]{
-    font-size: 15px;
+  .max-\[767px\]\:text-\[16px\]{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px){
+  .max-\[650px\]\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .max-\[650px\]\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .max-\[650px\]\:gap-\[12px\]{
+    gap: 12px;
   }
 }
 
