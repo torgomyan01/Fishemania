@@ -21,7 +21,7 @@
 /* Track */
 
 ::-webkit-scrollbar-track {
-  background: white;
+  background: #ffff;
 }
 
 /* Handle */
@@ -165,7 +165,7 @@ a {
 
 @media (max-width: 768px) {
   .swiper-button-next,
-  .swiper-button-prev {
+.swiper-button-prev {
     display: none;
   }
 
@@ -319,7 +319,7 @@ input:checked + .slider-v3::after {
   left: 50%;
   bottom: 20px;
   transform: translateX(-50%);
-  background: rgba(232, 232, 232, 0.5019607843);
+  background: #E8E8E880;
   height: 20px;
   width: auto;
   border-radius: 20px;
@@ -1835,10 +1835,6 @@ select{
   display: flex;
 }
 
-.inline-flex{
-  display: inline-flex;
-}
-
 .table{
   display: table;
 }
@@ -2289,6 +2285,10 @@ select{
 
 .min-w-\[600px\]{
   min-width: 600px;
+}
+
+.min-w-\[116px\]{
+  min-width: 116px;
 }
 
 .max-w-\[100\%\]{
@@ -3701,8 +3701,20 @@ select{
 }
 
 @media (max-width: 1600px){
+  .max-\[1600px\]\:flex{
+    display: flex;
+  }
+
   .max-\[1600px\]\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .max-\[1600px\]\:flex-col{
+    flex-direction: column;
+  }
+
+  .max-\[1600px\]\:gap-\[50px\]{
+    gap: 50px;
   }
 }
 
@@ -3889,6 +3901,10 @@ select{
     gap: 12px;
   }
 
+  .max-\[1024px\]\:gap-\[50px\]{
+    gap: 50px;
+  }
+
   .max-\[1024px\]\:p-\[0px\]{
     padding: 0px;
   }
@@ -3953,6 +3969,46 @@ select{
 }
 
 @media (max-width: 767px){
+  .max-\[767px\]\:absolute{
+    position: absolute;
+  }
+
+  .max-\[767px\]\:relative{
+    position: relative;
+  }
+
+  .max-\[767px\]\:bottom-\[0\]{
+    bottom: 0;
+  }
+
+  .max-\[767px\]\:left-\[20px\]{
+    left: 20px;
+  }
+
+  .max-\[767px\]\:bottom-\[10px\]{
+    bottom: 10px;
+  }
+
+  .max-\[767px\]\:bottom-\[14px\]{
+    bottom: 14px;
+  }
+
+  .max-\[767px\]\:left-\[33px\]{
+    left: 33px;
+  }
+
+  .max-\[767px\]\:right-\[33px\]{
+    right: 33px;
+  }
+
+  .max-\[767px\]\:right-\[15px\]{
+    right: 15px;
+  }
+
+  .max-\[767px\]\:col-span-6{
+    grid-column: span 6 / span 6;
+  }
+
   .max-\[767px\]\:my-\[40px\]{
     margin-top: 40px;
     margin-bottom: 40px;
@@ -4122,6 +4178,14 @@ select{
 
   .max-\[767px\]\:pl-\[24px\]{
     padding-left: 24px;
+  }
+
+  .max-\[767px\]\:pb-\[50px\]{
+    padding-bottom: 50px;
+  }
+
+  .max-\[767px\]\:text-center{
+    text-align: center;
   }
 
   .max-\[767px\]\:text-\[15px\]{

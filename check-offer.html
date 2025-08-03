@@ -212,14 +212,14 @@
 
 
   <div class="w-full mt-6">
-    <h1 class="text-[32px] font-medium mb-[30px] tracking-[-0.64px]">Оформление заказа</h1>
+    <h1 class="text-[32px] font-medium mb-[30px] tracking-[-0.64px] max-[767px]:text-[24px] max-[767px]:mb-[20px]">Оформление заказа</h1>
 
-    <div class="w-full grid grid-cols-12 gap-[138px]">
+    <div class="w-full grid grid-cols-12 gap-[138px] max-[1600px]:flex max-[1600px]:flex-col max-[1024px]:gap-[50px]">
       <div class="col-span-7">
 
-        <div class="w-full flex-js-c text-[18px] p-6 bg-[#F4F4F4] rounded-[16px]">
+        <div class="w-full flex-js-c text-[18px] p-6 bg-[#F4F4F4] rounded-[16px] max-[1024px]:flex-col max-[767px]:text-center ">
           <img src="img/icons/user-blue.svg" alt="user-blue">
-          <a href="#" class="text-blue underline">Авторизуйтесь</a>, чтобы увидеть персональные условия доставки и отслеживать заказы
+          <a href="#" class="text-blue underline">Авторизуйтесь</a> чтобы увидеть персональные условия доставки и отслеживать заказы
         </div>
 
         <h3 class="text-[24px] mt-8 font-medium">Кто заберет заказ</h3>
@@ -227,7 +227,7 @@
         <p class="mt-4">* — обязательно</p>
 
         <form action="#">
-          <div class="w-full grid grid-cols-2 gap-6 mt-6">
+          <div class="w-full grid grid-cols-2 gap-6 mt-6 max-[767px]:grid-cols-1">
             <label class="w-full">
               <span class="block text-[#323232] mb-1">Ваше имя</span>
               <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Введите имя">
@@ -252,10 +252,10 @@
           </label>
 
 
-          <div class="w-full mt-[60px]">
+          <div class="w-full mt-[60px] max-[767px]:mt-[30px]">
             <h4 class="text-[24px] font-medium mb-6">Как доставить заказ</h4>
             
-            <div class="w-full grid grid-cols-3 gap-6">
+            <div class="w-full grid grid-cols-3 gap-6 max-[767px]:grid-cols-1">
               <label class="w-full relative">
                 <input type="radio" name="order" class="peer hidden">
                 <span class="w-[18px] h-[18px] transition border-[2px] border-[#DBDBDB] absolute top-3 left-3 rounded-full peer-checked:border-[5px] peer-checked:border-[#009FFF]"></span>
@@ -300,9 +300,9 @@
             
           </div>
 
-          <h3 class="text-[24px] mt-[60px] font-medium">Адрес доставки</h3>
+          <h3 class="text-[24px] mt-[60px] font-medium max-[767px]:mt-[30px]">Адрес доставки</h3>
 
-          <div class="w-full grid grid-cols-2 gap-6 mt-6">
+          <div class="w-full grid grid-cols-2 gap-6 mt-6 max-[767px]:grid-cols-1">
             <label class="w-full">
               <span class="block text-[#323232] mb-1">Город доставки*</span>
               <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Введите город">
@@ -326,10 +326,10 @@
           </div>
 
 
-          <div class="w-full mt-[60px]">
+          <div class="w-full mt-[60px] max-[767px]:mt-[30px]">
             <h4 class="text-[24px] font-medium mb-6">Как будете оплачивать?</h4>
 
-            <div class="w-full grid grid-cols-4 gap-6">
+            <div class="w-full grid grid-cols-4 gap-6 max-[767px]:grid-cols-1">
               <label class="w-full relative">
                 <input type="radio" name="card" class="peer hidden">
                 <span class="w-[18px] h-[18px] transition border-[2px] border-[#DBDBDB] absolute top-3 left-3 rounded-full peer-checked:border-[5px] peer-checked:border-[#009FFF]"></span>
@@ -375,7 +375,7 @@
 
           </div>
 
-          <h3 class="text-[24px] mt-[60px] font-medium">Дополнительно</h3>
+          <h3 class="text-[24px] mt-[60px] font-medium max-[767px]:mt-[30px]">Дополнительно</h3>
 
           <label class="w-full max-w-[670px] mt-6 block">
             <span class="block text-[#323232] mb-1">Комментарии к заказу</span>
@@ -460,7 +460,7 @@
           </div>
 
 
-          <div class="w-full flex-jsb-c gap-4 mt-6">
+          <div class="w-full flex-jsb-c gap-4 mt-6 max-[767px]:flex-col">
             <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 min-w-[212px] transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
               Оформить заказ
             </button>
