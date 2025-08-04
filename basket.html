@@ -216,7 +216,7 @@
 
     <div class="w-full grid grid-cols-12 gap-[138px] max-[1600px]:gap-[50px] max-[1600px]:flex max-[1600px]:flex-col">
       <div class="col-span-8">
-        <div class="flex-js-c gap-6 pb-5 border-b">
+        <div class="flex-js-c gap-6 pb-5 border-b max-[767px]:flex-col max-[767px]:items-start max-[767px]:gap-[10px]">
           <label class="def-checkbox flex-js-c">
             <input type="checkbox">
             <span class="mr-2"></span>
@@ -233,57 +233,8 @@
         </div>
 
         <div class="w-full">
-          <div class="w-full grid grid-cols-12 gap-5 mt-5 pb-5 border-b max-[767px]:pb-[50px] max-[767px]:relative
-          ">
-            <div class="col-span-3">
-              <div class="w-full flex-js-s gap-1">
-                <label class="def-checkbox flex-js-c">
-                  <input type="checkbox">
-                  <span class="mr-2"></span>
-                </label>
-
-                <div class="w-[116px] min-w-[116px] h-[96px] flex-jc-c border rounded-[4px]">
-                  <img src="img/products/product2.png" alt="product image" class="w-[70%]">
-                </div>
-              </div>
-            </div>
-
-            <div class="col-span-3">
-              <h3 class="text-[18px] w-full max-w-[250px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
-              <div class="flex-js-c gap-2 mt-2">
-                <button class="w-10 h-8 bg-[#6E6E6E1A] rounded-[8px] flex-jc-c">
-                  <img src="img/icons/heard-gray.svg" alt="">
-                </button>
-                <button class="w-10 h-8 bg-[#6E6E6E1A] rounded-[8px] flex-jc-c">
-                  <img src="img/icons/rating-gray.svg" alt="">
-                </button>
-              </div>
-            </div>
-
-
-            <div class="col-span-4 max-[767px]:absolute max-[767px]:left-[33px] max-[767px]:bottom-[14px]">
-              <h3 class="text-[18px] text-[#212121]">2 100 ₽</h3>
-              <div class="flex-js-c gap-2">
-                <h4 class="text-[#CF301B] line-through">300 ₽</h4>
-                <span class="text-white px-2 text-[13px] bg-[#16B34B] rounded-[4px]">-15%</span>
-              </div>
-            </div>
-
-            <div class="col-span-2 flex-je-s max-[767px]:absolute max-[767px]:right-[15px] max-[767px]:bottom-[14px]">
-              <div class="flex-jsb-c gap-2">
-                <button class="w-8 h-8 bg-[#6E6E6E1A] rounded-[8px] flex-jc-c">
-                  -
-                </button>
-                <span class="mx-2">1</span>
-                <button class="w-8 h-8 bg-[#6E6E6E1A] rounded-[8px] flex-jc-c">
-                  +
-                </button>
-              </div>
-            </div>
-
-          </div>
-          <div class="w-full grid grid-cols-12 gap-5 mt-5 pb-5 border-b max-[767px]:relative max-[767px]:pb-[50px]">
-            <div class="col-span-3">
+          <div class="w-full grid grid-cols-12 gap-5 mt-5 pb-5 border-b max-[767px]:relative max-[767px]:pb-[20px]">
+            <div class="col-span-6 md:col-span-3">
               <div class="w-full flex-js-s gap-1">
                 <label class="def-checkbox flex-js-c">
                   <input type="checkbox">
@@ -296,8 +247,8 @@
               </div>
             </div>
 
-            <div class="col-span-3">
-              <h3 class="text-[18px] w-full max-w-[250px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
+            <div class="col-span-6 md:col-span-3">
+              <h3 class="text-[18px] w-full max-w-[250px] leading-[120%] max-[767px]:text-[16px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
               <div class="flex-js-c gap-2 mt-2">
                 <button class="w-10 h-8 bg-[#6E6E6E1A] rounded-[8px] flex-jc-c">
                   <img src="img/icons/heard-gray.svg" alt="">
@@ -309,7 +260,7 @@
             </div>
 
 
-            <div class="col-span-4 max-[767px]:absolute max-[767px]:left-[33px] max-[767px]:bottom-[14px]">
+            <div class="col-span-6 md:col-span-4 max-[768px]:pl-9">
               <h3 class="text-[18px] text-[#212121]">2 100 ₽</h3>
               <div class="flex-js-c gap-2">
                 <h4 class="text-[#CF301B] line-through">300 ₽</h4>
@@ -317,7 +268,55 @@
               </div>
             </div>
 
-            <div class="col-span-2 flex-je-s max-[767px]:absolute max-[767px]:right-[15px] max-[767px]:bottom-[14px]">
+            <div class="col-span-6 md:col-span-2 flex-je-s">
+              <div class="flex-jsb-c gap-2">
+                <button class="w-8 h-8 bg-[#6E6E6E1A] rounded-[8px] flex-jc-c">
+                  -
+                </button>
+                <span class="mx-2">1</span>
+                <button class="w-8 h-8 bg-[#6E6E6E1A] rounded-[8px] flex-jc-c">
+                  +
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <div class="w-full grid grid-cols-12 gap-5 mt-5 pb-5 border-b max-[767px]:relative max-[767px]:pb-[20px]">
+            <div class="col-span-6 md:col-span-3">
+              <div class="w-full flex-js-s gap-1">
+                <label class="def-checkbox flex-js-c">
+                  <input type="checkbox">
+                  <span class="mr-2"></span>
+                </label>
+
+                <div class="w-[116px] h-[96px] flex-jc-c border rounded-[4px]">
+                  <img src="img/products/product2.png" alt="product image" class="w-[70%]">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-6 md:col-span-3">
+              <h3 class="text-[18px] w-full max-w-[250px] leading-[120%] max-[767px]:text-[16px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
+              <div class="flex-js-c gap-2 mt-2">
+                <button class="w-10 h-8 bg-[#6E6E6E1A] rounded-[8px] flex-jc-c">
+                  <img src="img/icons/heard-gray.svg" alt="">
+                </button>
+                <button class="w-10 h-8 bg-[#6E6E6E1A] rounded-[8px] flex-jc-c">
+                  <img src="img/icons/rating-gray.svg" alt="">
+                </button>
+              </div>
+            </div>
+
+
+            <div class="col-span-6 md:col-span-4 max-[768px]:pl-9">
+              <h3 class="text-[18px] text-[#212121]">2 100 ₽</h3>
+              <div class="flex-js-c gap-2">
+                <h4 class="text-[#CF301B] line-through">300 ₽</h4>
+                <span class="text-white px-2 text-[13px] bg-[#16B34B] rounded-[4px]">-15%</span>
+              </div>
+            </div>
+
+            <div class="col-span-6 md:col-span-2 flex-je-s">
               <div class="flex-jsb-c gap-2">
                 <button class="w-8 h-8 bg-[#6E6E6E1A] rounded-[8px] flex-jc-c">
                   -
@@ -334,7 +333,7 @@
       </div>
 
       <div class="col-span-4">
-        <div class="w-full bg-[#F4F4F4] rounded-[24px] p-10">
+        <div class="w-full bg-[#F4F4F4] rounded-[24px] p-10 max-[767px]:p-[20px]">
           <h3 class="text-[#212121] font-semibold mb-6">Сумма заказа</h3>
 
           <ul class="w-full border-b pb-4">
@@ -405,7 +404,7 @@
           </div>
           <p class="text-[#6E6E6E]">Без учета возможной стоимости доставки</p>
 
-          <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2 mt-6">
+          <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white font-bold flex-jc-c gap-2 mt-6">
             К оформлению, 1 товар • 1 000 ₽ и 800 бонусов
           </button>
         </div>

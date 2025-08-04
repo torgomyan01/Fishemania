@@ -214,7 +214,7 @@
   <div class="w-full mt-6">
 
     <div class="w-full grid grid-cols-12 gap-[30px]">
-      <div class="col-span-3">
+      <div class="col-span-3 max-[1024px]:hidden">
         <div class="w-full border-r pr-[30px]">
           <h4 class="text-[18px] font-medium">Здравствуйте,</h4>
           <h5 class="text-[32px] font-medium pl-4">Сергей</h5>
@@ -325,14 +325,14 @@
         </div>
       </div>
 
-      <form action="#" class="col-span-9">
+      <form action="#" class="col-span-9 max-[767px]:col-span-12">
 
         <h1 class="text-[32px] font-medium mb-[30px]">Мои данные</h1>
 
         <h4 class="text-[24px] font-medium mb-[30px]">Личная информация</h4>
 
-        <div class="w-full lg:max-w-[670px] mb-[45px]">
-          <div class="w-full grid grid-cols-2 gap-x-[30px] gap-y-4">
+        <div class="w-full lg:max-w-[670px] mb-[45px] max-[767px]:max-w-[100%]">
+          <div class="w-full grid grid-cols-2 grid-cols-2 gap-x-[30px] gap-y-4 max-[767px]:grid-cols-1">
             <label class="w-full">
               <span class="block text-[#323232] mb-1">Ваше имя</span>
               <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Введите имя">
@@ -377,25 +377,25 @@
         <h4 class="text-[24px] font-medium mb-[30px]">Адрес</h4>
 
         <div class="w-full lg:max-w-[670px] mb-[45px]">
-          <div class="w-full grid grid-cols-2 gap-x-[30px] gap-y-4">
-            <label class="w-full">
+          <div class="w-full grid grid-cols-2 gap-x-[30px] gap-y-4 max-[767px]:block ">
+            <label class="w-full max-[767px]:mb-[12px] max-[767px]:block">
               <span class="block text-[#323232] mb-1">Город</span>
               <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Санкт-Петербург">
             </label>
-            <label class="w-full">
+            <label class="w-full max-[767px]:mb-[12px] max-[767px]:block">
               <span class="block text-[#323232] mb-1">Город</span>
               <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Индекс*">
             </label>
-            <label class="w-full col-span-2">
+            <label class="w-full max-[767px]:mb-[12px] max-[767px]:block col-span-2">
               <span class="block text-[#323232] mb-1">Улица</span>
               <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Улица">
             </label>
 
-            <label class="w-full">
+            <label class="w-full max-[767px]:mb-[12px] max-[767px]:block">
               <span class="block text-[#323232] mb-1">Номер квартиры</span>
               <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Введите номер">
             </label>
-            <label class="w-full">
+            <label class="w-full max-[767px]:mb-[12px] max-[767px]:block">
               <span class="block text-[#323232] mb-1">Этаж</span>
               <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Введите этаж">
             </label>
@@ -406,23 +406,24 @@
         <h4 class="text-[24px] font-medium mb-[30px]">Безопасность и пароль</h4>
 
         <div class="w-full lg:max-w-[670px] mb-[30px]">
-          <div class="w-full grid grid-cols-2 gap-x-[30px] gap-y-4">
-            <label class="w-full col-span-2">
+          <div class="w-full grid grid-cols-2 gap-x-[30px] gap-y-4 max-[767px]:block">
+            <label class="w-full col-span-2 max-[767px]:mb-[12px] max-[767px]:block">
               <span class="block text-[#323232] mb-1">Пароль</span>
               <input type="password" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="*********">
             </label>
-            <label class="w-full">
+            <label class="w-full max-[767px]:mb-[12px] max-[767px]:block">
               <span class="block text-[#323232] mb-1">Новый пароль</span>
               <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Индекс*">
             </label>
-            <label class="w-full">
+            <label class="w-full max-[767px]:mb-[12px] max-[767px]:block">
               <span class="block text-[#323232] mb-1">Новый пароль повторно</span>
               <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Индекс*">
             </label>
           </div>
         </div>
 
-        <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 min-w-[212px] transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
+        <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 min-w-[212px]
+         transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2 max-[767px]:max-w-[100%] max-[767px]:w-full">
           Сохранить
         </button>
 
