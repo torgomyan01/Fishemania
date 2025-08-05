@@ -375,6 +375,21 @@ input:checked + .slider-v3::after {
   border-radius: 5px;
 }
 
+[src="img/message-ilustriator.png"]{
+  @media (max-width: 992px){
+    display: none !important;
+  }
+}
+
+.com-body-scroll-bottom-min{
+  &::-webkit-scrollbar {
+    height: 2px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+}
+
 
 @tailwind base;
 @tailwind components;
