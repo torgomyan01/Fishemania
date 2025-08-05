@@ -201,12 +201,45 @@ const productItemSlider = new Swiper('.product-item-slider', {
       const activeIndex = this.realIndex; // loop enabled => real index
       const activeSlide = this.slides[this.activeIndex];
 
-      const findImagePath = activeSlide.querySelector('img')?.getAttribute('src');
+      const findImagePath = activeSlide?.querySelector('img')?.getAttribute('src');
 
       $el('#fullImagePath').setAttribute('src', findImagePath);
     }
-  }
+  },
 });
+
+
+if(window.innerWidth < 1280){
+  const productItemSliderMobile = new Swiper('.product-item-slider-mobile', {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 16,
+    nested: true,
+    navigation: {
+      nextEl: '#product-items-next-mobile',
+      prevEl: '#product-items-prev-mobile',
+    },
+    on: {
+      slideChange: function () {
+        const activeIndex = this.realIndex; // loop enabled => real index
+        const activeSlide = this.slides[this.activeIndex];
+
+        const findImagePath = activeSlide?.querySelector('img')?.getAttribute('src');
+
+        $el('#fullImagePath').setAttribute('src', findImagePath);
+      }
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    }
+
+  });
+}
 
 
 $('.product-item-slider .swiper-slide').forEach((item, index) => {
@@ -295,3 +328,22 @@ function switchTab(tab) {
     loginForm.classList.add('hidden');
   }
 }
+
+
+
+const openMobileFilter = $el('#open-mobile-filter');
+const closeMobileFilter = $el('#close-mobile-filter');
+
+const filterMobileModal = $el('#filter-mobile-modal');
+
+
+
+openMobileFilter?.addEventListener('click', function (){
+  filterMobileModal.classList.remove('hidden')
+  document.body.classList.add('overflow-hidden')
+})
+
+closeMobileFilter?.addEventListener('click', function (){
+  filterMobileModal.classList.add('hidden')
+  document.body.classList.remove('overflow-hidden')
+})
