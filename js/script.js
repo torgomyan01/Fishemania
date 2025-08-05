@@ -6,9 +6,26 @@ function $el(target) {
   return document.querySelector(target);
 }
 
-const getCom = $el('com-header');
 
-console.log(getCom)
+
+
+const getDataFor = $('*[data-for]');
+
+
+getDataFor.forEach((item) => {
+  const getCount = item.dataset.for;
+
+  let html = '';
+
+  Array.from({length: +getCount}).forEach(() => {
+    html += item.outerHTML;
+  })
+
+  item.outerHTML = html;
+})
+
+
+
 
 AOS.init({
   duration: 1000
@@ -347,3 +364,5 @@ closeMobileFilter?.addEventListener('click', function (){
   filterMobileModal.classList.add('hidden')
   document.body.classList.remove('overflow-hidden')
 })
+
+

@@ -214,7 +214,7 @@
   <div class="w-full mt-6">
 
     <div class="w-full grid grid-cols-12 gap-[30px]">
-      <div class="col-span-3">
+      <div class="col-span-3 hidden lg:block">
         <div class="w-full border-r pr-[30px]">
           <h4 class="text-[18px] font-medium">Здравствуйте,</h4>
           <h5 class="text-[32px] font-medium pl-4">Сергей</h5>
@@ -319,11 +319,21 @@
         </div>
       </div>
 
-      <div class="col-span-9">
+      <div class="col-span-12 lg:col-span-9">
 
-        <h1 class="text-[32px] font-medium mb-[30px]">Избранное</h1>
+        <div class="flex-js-c gap-4 mb-6 md:mb-[30px]">
+          <img src="img/icons/arrow-right.svg" alt="" class="transform rotate-180 block md:hidden" width="10">
+          <h1 class="text-[24px] sm:text-[32px] font-medium">Избранное</h1>
+        </div>
 
-        <div class="w-full">
+        <hr class="mb-6  block md:hidden">
+
+        <div class="w-full bg-[#F4F4F4] rounded-[12px] px-4 flex-jsb-c sm:hidden h-[48px] mb-5" id="open-mobile-filter">
+          <h4 class="font-semibold">Фильтр</h4>
+          <img src="img/icons/arrow-right.svg" alt="right">
+        </div>
+
+        <div class="w-full hidden sm:block">
           <div class="flex-js-c gap-6">
             <div class="flex-js-c gap-4 text-[#6E6E6E]">
               Сортировать
@@ -356,203 +366,8 @@
           </div>
         </div>
 
-        <div class="w-full grid grid-cols-4 gap-[30px] mt-[30px]">
-          <div class="w-full">
-            <div class="w-full h-[427px] border rounded-[16px] relative">
-              <div class="absolute top-2 right-2 flex-je-c gap-2">
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
-                  <img src="img/icons/heard-gray.svg" alt="heard-gray">
-                </div>
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
-                  <img src="img/icons/rating-gray.svg" alt="rating-gray">
-                </div>
-              </div>
-
-              <div class="swiper swiperProductItems h-full relative">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                </div>
-                <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
-              </div>
-
-
-            </div>
-            <div class="w-full p-4">
-              <div class="flex-jsb-c">
-                <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
-                  <img src="img/icons/star-yellow.svg" alt="star-yellow">
-                  4.2
-                  <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
-                  29 отзывов
-                </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
-              </div>
-
-              <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
-
-
-              <div class="flex-js-c gap-2 text-[#707070]">
-                Производитель
-                <span class="text-[#323232] font-bold">Daiwa</span>
-              </div>
-
-
-              <div class="flex-js-c gap-1 mt-2">
-                <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
-              </div>
-
-
-              <div class="flex-jsb-c mt-2">
-                <h4 class="text-[24px] font-semibold">3 200 ₽</h4>
-                <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-                  В корзину
-                  <img src="img/icons/basket-white.svg" alt="">
-                </button>
-              </div>
-
-
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="w-full h-[427px] border rounded-[16px] relative">
-              <div class="absolute top-2 right-2 flex-je-c gap-2">
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
-                  <img src="img/icons/heard-gray.svg" alt="heard-gray">
-                </div>
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
-                  <img src="img/icons/rating-gray.svg" alt="rating-gray">
-                </div>
-              </div>
-
-              <div class="swiper swiperProductItems h-full relative">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                </div>
-                <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
-              </div>
-
-
-            </div>
-            <div class="w-full p-4">
-              <div class="flex-jsb-c">
-                <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
-                  <img src="img/icons/star-yellow.svg" alt="star-yellow">
-                  4.2
-                  <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
-                  29 отзывов
-                </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
-              </div>
-
-              <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
-
-
-              <div class="flex-js-c gap-2 text-[#707070]">
-                Производитель
-                <span class="text-[#323232] font-bold">Daiwa</span>
-              </div>
-
-
-              <div class="flex-js-c gap-1 mt-2">
-                <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
-              </div>
-
-
-              <div class="flex-jsb-c mt-2">
-                <h4 class="text-[24px] font-semibold">3 200 ₽</h4>
-                <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-                  В корзину
-                  <img src="img/icons/basket-white.svg" alt="">
-                </button>
-              </div>
-
-
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="w-full h-[427px] border rounded-[16px] relative">
-              <div class="absolute top-2 right-2 flex-je-c gap-2">
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
-                  <img src="img/icons/heard-gray.svg" alt="heard-gray">
-                </div>
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
-                  <img src="img/icons/rating-gray.svg" alt="rating-gray">
-                </div>
-              </div>
-
-              <div class="swiper swiperProductItems h-full relative">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                </div>
-                <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
-              </div>
-
-
-            </div>
-            <div class="w-full p-4">
-              <div class="flex-jsb-c">
-                <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
-                  <img src="img/icons/star-yellow.svg" alt="star-yellow">
-                  4.2
-                  <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
-                  29 отзывов
-                </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
-              </div>
-
-              <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
-
-
-              <div class="flex-js-c gap-2 text-[#707070]">
-                Производитель
-                <span class="text-[#323232] font-bold">Daiwa</span>
-              </div>
-
-
-              <div class="flex-js-c gap-1 mt-2">
-                <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
-              </div>
-
-
-              <div class="flex-jsb-c mt-2">
-                <h4 class="text-[24px] font-semibold">3 200 ₽</h4>
-                <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-                  В корзину
-                  <img src="img/icons/basket-white.svg" alt="">
-                </button>
-              </div>
-
-
-            </div>
-          </div>
-          <div class="w-full">
+        <div class="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-[30px] mt-[30px]">
+          <div data-for="5" class="w-full">
             <div class="w-full h-[427px] border rounded-[16px] relative">
               <div class="absolute top-2 right-2 flex-je-c gap-2">
                 <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">

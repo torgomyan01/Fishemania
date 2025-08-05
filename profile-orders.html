@@ -214,7 +214,7 @@
   <div class="w-full mt-6">
 
     <div class="w-full grid grid-cols-12 gap-[30px]">
-      <div class="col-span-3">
+      <div class="col-span-3 hidden lg:block">
         <div class="w-full border-r pr-[30px]">
           <h4 class="text-[18px] font-medium">Здравствуйте,</h4>
           <h5 class="text-[32px] font-medium pl-4">Сергей</h5>
@@ -327,12 +327,15 @@
         </div>
       </div>
 
-      <div class="col-span-9">
+      <div class="col-span-12 lg:col-span-9">
 
-        <h1 class="text-[32px] font-medium mb-[30px]">Мои заказы</h1>
+        <div class="flex-js-c gap-4 mb-6 md:mb-[30px]">
+          <img src="img/icons/arrow-right.svg" alt="" class="transform rotate-180 block md:hidden" width="10">
+          <h1 class="text-[24px] sm:text-[32px] font-medium">Мои заказы</h1>
+        </div>
 
         <div class="w-full lg:max-w-[670px] mb-[45px]">
-          <div class="w-full grid grid-cols-2 gap-x-[30px] gap-y-4">
+          <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-x-[30px] gap-y-4">
             <label class="w-full">
               <span class="block text-[#323232] mb-1">Выбрать период</span>
               <input type="date" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Выберите период">
@@ -341,8 +344,8 @@
         </div>
 
 
-        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
-          <div class="w-full border p-4 rounded-[12px]">
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-[30px]">
+          <div data-for="5" class="w-full border p-4 rounded-[12px]">
             <ul class="mb-5">
               <li class="text-[#6E6E6E]">
                 Дата: <b class="text-black">12 апреля 2025</b>
@@ -361,109 +364,17 @@
             <b class="mb-1 block">Товары</b>
 
             <div class="w-full grid grid-cols-5 gap-1 mb-5">
-              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer">
-                <img src="img/products/product2.png" alt="" class="w-full h-auto">
+              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer overflow-hidden">
+                <img src="img/products/product2.png" alt="" class="h-full">
               </div>
-              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer">
-                <img src="img/products/product2.png" alt="" class="w-full h-auto">
+              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer overflow-hidden">
+                <img src="img/products/product2.png" alt="" class="h-full">
               </div>
-              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer">
-                <img src="img/products/product2.png" alt="" class="w-full h-auto">
+              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer overflow-hidden">
+                <img src="img/products/product2.png" alt="" class="h-full">
               </div>
-              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer">
-                <img src="img/products/product2.png" alt="" class="w-full h-auto">
-              </div>
-              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer text-[#6E6E6E]">
-                +6
-              </div>
-            </div>
-
-            <div class="w-full flex-jsb-c gap-4">
-              <a href="#" class="text-blue underline">Повторить заказ</a>
-
-              <div class="flex-jse-c gap-2">
-                <img src="img/icons/worning-rounded-blue.svg" alt="worning-rounded-blue">
-                Подробнее
-              </div>
-            </div>
-
-          </div>
-          <div class="w-full border p-4 rounded-[12px]">
-            <ul class="mb-5">
-              <li class="text-[#6E6E6E]">
-                Дата: <b class="text-black">12 апреля 2025</b>
-              </li>
-              <li class="text-[#6E6E6E]">
-                Товаров: <span class="text-black">10</span>
-              </li>
-              <li class="text-[#6E6E6E]">
-                Сумма заказа: <span class="text-black">23 000 ₽</span>
-              </li>
-              <li class="text-[#6E6E6E]">
-                Статус: <span class="text-[#336B46]">Доставлено</span>
-              </li>
-            </ul>
-
-            <b class="mb-1 block">Товары</b>
-
-            <div class="w-full grid grid-cols-5 gap-1 mb-5">
-              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer">
-                <img src="img/products/product2.png" alt="" class="w-full h-auto">
-              </div>
-              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer">
-                <img src="img/products/product2.png" alt="" class="w-full h-auto">
-              </div>
-              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer">
-                <img src="img/products/product2.png" alt="" class="w-full h-auto">
-              </div>
-              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer">
-                <img src="img/products/product2.png" alt="" class="w-full h-auto">
-              </div>
-              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer text-[#6E6E6E]">
-                +6
-              </div>
-            </div>
-
-            <div class="w-full flex-jsb-c gap-4">
-              <a href="#" class="text-blue underline">Повторить заказ</a>
-
-              <div class="flex-jse-c gap-2">
-                <img src="img/icons/worning-rounded-blue.svg" alt="worning-rounded-blue">
-                Подробнее
-              </div>
-            </div>
-
-          </div>
-          <div class="w-full border p-4 rounded-[12px]">
-            <ul class="mb-5">
-              <li class="text-[#6E6E6E]">
-                Дата: <b class="text-black">12 апреля 2025</b>
-              </li>
-              <li class="text-[#6E6E6E]">
-                Товаров: <span class="text-black">10</span>
-              </li>
-              <li class="text-[#6E6E6E]">
-                Сумма заказа: <span class="text-black">23 000 ₽</span>
-              </li>
-              <li class="text-[#6E6E6E]">
-                Статус: <span class="text-[#336B46]">Доставлено</span>
-              </li>
-            </ul>
-
-            <b class="mb-1 block">Товары</b>
-
-            <div class="w-full grid grid-cols-5 gap-1 mb-5">
-              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer">
-                <img src="img/products/product2.png" alt="" class="w-full h-auto">
-              </div>
-              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer">
-                <img src="img/products/product2.png" alt="" class="w-full h-auto">
-              </div>
-              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer">
-                <img src="img/products/product2.png" alt="" class="w-full h-auto">
-              </div>
-              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer">
-                <img src="img/products/product2.png" alt="" class="w-full h-auto">
+              <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer overflow-hidden">
+                <img src="img/products/product2.png" alt="" class="h-full">
               </div>
               <div class="w-full h-[50px] border hover:border-black transition rounded-[4px] flex-jc-c p-2 cursor-pointer text-[#6E6E6E]">
                 +6

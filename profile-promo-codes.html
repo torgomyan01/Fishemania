@@ -214,7 +214,7 @@
   <div class="w-full mt-6">
 
     <div class="w-full grid grid-cols-12 gap-[30px]">
-      <div class="col-span-3">
+      <div class="col-span-3 hidden lg:block">
         <div class="w-full border-r pr-[30px]">
           <h4 class="text-[18px] font-medium">Здравствуйте,</h4>
           <h5 class="text-[32px] font-medium pl-4">Сергей</h5>
@@ -326,11 +326,16 @@
         </div>
       </div>
 
-      <div class="col-span-9">
+      <div class="col-span-12 lg:col-span-9">
 
-        <h1 class="text-[32px] font-medium mb-[30px]">Промокоды</h1>
+        <div class="flex-js-c gap-4 mb-6 md:mb-[30px]">
+          <img src="img/icons/arrow-right.svg" alt="" class="transform rotate-180 block md:hidden" width="10">
+          <h1 class="text-[24px] sm:text-[32px] font-medium">Промокоды</h1>
+        </div>
 
-        <div class="w-full grid grid-cols-4 gap-[30px]">
+        <hr class="mb-6  block md:hidden">
+
+        <div class="w-full grid md:grid-cols-2 xl:grid-cols-4 gap-[30px]">
           <div class="w-full h-[145px] bg-no-repeat p-5" style="background-image: url(img/bg-item-promo-code.png); background-size: 100% 100%;">
             <div class="w-full flex-jsb-c">
               <div>
