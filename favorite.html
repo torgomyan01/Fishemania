@@ -23,7 +23,7 @@
 <div class="w-full h-[50px] bg-[#323232] hidden sm:block">
   <div class="container h-full">
     <div class="w-full h-full flex items-center justify-between">
-      <div class="text-white flex-js-c gap-2 cursor-pointer">
+      <div class="text-white flex-js-c gap-2 cursor-pointer"><img src="img/icons/location-white.svg" alt="">
         г. Москва
         <img src="img/icons/down.svg" alt="">
       </div>
@@ -121,7 +121,7 @@
 </div>
 
 <div
-    class="w-full fixed top-0 left-0 bg-[#F4F4F4] rounded-[0_0_16px_16px] h-[65px] px-4 flex-jsb-c flex sm:hidden z-10">
+    class="w-full fixed top-0 left-0 bg-[#F4F4F4] rounded-[0_0_16px_16px] h-[65px] px-4 flex-jsb-c flex sm:hidden z-[1000]">
   <a href="index.html">
     <img src="img/logo-header.svg" alt="" class="w-[122px]">
   </a>
@@ -171,7 +171,7 @@
         </a>
       </div>
 
-      <div class="min-w-[1px] w-[1px] h-[27px] bg-[#CACACA] mx-8"></div>
+      <div class="min-w-[1px] w-[1px] h-[27px] bg-[#CACACA] mx-8 lg:mx-12"></div>
       <div class="flex-jsb-c gap-6 h-full w-[60%]">
         <a href="#" class="flex-js-c gap-2 text-black min-w-[1290px]:text-[18px] font-medium">
           Удилища
@@ -200,7 +200,7 @@
 <div class="container mt-4">
 
 
-  <ul class="flex-js-c gap-1 mb-7">
+  <ul class="flex-js-c gap-1 mb-7 mt-[80px] sm:mt-0">
     <li>
       <a href="index.html" class="text-[15px] text-[#6E6E6E]">Главная</a>
     </li>
@@ -212,9 +212,14 @@
     </li>
   </ul>
 
-  <h2 class="font-medium text-[#212121] text-[32px] mb-[30px]">Избранное</h2>
+  <h2 class="font-medium text-[#212121] text-[24px] sm:text-[32px] mb-4 sm:mb-[30px]">Избранное</h2>
 
-  <div class="flex items-center mb-[30px] max-[767px]:flex-col max-[767px]:items-start">
+  <div class="w-full bg-[#F4F4F4] rounded-[12px] px-4 flex-jsb-c sm:hidden h-[48px] mb-5">
+    <h4 class="font-semibold">Фильтр</h4>
+    <img src="img/icons/arrow-right.svg" alt="right">
+  </div>
+
+  <div class="items-center mb-[30px] max-[767px]:flex-col max-[767px]:items-start hidden sm:flex">
     <span class="mr-[16px] text-[#6E6E6E] text-[16px] max-[767px]:mb-[12px]">Сортировать</span>
     <select class="bg-[#F4F4F4] border-[none] border-0 
     cursor-pointer focus:outline-none focus:border-0 max-[767px]:mb-[12px]">
@@ -238,11 +243,11 @@
   max-[1024px]:grid-cols-2 max-[650px]:grid-cols-1">
     <div class="w-full">
       <div class="w-full h-[427px] border rounded-[16px] relative">
-        <div class="absolute top-2 right-2 flex-je-c gap-2">
-          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+        <div class="absolute top-2 right-2 flex-je-c gap-2 z-10">
+          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
             <img src="img/icons/heard-gray.svg" alt="heard-gray">
           </div>
-          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
             <img src="img/icons/rating-gray.svg" alt="rating-gray">
           </div>
         </div>
@@ -305,11 +310,11 @@
     </div>
     <div class="w-full">
       <div class="w-full h-[427px] border rounded-[16px] relative">
-        <div class="absolute top-2 right-2 flex-je-c gap-2">
-          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+        <div class="absolute top-2 right-2 flex-je-c gap-2 z-10">
+          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
             <img src="img/icons/heard-gray.svg" alt="heard-gray">
           </div>
-          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
             <img src="img/icons/rating-gray.svg" alt="rating-gray">
           </div>
         </div>
@@ -372,11 +377,11 @@
     </div>
     <div class="w-full">
       <div class="w-full h-[427px] border rounded-[16px] relative">
-        <div class="absolute top-2 right-2 flex-je-c gap-2">
-          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+        <div class="absolute top-2 right-2 flex-je-c gap-2 z-10">
+          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
             <img src="img/icons/heard-gray.svg" alt="heard-gray">
           </div>
-          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
             <img src="img/icons/rating-gray.svg" alt="rating-gray">
           </div>
         </div>

@@ -124,7 +124,7 @@ const swiperHero = new Swiper('.swiperHero', {
 const swiperPartners = new Swiper('.swiperPartners', {
   loop: true,
   slidesPerView: 7,
-  spaceBetween: 30,
+  spaceBetween: 16,
   navigation: {
     nextEl: '.swiper-button-next.brand',
     prevEl: '.swiper-button-prev.brand',
@@ -136,7 +136,6 @@ const swiperPartners = new Swiper('.swiperPartners', {
   breakpoints: {
     0: {
       slidesPerView: "auto",
-      spaceBetween: 0,
     },
     768: {
       slidesPerView: 4,

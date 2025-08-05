@@ -21,7 +21,7 @@
 <div class="w-full h-[50px] bg-[#323232] hidden sm:block">
   <div class="container h-full">
     <div class="w-full h-full flex items-center justify-between">
-      <div class="text-white flex-js-c gap-2 cursor-pointer">
+      <div class="text-white flex-js-c gap-2 cursor-pointer"><img src="img/icons/location-white.svg" alt="">
         г. Москва
         <img src="img/icons/down.svg" alt="">
       </div>
@@ -119,7 +119,7 @@
 </div>
 
 <div
-    class="w-full fixed top-0 left-0 bg-[#F4F4F4] rounded-[0_0_16px_16px] h-[65px] px-4 flex-jsb-c flex sm:hidden z-10">
+    class="w-full fixed top-0 left-0 bg-[#F4F4F4] rounded-[0_0_16px_16px] h-[65px] px-4 flex-jsb-c flex sm:hidden z-[1000]">
   <a href="index.html">
     <img src="img/logo-header.svg" alt="" class="w-[122px]">
   </a>
@@ -170,7 +170,7 @@
         </a>
       </div>
 
-      <div class="min-w-[1px] w-[1px] h-[27px] bg-[#CACACA] mx-8"></div>
+      <div class="min-w-[1px] w-[1px] h-[27px] bg-[#CACACA] mx-8 lg:mx-12"></div>
       <div class="flex-jsb-c gap-6 h-full w-[60%]">
         <a href="#" class="flex-js-c gap-2 text-black min-w-[1290px]:text-[18px] font-medium">
           Удилища
@@ -217,18 +217,20 @@
     <div class="w-full grid grid-cols-12 gap-[138px] max-[1600px]:gap-[50px] max-[1600px]:flex max-[1600px]:flex-col">
       <div class="col-span-8">
         <div class="flex-js-c gap-6 pb-5 border-b max-[767px]:flex-col max-[767px]:items-start max-[767px]:gap-[10px]">
-          <label class="def-checkbox flex-js-c">
+          <label class="def-checkbox flex-js-c order-2 sm:order-2">
             <input type="checkbox">
             <span class="mr-2"></span>
             Выбрать все
           </label>
-          <div class="flex-js-c gap-2 cursor-pointer text-[#212121]">
-            <img src="img/icons/delete-remove.svg" alt="remove icon" class="w-6">
-            Удалить
-          </div>
-          <div class="flex-js-c gap-2 cursor-pointer text-[#212121]">
-            <img src="img/icons/xmark.svg" alt="remove icon" class="w-6">
-            Очистить всё
+          <div class="flex-je-c gap-6">
+            <div class="flex-js-c gap-2 cursor-pointer text-[#212121]">
+              <img src="img/icons/delete-remove.svg" alt="remove icon" class="w-6">
+              Удалить
+            </div>
+            <div class="flex-js-c gap-2 cursor-pointer text-[#212121]">
+              <img src="img/icons/xmark.svg" alt="remove icon" class="w-6">
+              Очистить всё
+            </div>
           </div>
         </div>
 
@@ -377,7 +379,7 @@
           </div>
 
           <div class="w-full mt-4 border-b pb-6">
-            <div class="w-full flex-jsb-c">
+            <div class="w-full flex-jsb-c mb-2">
               Бонусы
               <img src="img/icons/arrow-right.svg" alt="" class="transform rotate-[-90deg]">
             </div>

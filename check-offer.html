@@ -21,7 +21,7 @@
 <div class="w-full h-[50px] bg-[#323232] hidden sm:block">
   <div class="container h-full">
     <div class="w-full h-full flex items-center justify-between">
-      <div class="text-white flex-js-c gap-2 cursor-pointer">
+      <div class="text-white flex-js-c gap-2 cursor-pointer"><img src="img/icons/location-white.svg" alt="">
         г. Москва
         <img src="img/icons/down.svg" alt="">
       </div>
@@ -119,7 +119,7 @@
 </div>
 
 <div
-    class="w-full fixed top-0 left-0 bg-[#F4F4F4] rounded-[0_0_16px_16px] h-[65px] px-4 flex-jsb-c flex sm:hidden z-10">
+    class="w-full fixed top-0 left-0 bg-[#F4F4F4] rounded-[0_0_16px_16px] h-[65px] px-4 flex-jsb-c flex sm:hidden z-[1000]">
   <a href="index.html">
     <img src="img/logo-header.svg" alt="" class="w-[122px]">
   </a>
@@ -170,7 +170,7 @@
         </a>
       </div>
 
-      <div class="min-w-[1px] w-[1px] h-[27px] bg-[#CACACA] mx-8"></div>
+      <div class="min-w-[1px] w-[1px] h-[27px] bg-[#CACACA] mx-8 lg:mx-12"></div>
       <div class="flex-jsb-c gap-6 h-full w-[60%]">
         <a href="#" class="flex-js-c gap-2 text-black min-w-[1290px]:text-[18px] font-medium">
           Удилища
@@ -217,9 +217,11 @@
     <div class="w-full grid grid-cols-12 gap-[138px] max-[1600px]:flex max-[1600px]:flex-col max-[1024px]:gap-[50px]">
       <div class="col-span-7">
 
-        <div class="w-full flex-js-c text-[18px] p-6 bg-[#F4F4F4] rounded-[16px] max-[1024px]:flex-col max-[767px]:text-center ">
+        <div class="w-full flex-js-s lg:flex-js-c text-[16px] sm:text-[18px] p-4 sm:p-6 bg-[#F4F4F4] rounded-[16px] gap-2">
           <img src="img/icons/user-blue.svg" alt="user-blue">
-          <a href="#" class="text-blue underline">Авторизуйтесь</a> чтобы увидеть персональные условия доставки и отслеживать заказы
+          <p>
+            <a href="#" class="text-blue underline">Авторизуйтесь</a> чтобы увидеть персональные условия доставки и отслеживать заказы
+          </p>
         </div>
 
         <h3 class="text-[24px] mt-8 font-medium">Кто заберет заказ</h3>
@@ -227,7 +229,7 @@
         <p class="mt-4">* — обязательно</p>
 
         <form action="#">
-          <div class="w-full grid grid-cols-2 gap-6 mt-6 max-[767px]:grid-cols-1">
+          <div class="w-full grid grid-cols-2 gap-4 sm:gap-6 mt-6 max-[767px]:grid-cols-1">
             <label class="w-full">
               <span class="block text-[#323232] mb-1">Ваше имя</span>
               <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Введите имя">
@@ -255,7 +257,7 @@
           <div class="w-full mt-[60px] max-[767px]:mt-[30px]">
             <h4 class="text-[24px] font-medium mb-6">Как доставить заказ</h4>
             
-            <div class="w-full grid grid-cols-3 gap-6 max-[767px]:grid-cols-1">
+            <div class="w-full grid grid-cols-3 gap-4 sm:gap-6 max-[767px]:grid-cols-1">
               <label class="w-full relative">
                 <input type="radio" name="order" class="peer hidden">
                 <span class="w-[18px] h-[18px] transition border-[2px] border-[#DBDBDB] absolute top-3 left-3 rounded-full peer-checked:border-[5px] peer-checked:border-[#009FFF]"></span>
@@ -302,7 +304,7 @@
 
           <h3 class="text-[24px] mt-[60px] font-medium max-[767px]:mt-[30px]">Адрес доставки</h3>
 
-          <div class="w-full grid grid-cols-2 gap-6 mt-6 max-[767px]:grid-cols-1">
+          <div class="w-full grid grid-cols-2 gap-4 sm:gap-6 mt-6 max-[767px]:grid-cols-1">
             <label class="w-full">
               <span class="block text-[#323232] mb-1">Город доставки*</span>
               <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Введите город">
