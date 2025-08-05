@@ -214,7 +214,7 @@
   <div class="w-full mt-6">
 
     <div class="w-full grid grid-cols-12 gap-[30px]">
-      <div class="col-span-3">
+      <div class="col-span-3 hidden lg:block">
         <div class="w-full border-r pr-[30px]">
           <h4 class="text-[18px] font-medium">Здравствуйте,</h4>
           <h5 class="text-[32px] font-medium pl-4">Сергей</h5>
@@ -319,276 +319,221 @@
         </div>
       </div>
 
-      <div class="col-span-9">
+      <div class="col-span-12 lg:col-span-9">
 
-        <h1 class="text-[32px] font-medium mb-[30px]">Сравнение</h1>
+        <div class="flex-js-c gap-4 mb-6 md:mb-[30px]">
+          <img src="img/icons/arrow-right.svg" alt="" class="transform rotate-180 block md:hidden" width="10">
+          <h1 class="text-[24px] sm:text-[32px] font-medium">Сравнение</h1>
+        </div>
 
-        <div class="w-full mt-6">
-          <div class="flex-js-c gap-4">
-            <span class="text-[#6E6E6E]">Показывать</span>
-            <button class="text-[#6E6E6E] px-4 h-10 bg-white border rounded-[30px]">Все характеристики</button>
-            <button class="text-[#6E6E6E] px-4 h-10 bg-white border rounded-[30px]">Только различия</button>
-          </div>
-
-          <div class="w-full mt-10 grid grid-cols-12 border-b pb-2">
-            <div class="col-span-2">
-              <a href="#" class="text-[#6E6E6E] underline flex-js-e gap-2">
-                <img src="img/icons/delete-remove.svg" alt="delete-remove">
-                Очистить
-              </a>
-            </div>
-            <div class="col-span-2 px-[30px] relative">
-              <img src="img/products/product2.png" alt="product" class="w-[80%]">
-              <h4 class="text-[18px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h4>
-              <img src="img/icons/xmark.svg" alt="close" class="absolute right-0 top-0 cursor-pointer">
-            </div>
-            <div class="col-span-2 px-[30px] relative">
-              <img src="img/products/product2.png" alt="product" class="w-[80%]">
-              <h4 class="text-[18px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h4>
-              <img src="img/icons/xmark.svg" alt="close" class="absolute right-0 top-0 cursor-pointer">
-            </div>
-          </div>
-
-          <div class="w-full mt-10 mb-[300px]">
-            <div class="w-full grid grid-cols-12 b-4">
-              <div class="col-span-2 border-r pb-3">
+        <div class="w-full overflow-x-auto pb-10 com-body-scroll-bottom-min hidden sm:block">
+          <table class="mt-10">
+            <tbody>
+            <tr class="border-b">
+              <td class="pb-4 min-w-[250px] w-[300px]">
+                <a href="#" class="text-[#6E6E6E] underline flex-js-e gap-2">
+                  <img src="img/icons/delete-remove.svg" alt="delete-remove">
+                  Очистить
+                </a>
+              </td>
+              <td class="pb-4 min-w-[250px] w-[300px]">
+                <div class="px-[30px] relative">
+                  <img src="img/products/product2.png" alt="product" class="w-[80%]">
+                  <h4 class="text-[16px] md:text-[18px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h4>
+                  <img src="img/icons/xmark.svg" alt="close" class="absolute right-0 top-0 cursor-pointer">
+                </div>
+              </td>
+              <td class="pb-4 min-w-[250px] w-[300px]">
+                <div class="px-[30px] relative">
+                  <img src="img/products/product2.png" alt="product" class="w-[80%]">
+                  <h4 class="text-[16px] md:text-[18px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h4>
+                  <img src="img/icons/xmark.svg" alt="close" class="absolute right-0 top-0 cursor-pointer">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="pt-6 border-r">
                 <b class="text-[18px]">Цена</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
+              </td>
+              <td class="border-r pl-6 text-[18px]">
                 5 965 руб
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
+              </td>
+              <td class="border-r pl-6 text-[18px]">
                 5 965 руб
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12 b-4">
-              <div class="col-span-2 border-r">
+              </td>
+            </tr>
+            <tr>
+              <td class="pt-6 border-r">
                 <b class="text-[18px]">Тип удилища</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 Штекерное
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 Штекерное
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
+              </td>
+            </tr>
+            <tr>
+              <td class="pt-6 border-r">
                 <b class="text-[18px]">Предназначение</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 для спиннинга/ ловля в заброс/ для ловли на джиг/ для микроджига/ для ультралайта
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 для спиннинга/ ловля в заброс/ для ловли на джиг/ для микроджига/ для ультралайта
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
+              </td>
+            </tr>
+            <tr>
+              <td class="pt-6 border-r">
                 <b class="text-[18px]">Бренд</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 Jaxon
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 Jaxon
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
+              </td>
+            </tr>
+            <tr>
+              <td class="pt-6 border-r">
                 <b class="text-[18px]">Для вида рыбы</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 на окуня/ на щуку/ на судака/ для хищной рыбы
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 на окуня/ на щуку/ на судака/ для хищной рыбы
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
+              </td>
+            </tr>
+            <tr>
+              <td class="pt-6 border-r">
                 <b class="text-[18px]">Длина (см)</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 210
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 210
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
+              </td>
+            </tr>
+            <tr>
+              <td class="pt-6 border-r">
                 <b class="text-[18px]">Назначение</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 для рыбалки
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 для рыбалки
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
+              </td>
+            </tr>
+            <tr>
+              <td class="pt-6 border-r">
                 <b class="text-[18px]">Модель</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 Blue_Wind
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 Blue_Wind
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
+              </td>
+            </tr>
+            <tr>
+              <td class="pt-6 border-r">
                 <b class="text-[18px]">Вес (гр)</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 102
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px]">
                 102
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
-                <b class="text-[18px]">Длина в сложении (см)</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
-                108
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
-                108
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
-                <b class="text-[18px]">Секции</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
-                2
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
-                2
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
-                <b class="text-[18px]">Кол-во пропускных колец (шт):</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
-                8
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
-                8
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
-                <b class="text-[18px]">Сезон</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
-                Демисезон/ Лето/ Осень/ Весна
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
-                Демисезон/ Лето/ Осень/ Весна
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
-                <b class="text-[18px]">Строй</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
-                Сверхбыстрый (Extra-fast)
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
-                Сверхбыстрый (Extra-fast)
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
-                <b class="text-[18px]">Страна производитель</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
-                Китай
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
-                Китай
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
-                <b class="text-[18px]">Материал</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
-                -
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
-                -
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
-                <b class="text-[18px]">Цвет</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
-                синий/ белый/ черный
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
-                синий/ белый/ черный
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
-                <b class="text-[18px]">Кол-во в упаковке, шт.</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
-                1
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
-                1
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
-                <b class="text-[18px]">Место ловли</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
-                на озере/ на реке/ с берега/ с лодки
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
-                на озере/ на реке/ с берега/ с лодки
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
-                <b class="text-[18px]">Уровень подготовки</b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
-                -
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
-                -
-              </div>
-            </div>
-            <div class="w-full grid grid-cols-12">
-              <div class="col-span-2 border-r pb-3">
-                <b class="text-[18px]"></b>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] border-r pb-3">
+              </td>
+            </tr>
+            <tr>
+              <td class="pt-6 border-r">
+
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px] pt-6">
                 <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 w-full transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
                   В корзину
                   <img src="img/icons/basket-white.svg" alt="">
                 </button>
-              </div>
-              <div class="text-[18px] col-span-2 px-[30px] pb-3 border-r">
+              </td>
+              <td class="border-r px-4 text-[16px] md:text-[18px] pt-6">
                 <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 w-full transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
                   В корзину
                   <img src="img/icons/basket-white.svg" alt="">
                 </button>
-              </div>
-            </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="w-full block sm:hidden mt-10">
+
+          <div class="w-full pb-4 border-b mb-4">
+            <a href="#" class="text-[#6E6E6E] underline flex-js-e gap-2">
+              <img src="img/icons/delete-remove.svg" alt="delete-remove">
+              Очистить
+            </a>
           </div>
 
+
+          <div data-for="4" class="w-full mb-10">
+            <div class="relative flex-js-c gap-4 pb-4 border-b mb-4">
+              <img src="img/products/product2.png" alt="product" class="w-[74px]">
+              <h4 class="text-[16px] md:text-[18px] pe-4">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h4>
+              <img src="img/icons/xmark.svg" alt="close" class="absolute right-0 top-0 cursor-pointer">
+            </div>
+
+            <div class="mb-3">
+              <b class="block">Цена</b>
+              <p>5 965 руб</p>
+            </div>
+
+            <div class="mb-3">
+              <b class="block">Тип удилища</b>
+              <p>Штекерное</p>
+            </div>
+
+            <div class="mb-3">
+              <b class="block">Предназначение</b>
+              <p>для спиннинга/ ловля в заброс/ для ловли на джиг/ для микроджига/ для ультралайта</p>
+            </div>
+
+            <div class="mb-3">
+              <b class="block">Бренд</b>
+              <p>Jaxon</p>
+            </div>
+
+            <div class="mb-3">
+              <b class="block">Для вида рыбы</b>
+              <p>на окуня/ на щуку/ на судака/ для хищной рыбы</p>
+            </div>
+
+            <div class="mb-3">
+              <b class="block">Длина (см)</b>
+              <p>210</p>
+            </div>
+
+            <div class="mb-3">
+              <b class="block">Назначение</b>
+              <p>для рыбалки</p>
+            </div>
+
+            <div class="mb-3">
+              <b class="block">Модель</b>
+              <p>Blue_Wind</p>
+            </div>
+
+            <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 w-full transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
+              В корзину
+              <img src="img/icons/basket-white.svg" alt="">
+            </button>
+
+          </div>
         </div>
 
 
