@@ -211,10 +211,10 @@
   </ul>
 
 
-  <div class="w-full mt-6">
+  <div class="w-full mt-6 max-[1300px]:mb-[100px]">
 
-    <div class="w-full grid grid-cols-12 gap-[30px]">
-      <div class="col-span-3">
+    <div class="w-full grid grid-cols-12 gap-[30px] ">
+      <div class="col-span-3 max-[1024px]:hidden">
         <div class="w-full border-r pr-[30px]">
           <h4 class="text-[18px] font-medium">Здравствуйте,</h4>
           <h5 class="text-[32px] font-medium pl-4">Сергей</h5>
@@ -326,7 +326,7 @@
         </div>
       </div>
 
-      <div class="col-span-9">
+      <div class="col-span-9 max-[1024px]:col-span-12">
 
         <h1 class="text-[32px] font-medium mb-[30px]">Мои бонусы</h1>
 
@@ -345,7 +345,7 @@
 
           </div>
 
-          <div class="w-full grid grid-cols-3 gap-3 mb-3">
+          <div class="w-full grid grid-cols-3 gap-3 mb-3 max-[767px]:grid-cols-1">
             <div class="w-full relative rounded-[12px] p-3 bg-[#F4F4F4] overflow-hidden">
               <div>
                 <h4>Кэшбек</h4>
@@ -360,7 +360,8 @@
               </div>
               <img src="img/fish-right-blue.svg" alt="fish-right" class="absolute right-0 bottom-0">
             </div>
-            <a href="#" class="w-full relative rounded-[12px] p-3 bg-[#F4F4F4] overflow-hidden flex-jc-c gap-2 text-blue underline">
+            <a href="#" class="w-full relative rounded-[12px] p-3 bg-[#F4F4F4] overflow-hidden flex-jc-c gap-2
+            max-[767px]:w-full text-blue underline">
               <img src="img/icons/hystory-blue.svg" alt="hystory-blue">
               История бонусов
             </a>
@@ -370,7 +371,7 @@
             <h3 class="font-bold mb-[-2px]">Уровень карты</h3>
             <p class="text-[14px]">Сохраняйте уровень и пользуйтесь всеми возможностями карты</p>
 
-            <div class="w-full mt-3 flex-jsb-c gap-5">
+            <div class="w-full mt-3 flex-jsb-c gap-5 max-[1024px]:block">
 
               <div class="w-full relative flex-jc-c">
                 <div class="w-full h-1 bg-[#D9D9D9] rounded-[5px] relative flex-js-c">
@@ -383,7 +384,7 @@
 
               </div>
 
-              <h5 class="text-[14px]">
+              <h5 class="text-[14px] max-[1024px]:mt-[20px]">
                 <span class="font-medium block text-nowrap">До следующего уровня:</span>
                 23 000 рублей
               </h5>
@@ -394,35 +395,35 @@
 
           <h4 class="text-[24px] font-medium mb-[30px]">История бонусов</h4>
 
-          <div class="w-full grid grid-cols-12">
+          <div class="w-full grid grid-cols-12 max-[767px]:block">
             <h5 class="text-[#6E6E6E] col-span-5">
               12 апреля 2025
             </h5>
-            <div class="text-[#6E6E6E] text-[20px] flex-jc-c gap-1 col-span-2">
+            <div class="text-[#6E6E6E] text-[20px] flex-jc-c gap-1 col-span-2 max-[767px]:justify-end">
               + 500
               <img src="img/icons/fish-min-logo.svg" alt="" class="w-5 h-5">
             </div>
-            <h5 class="text-[20px] col-span-5 text-right">Бонус за покупку</h5>
+            <h5 class="text-[20px] col-span-5 text-right max-[767px]:text-left">Бонус за покупку</h5>
           </div>
-          <div class="w-full grid grid-cols-12">
+          <div class="w-full grid grid-cols-12 max-[767px]:block">
             <h5 class="text-[#6E6E6E] col-span-5">
               8 апреля 2025
             </h5>
-            <div class="text-[#6E6E6E] text-[20px] flex-jc-c gap-1 col-span-2">
+            <div class="text-[#6E6E6E] text-[20px] flex-jc-c gap-1 col-span-2 max-[767px]:justify-end">
               + 100
               <img src="img/icons/fish-min-logo.svg" alt="" class="w-5 h-5">
             </div>
-            <h5 class="text-[20px] col-span-5 text-right">Праздничный бонус</h5>
+            <h5 class="text-[20px] col-span-5 text-right max-[767px]:text-left">Праздничный бонус</h5>
           </div>
-          <div class="w-full grid grid-cols-12">
+          <div class="w-full grid grid-cols-12 max-[767px]:block">
             <h5 class="text-[#6E6E6E] col-span-5">
               3 апреля 2024
             </h5>
-            <div class="text-[#6E6E6E] text-[20px] flex-jc-c gap-1 col-span-2">
+            <div class="text-[#6E6E6E] text-[20px] flex-jc-c gap-1 col-span-2 max-[767px]:justify-end">
               - 1 000
               <img src="img/icons/fish-min-logo.svg" alt="" class="w-5 h-5">
             </div>
-            <h5 class="text-[20px] col-span-5 text-right">Списание за покупку</h5>
+            <h5 class="text-[20px] col-span-5 text-right max-[767px]:text-left">Списание за покупку</h5>
           </div>
 
 
@@ -445,7 +446,10 @@
     <div class="w-full h-[360px] min-[500px]:h-[320px] relative transform translate-y-[-50%] bg-blue rounded-[12px]">
       <img src="img/contact-me-bg.png" alt="contact-me-bg" class="w-full h-full object-cover  rounded-[16px]">
       <img src="img/message-ilustriator.png" alt="message-illustrator"
-           class="absolute left-[2%] min-[1350px]:left-[10%] min-[1450px]:left-[17%] top-[-140px] min-[350px]:top-[-180px] min-[500px]:top-[-230px] min-[1256px]:top-[-100px] transform max-[500px]:!scale-50 max-[1240px]:!scale-75">
+           class="absolute left-[2%] min-[1350px]:left-[10%] min-[1450px]:left-[17%]
+            top-[-140px] min-[350px]:top-[-180px] min-[500px]:top-[-230px]
+             min-[1256px]:top-[-100px] transform max-[500px]:!scale-50
+              max-[1240px]:!scale-75 ">
       <div
           class="absolute top-0 min-[890px]:top-[50%] max-[890px]:bottom-0 min-[890px]:right-[70px] transform min-[890px]:translate-y-[-50%] max-[576px]:pr-4 max-[576px]:pl-4 max-[890px]:pl-10 max-[431px]:pt-[50px] max-[890px]:pt-[100px]">
         <h3 class="font-light max-[890px]:mb-2 max-[890px]:leading-[32px] text-[32px] min-[890px]:text-[64px] text-white">
