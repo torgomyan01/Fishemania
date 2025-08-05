@@ -2185,12 +2185,52 @@
 
 
 
-<div class="w-full h-[100dvh] flex-jc-c fixed top-0 left-0 bg-black/60 z-10 p-4">
-    <div class="bg-white rounded-2xl p-6 w-full max-w-md relative">
+<div class="w-full h-[100dvh]  flex-jc-c fixed top-0 left-0 bg-black/60 z-10 p-4">
+    <div class="bg-white rounded-2xl p-6 w-full max-w-[500px] relative max-[767px]:p-[15px]">
         <button class="absolute top-4 right-4">
             <img src="img/icons/xmark.svg" alt="Փակել">
         </button>
-        <h3>Наличие в магазинах</h3>
+        <h3 class="text-[#212121] text-[32px] leading-[100%] font-medium border-b border-[rgba(110,110,110,0.25)]
+        mb-[20px] pb-[20px] max-[767px]:text-[24px]">Наличие в магазинах</h3>
+        <div class="flex items-center mb-[10px]">
+            <img src="img/fish.svg" alt="" class="mr-[12px]">
+            <div class="">
+                <span class="text-[#323232] text-[24px] mb-[2px] block leading-[100%]">Рыболов</span>
+                <span class="text-[16px] text-[#323232]">Санкт-Петербург , наб. Обводного Канала д.165</span>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 mt-[8px]">
+            <span class="text-[#707070] text-[16px]">Наличие</span>
+            <span class="font-bold text-[#1DBC52]">есть</span>
+        </div>
+        <div class="grid grid-cols-2 mt-[8px]">
+            <span class="text-[#707070] text-[16px]">Метро</span>
+            <span class="text-[#323232]">Балтийская</span>
+        </div>
+        <div class="grid grid-cols-2 mt-[8px]">
+            <span class="text-[#707070] text-[16px]">Режим работы</span>
+            <span class="text-[#323232] max-[767px]:text-[14px]" >Пн-СБ с 10-20 , Вс с 10-17</span>
+        </div>
+        <div class="grid grid-cols-2 mt-[8px]">
+            <span class="text-[#707070] text-[16px]">Телефон</span>
+            <span class="text-[#323232]">+7 812 575 38 84</span>
+        </div>
+        <div class="py-[20px] my-[20px] border-b border-[rgba(110,110,110,0.25)] border-t border-[rgba(110,110,110,0.25)]">
+            <div class="flex items-center">
+                <img src="img/fish-grey.svg" alt="">
+                <span class="ml-[12px] text-[24px] text-[#323232]">Интернет-магазин</span>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 mt-[8px]">
+            <span class="text-[#707070] text-[16px]">Наличие</span>
+            <span class="font-bold text-[#CF301B]">нет</span>
+        </div>
+        <div class="grid grid-cols-2 mt-[8px]">
+            <span class="text-[#707070] text-[16px]">Телефон</span>
+            <span class="text-[#323232]">+7 921 903 53 50</span>
+        </div>
+        <button class="bg-[#009FFF] text-[16px] font-bold text-[white] rounded-[8px]
+        py-[12px] px-[24px] mt-[20px]">Закрыть</button>
     </div>
 </div>
 
