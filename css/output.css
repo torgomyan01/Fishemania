@@ -1906,6 +1906,10 @@ select{
   margin-top: 10px;
 }
 
+.ml-10{
+  margin-left: 2.5rem;
+}
+
 .block{
   display: block;
 }
@@ -3766,6 +3770,11 @@ select{
 
 .text-white\/80{
   color: rgb(255 255 255 / 0.8);
+}
+
+.text-red-600{
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
 }
 
 .underline{
