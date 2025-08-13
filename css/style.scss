@@ -278,6 +278,10 @@ a {
   height: 0px;
 }
 
+.noUi-handle {
+  box-shadow: inherit !important;
+}
+
 .custom-scrollbar {
   -ms-overflow-style: none; /* IE и Edge */
   scrollbar-width: none;    /* Firefox */
@@ -387,6 +391,13 @@ input:checked + .slider-v3::after {
   }
   &::-webkit-scrollbar-thumb {
     background: #888;
+  }
+}
+
+.scroll-gray{
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgb(146, 146, 146);
   }
 }
 

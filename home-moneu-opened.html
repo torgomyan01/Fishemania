@@ -108,7 +108,7 @@
 
   <div class="w-full h-[calc(100dvh-162px)] absolute left-0 top-[100%] bg-black/50"></div>
 
-  <div class="w-[489px] h-[calc(100dvh-162px)] bg-white absolute left-0 top-[100%] pl-[100px] overflow-y-auto pb-[100px]">
+  <div class="w-[489px] h-[calc(100dvh-162px)] bg-white absolute left-0 top-[100%] pl-[100px] overflow-y-auto scroll-gray pb-[100px]">
     <div class="w-full text-[#6E6E6E] pt-6 pb-3 border-b">
       По категориям
     </div>
@@ -327,105 +327,118 @@
 
     <div class="w-full flex-jsb-s mt-6 gap-8">
       <ul class="min-w-[264px]">
-        <li class="text-[#6E6E6E] border-b pb-4 mb-3">
+        <li class="font-bold border-b pb-4 mb-3 text-[20px]">
           Категории
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Спиннинги
           </a>
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Удочки
           </a>
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Вершинки для удилищ
           </a>
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Удилища маховые
           </a>
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Удилища болонские
           </a>
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Спиннинги ультралайт
           </a>
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Спиннинги джиговые
           </a>
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Спиннинги кастинговые
           </a>
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Спиннинги Maximus
           </a>
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Удилища фидерные
           </a>
         </li>
       </ul>
       <ul class="min-w-[264px]">
-        <li class="text-[#6E6E6E] border-b pb-4 mb-3">
+        <li class="font-bold border-b pb-4 mb-3 text-[20px]">
           Популярные разделы
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Спиннинги ультралайт
           </a>
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Фидерные удилища
           </a>
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Троллинговые удилища
           </a>
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Болонское удилище
           </a>
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Маховая удочка
           </a>
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Спининг универсальный
           </a>
         </li>
-        <li class="mb-1">
+        <li class="mb-2">
           <a href="#">
             Спининг для джига
           </a>
         </li>
       </ul>
       <div class="min-w-[200px]">
-        <h4 class="text-[#6E6E6E] border-b pb-4 mb-3">
+        <h4 class="font-bold border-b pb-4 mb-3 text-[20px]">
           Бренды
         </h4>
-        <img src="img/brands.png" alt="brands">
+        <div class="w-full flex-js-c gap-2 flex-col">
+          <div class="w-full flex-jc-c px-4 py-2 border">
+              <img src="img/brand-img1.png" />  
+          </div>
+          <div class="w-full flex-jc-c px-4 py-2 border">
+            <img src="img/brand-img2.png" />  
+          </div>
+          <div class="w-full flex-jc-c px-4 py-2 border">
+            <img src="img/brand-img3.png" />  
+          </div>
+          <div class="w-full flex-jc-c px-4 py-2 border">
+            <img src="img/brand-img4.png" />  
+          </div>
+        </div>
       </div>
 
       <div class="w-[443px] h-[353px] overflow-hidden rounded-[16px] p-8 relative">
@@ -601,13 +614,13 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Daiwa</span>
               </div>
@@ -615,7 +628,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -672,7 +685,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -680,7 +693,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">LureMax</span>
               </div>
@@ -688,7 +701,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -741,7 +754,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -749,7 +762,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -757,7 +770,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -810,7 +823,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -818,7 +831,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -826,7 +839,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -885,7 +898,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -893,7 +906,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -901,7 +914,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -954,7 +967,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -962,7 +975,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -970,7 +983,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -1178,13 +1191,13 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Daiwa</span>
               </div>
@@ -1192,7 +1205,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -1249,7 +1262,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -1257,7 +1270,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">LureMax</span>
               </div>
@@ -1265,7 +1278,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -1318,7 +1331,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -1326,7 +1339,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -1334,7 +1347,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -1387,7 +1400,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -1395,7 +1408,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -1403,7 +1416,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -1462,7 +1475,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -1470,7 +1483,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -1478,7 +1491,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -1531,7 +1544,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -1539,7 +1552,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -1547,7 +1560,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -1668,13 +1681,13 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Daiwa</span>
               </div>
@@ -1682,7 +1695,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -1739,7 +1752,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -1747,7 +1760,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">LureMax</span>
               </div>
@@ -1755,7 +1768,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -1808,7 +1821,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -1816,7 +1829,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -1824,7 +1837,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -1877,7 +1890,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -1885,7 +1898,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -1893,7 +1906,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -1952,7 +1965,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -1960,7 +1973,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -1968,7 +1981,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -2021,7 +2034,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -2029,7 +2042,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -2037,7 +2050,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -2123,13 +2136,13 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Daiwa</span>
               </div>
@@ -2137,7 +2150,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -2194,7 +2207,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -2202,7 +2215,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">LureMax</span>
               </div>
@@ -2210,7 +2223,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -2263,7 +2276,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -2271,7 +2284,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -2279,7 +2292,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -2332,7 +2345,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -2340,7 +2353,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -2348,7 +2361,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -2407,7 +2420,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -2415,7 +2428,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -2423,7 +2436,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -2476,7 +2489,7 @@
                   <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
                   29 отзывов
                 </div>
-                <span class="text-[#6E6E6E]">арт. 234 345</span>
+                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
               </div>
 
               <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
@@ -2484,7 +2497,7 @@
               </h3>
 
 
-              <div class="flex-js-c gap-2 text-[#707070]">
+              <div class="flex-js-c gap-2 text-[#707070] hidden">
                 Производитель
                 <span class="text-[#323232] font-bold">Fisher</span>
               </div>
@@ -2492,7 +2505,7 @@
 
               <div class="flex-js-c gap-1 mt-2">
                 <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кэшбэк</span>
               </div>
 
 
@@ -2925,9 +2938,8 @@
           fishemania777@yandex.ru
         </a>
 
-        <p class="text-[14px] text-white opacity-80">
-          пн-пт, 10:00 - 20:00, прием заказов на сайте круглосуточно
-        </p>
+        <p class="text-[14px] text-white opacity-80 max-w-[170px]">
+Пн-Пт : с 10:00 до 18:00 Сб-Вс : Выходные        </p>
       </div>
 
 

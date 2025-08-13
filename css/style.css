@@ -238,6 +238,10 @@ a {
   height: 0px;
 }
 
+.noUi-handle {
+  box-shadow: inherit !important;
+}
+
 .custom-scrollbar {
   -ms-overflow-style: none;
   /* IE и Edge */
@@ -334,6 +338,11 @@ input:checked + .slider-v3::after {
 }
 .com-body-scroll-bottom-min::-webkit-scrollbar-thumb {
   background: #888;
+}
+
+.scroll-gray::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #929292;
 }
 
 @tailwind base;
