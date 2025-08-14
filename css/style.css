@@ -16,7 +16,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #ffff;
+  background: white;
 }
 
 /* Handle */
@@ -146,10 +146,9 @@ a {
 
 @media (max-width: 768px) {
   .swiper-button-next,
-.swiper-button-prev {
+  .swiper-button-prev {
     display: none;
   }
-
   .swiper-pagination {
     display: block;
   }
@@ -170,7 +169,6 @@ a {
   .popularSwiper .swiper-pagination {
     bottom: 0px;
   }
-
   .popularSwiper .swiper-slide {
     width: 320px;
     margin-left: 20px;
@@ -191,7 +189,6 @@ a {
   .categoriesSwiper .swiper-pagination {
     bottom: 0px;
   }
-
   .categoriesSwiper .swiper-slide {
     width: 320px;
     margin-left: 20px;
@@ -202,12 +199,10 @@ a {
     width: 190px;
     margin-left: 15px;
   }
-
   .swiperPartners .swiper-slide {
     width: 190px;
     margin-left: 15px;
   }
-
   .swiperPartners {
     margin-left: -16px;
     width: calc(100% + 32px);
@@ -216,18 +211,15 @@ a {
   .swiperPartners .swiper-pagination {
     bottom: 0px;
   }
-
   .infoSwiper {
     padding-bottom: 30px;
   }
   .infoSwiper .swiper-pagination {
     bottom: 0px;
   }
-
   .bg-none {
     background: none !important;
   }
-
   #tab-login, #tab-register {
     font-size: 20px !important;
     padding: 12px !important;
@@ -243,10 +235,8 @@ a {
 }
 
 .custom-scrollbar {
-  -ms-overflow-style: none;
-  /* IE и Edge */
-  scrollbar-width: none;
-  /* Firefox */
+  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .bg {
@@ -294,7 +284,7 @@ input:checked + .slider-v3::after {
   left: 50%;
   bottom: 20px;
   transform: translateX(-50%);
-  background: #E8E8E880;
+  background: rgba(232, 232, 232, 0.5019607843);
   height: 20px;
   width: auto;
   border-radius: 20px;
@@ -342,7 +332,7 @@ input:checked + .slider-v3::after {
 
 .scroll-gray::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background: #929292;
+  background: rgb(146, 146, 146);
 }
 
 @tailwind base;
