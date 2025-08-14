@@ -3021,6 +3021,21 @@ select{
   border-top-color: rgba(33,33,33,0.25);
 }
 
+.border-r-\[\#333\]{
+  --tw-border-opacity: 1;
+  border-right-color: rgb(51 51 51 / var(--tw-border-opacity, 1));
+}
+
+.border-r-\[\#b1b1b1\]{
+  --tw-border-opacity: 1;
+  border-right-color: rgb(177 177 177 / var(--tw-border-opacity, 1));
+}
+
+.border-r-\[\#D7DBDF\]{
+  --tw-border-opacity: 1;
+  border-right-color: rgb(215 219 223 / var(--tw-border-opacity, 1));
+}
+
 .\!bg-transparent{
   background-color: transparent !important;
 }
@@ -4032,6 +4047,26 @@ select{
   background-color: rgb(255 255 255 / 0.8);
 }
 
+.hover\:bg-blue:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 159 255 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-\[\#fff\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-\[\#009fff\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 159 255 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-\[\#56baf8\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(86 186 248 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:text-\[\#009FFF\]:hover{
   --tw-text-opacity: 1;
   color: rgb(0 159 255 / var(--tw-text-opacity, 1));
@@ -4040,6 +4075,11 @@ select{
 .hover\:text-\[\#fff\]:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-blue:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 159 255 / var(--tw-text-opacity, 1));
 }
 
 .hover\:opacity-100:hover{
@@ -4100,6 +4140,20 @@ select{
   background-color: rgb(0 159 255 / var(--tw-bg-opacity, 1));
 }
 
+@media (max-width: 1760px){
+  .max-\[1760px\]\:flex-col{
+    flex-direction: column;
+  }
+
+  .max-\[1760px\]\:items-start{
+    align-items: flex-start;
+  }
+
+  .max-\[1760px\]\:gap-1{
+    gap: 0.25rem;
+  }
+}
+
 @media (max-width: 1700px){
   .max-\[1700px\]\:flex-col{
     flex-direction: column;
@@ -4125,6 +4179,10 @@ select{
 
   .max-\[1600px\]\:gap-\[50px\]{
     gap: 50px;
+  }
+
+  .max-\[1600px\]\:text-\[24px\]{
+    font-size: 24px;
   }
 }
 
@@ -4479,6 +4537,10 @@ select{
     margin-top: 30px;
   }
 
+  .max-\[767px\]\:mb-\[-30px\]{
+    margin-bottom: -30px;
+  }
+
   .max-\[767px\]\:block{
     display: block;
   }
@@ -4642,6 +4704,10 @@ select{
 
   .max-\[767px\]\:pl-\[24px\]{
     padding-left: 24px;
+  }
+
+  .max-\[767px\]\:pb-\[30px\]{
+    padding-bottom: 30px;
   }
 
   .max-\[767px\]\:text-left{

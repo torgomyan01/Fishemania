@@ -57,6 +57,36 @@ const swiper = new Swiper(".popularSwiper", {
   },
 });
 
+const swiper4 = new Swiper(".catSwiper", {
+  loop: true,
+  navigation: {
+    nextEl: ".popular-navigation .swiper-button-next",
+    prevEl: ".popular-navigation .swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 'auto',
+      spaceBetween: 0,
+    },
+    768: {
+      spaceBetween: 20,
+      slidesPerView: 2,
+    },
+    1201: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+    },
+    1600: {
+      slidesPerView: 4, // ключевой момент!
+      spaceBetween: 30,
+    },
+  },
+});
+
 const swiper2 = new Swiper(".categoriesSwiper", {
   loop: true,
   navigation: {
