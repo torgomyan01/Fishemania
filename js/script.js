@@ -8,6 +8,18 @@ function $el(target) {
 
 
 
+const components = $('component');
+
+
+components.forEach(component => {
+  const src = component.getAttribute('src');
+
+  fetch(src).then(response => response.text()).then((text) => {
+    component.outerHTML = text;
+  })
+})
+
+
 
 const getDataFor = $('*[data-for]');
 
@@ -393,5 +405,7 @@ closeMobileFilter?.addEventListener('click', function (){
   filterMobileModal.classList.add('hidden')
   document.body.classList.remove('overflow-hidden')
 })
+
+
 
 

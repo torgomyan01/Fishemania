@@ -310,8 +310,12 @@ a {
 
 input:checked + .slider-v3::after {
   left: 20px;
-  background: #009FFF;
+  background: #fff;
   box-shadow: 0 0 0 0 #f2f2f2 inset;
+}
+
+input:checked + .slider-v3 {
+  background: #009FFF;
 }
 
 .bottom-scroll-none::-webkit-scrollbar {
@@ -1311,10 +1315,6 @@ select{
   left: 10px;
 }
 
-.left-\[17\%\]{
-  left: 17%;
-}
-
 .left-\[2\%\]{
   left: 2%;
 }
@@ -1359,10 +1359,6 @@ select{
   right: 40px;
 }
 
-.right-\[70px\]{
-  right: 70px;
-}
-
 .top-0{
   top: 0px;
 }
@@ -1387,10 +1383,6 @@ select{
   top: 1rem;
 }
 
-.top-\[-100px\]{
-  top: -100px;
-}
-
 .top-\[-11px\]{
   top: -11px;
 }
@@ -1413,10 +1405,6 @@ select{
 
 .top-\[112px\]{
   top: 112px;
-}
-
-.top-\[50\%\]{
-  top: 50%;
 }
 
 .top-\[7px\]{
@@ -2058,10 +2046,6 @@ select{
 
 .h-\[28px\]{
   height: 28px;
-}
-
-.h-\[320px\]{
-  height: 320px;
 }
 
 .h-\[32px\]{
