@@ -26,13 +26,13 @@
 
   <ul class="flex-js-c gap-1 mb-10">
     <li>
-      <a href="home.html" class="text-[18px] text-[#6E6E6E] hover:text-blue">Главная</a>
+      <a href="home.html" class="text-[14px] sm:text-[18px] text-[#6E6E6E] hover:text-blue">Главная</a>
     </li>
     <li class="text-[18px] text-[#6E6E6E]">
       •
     </li>
     <li>
-      <a href="catalog.html" class="text-[18px] text-[#6E6E6E] hover:text-blue">Регистрация и вход</a>
+      <a href="catalog.html" class="text-[14px] sm:text-[18px] text-[#6E6E6E] hover:text-blue">Регистрация и вход</a>
     </li>
   </ul>
 
@@ -151,13 +151,22 @@
           <img src="img/icons/arrow-right.svg" alt="" class="transform rotate-180 block md:hidden" width="10">
           <h1 class="text-[24px] sm:text-[32px] font-medium">Сравнение</h1>
         </div>
+        <div class="flex-js-c gap-4 max-[767px]:flex-wrap">
+          <span class="text-[#6E6E6E] max-[767px]:w-full">Показывать</span>
+          <button class="text-[#6E6E6E] px-4 h-10 bg-white border rounded-[30px]">Все характеристики</button>
+          <button class="text-[#6E6E6E] px-4 h-10 bg-white border rounded-[30px]">Только различия</button>
+          <a href="#" class="text-[#6E6E6E] underline flex-js-e max-[767px]:w-full">
+            <img src="img/icons/delete-remove.svg" alt="delete-remove">
+            Очистить
+          </a>
+        </div>
 
         <div class="w-full overflow-x-auto pb-10 com-body-scroll-bottom-min hidden sm:block">
           <table class="mt-10">
             <tbody>
             <tr class="border-b">
               <td class="pb-4 min-w-[250px] w-[300px]">
-                <a href="#" class="text-[#6E6E6E] underline flex-js-e gap-2">
+                <a href="#" class="text-[#6E6E6E] underline flex-js-e gap-2 mt-[160px]">
                   <img src="img/icons/delete-remove.svg" alt="delete-remove">
                   Очистить
                 </a>
@@ -166,14 +175,14 @@
                 <div class="px-[30px] relative">
                   <img src="img/products/product2.png" alt="product" class="w-[80%]">
                   <h4 class="text-[16px] md:text-[18px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h4>
-                  <img src="img/icons/xmark.svg" alt="close" class="absolute right-0 top-0 cursor-pointer">
+                  <img src="img/icons/xmark.svg" alt="close" class="absolute right-0 top-0 cursor-pointer hover:brightness-[0]">
                 </div>
               </td>
               <td class="pb-4 min-w-[250px] w-[300px]">
                 <div class="px-[30px] relative">
                   <img src="img/products/product2.png" alt="product" class="w-[80%]">
                   <h4 class="text-[16px] md:text-[18px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h4>
-                  <img src="img/icons/xmark.svg" alt="close" class="absolute right-0 top-0 cursor-pointer">
+                  <img src="img/icons/xmark.svg" alt="close" class="absolute right-0 top-0 cursor-pointer hover:brightness-[0]">
                 </div>
               </td>
             </tr>
@@ -181,10 +190,10 @@
               <td class="pt-6 border-r">
                 <b class="text-[18px]">Цена</b>
               </td>
-              <td class="border-r pl-6 text-[18px]">
+              <td class="border-r pl-6 text-[18px] pt-6">
                 5 965 руб
               </td>
-              <td class="border-r pl-6 text-[18px]">
+              <td class="border-r pl-6 text-[18px] pt-6">
                 5 965 руб
               </td>
             </tr>
@@ -192,10 +201,10 @@
               <td class="pt-6 border-r">
                 <b class="text-[18px]">Тип удилища</b>
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 Штекерное
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 Штекерное
               </td>
             </tr>
@@ -203,10 +212,10 @@
               <td class="pt-6 border-r">
                 <b class="text-[18px]">Предназначение</b>
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 для спиннинга/ ловля в заброс/ для ловли на джиг/ для микроджига/ для ультралайта
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 для спиннинга/ ловля в заброс/ для ловли на джиг/ для микроджига/ для ультралайта
               </td>
             </tr>
@@ -214,10 +223,10 @@
               <td class="pt-6 border-r">
                 <b class="text-[18px]">Бренд</b>
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 Jaxon
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 Jaxon
               </td>
             </tr>
@@ -225,10 +234,10 @@
               <td class="pt-6 border-r">
                 <b class="text-[18px]">Для вида рыбы</b>
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 на окуня/ на щуку/ на судака/ для хищной рыбы
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 на окуня/ на щуку/ на судака/ для хищной рыбы
               </td>
             </tr>
@@ -236,10 +245,10 @@
               <td class="pt-6 border-r">
                 <b class="text-[18px]">Длина (см)</b>
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 210
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 210
               </td>
             </tr>
@@ -247,10 +256,10 @@
               <td class="pt-6 border-r">
                 <b class="text-[18px]">Назначение</b>
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 для рыбалки
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 для рыбалки
               </td>
             </tr>
@@ -258,10 +267,10 @@
               <td class="pt-6 border-r">
                 <b class="text-[18px]">Модель</b>
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 Blue_Wind
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 Blue_Wind
               </td>
             </tr>
@@ -269,10 +278,10 @@
               <td class="pt-6 border-r">
                 <b class="text-[18px]">Вес (гр)</b>
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 102
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px]">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6">
                 102
               </td>
             </tr>
@@ -280,13 +289,13 @@
               <td class="pt-6 border-r">
 
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px] pt-6">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6 pt-6">
                 <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 w-full transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
                   В корзину
                   <img src="img/icons/basket-white.svg" alt="">
                 </button>
               </td>
-              <td class="border-r px-4 text-[16px] md:text-[18px] pt-6">
+              <td class=" border-r px-4 text-[16px] md:text-[18px] pt-6 pt-6">
                 <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 w-full transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
                   В корзину
                   <img src="img/icons/basket-white.svg" alt="">

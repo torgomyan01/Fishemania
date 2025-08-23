@@ -6,35 +6,44 @@ function $el(target) {
   return document.querySelector(target);
 }
 
+function processComponents() {
+  const components = $('component');
 
+  if (components.length === 0) return; // այլևս component չկա
 
-const components = $('component');
+  components.forEach(component => {
+    const src = component.getAttribute('src');
 
+    fetch(src)
+      .then(response => response.text())
+      .then((text) => {
+        component.outerHTML = text;
+        // երբ HTML-ը դրվեց, նորից ստուգում ենք՝ նոր component կա՞
+        processComponents();
+      });
+  });
+}
 
-components.forEach(component => {
-  const src = component.getAttribute('src');
+function processDataFor() {
+  const getDataFor = $('*[data-for]');
 
-  fetch(src).then(response => response.text()).then((text) => {
-    component.outerHTML = text;
-  })
-})
+  getDataFor.forEach((item) => {
+    const getCount = item.dataset.for;
 
+    let html = '';
+    Array.from({ length: +getCount }).forEach(() => {
+      html += item.outerHTML;
+    });
 
+    item.outerHTML = html;
+  });
 
-const getDataFor = $('*[data-for]');
+  // data-for-ից հետո կարող են նոր component հայտնվել
+  processComponents();
+}
 
-
-getDataFor.forEach((item) => {
-  const getCount = item.dataset.for;
-
-  let html = '';
-
-  Array.from({length: +getCount}).forEach(() => {
-    html += item.outerHTML;
-  })
-
-  item.outerHTML = html;
-})
+// նախ աշխատում է data-for
+processDataFor();
 
 
 

@@ -170,7 +170,7 @@
 
           </div>
 
-          <div class="w-full grid grid-cols-3 gap-3 mb-3 max-[767px]:grid-cols-1">
+          <div class="w-full grid grid-cols-3 gap-3 mb-3 max-[767px]:grid-cols-2">
             <div class="w-full relative rounded-[12px] p-3 bg-[#F4F4F4] overflow-hidden">
               <div>
                 <h4>Кэшбек</h4>
@@ -185,8 +185,7 @@
               </div>
               <img src="img/fish-right-blue.svg" alt="fish-right" class="absolute right-0 bottom-0">
             </div>
-            <a href="#" class="w-full relative rounded-[12px] p-3 bg-[#F4F4F4] overflow-hidden flex-jc-c gap-2
-            max-[767px]:w-full text-blue underline">
+            <a href="#" class="w-full relative rounded-[12px] p-3 bg-[#F4F4F4] overflow-hidden flex-jc-c gap-2 max-[767px]:w-full text-blue underline max-[767px]:col-span-2">
               <img src="img/icons/hystory-blue.svg" alt="hystory-blue">
               История бонусов
             </a>
@@ -196,9 +195,9 @@
             <h3 class="font-bold mb-[-2px]">Уровень карты</h3>
             <p class="text-[14px]">Сохраняйте уровень и пользуйтесь всеми возможностями карты</p>
 
-            <div class="w-full mt-3 flex-jsb-c gap-5 max-[1024px]:block">
+            <div class="w-full mt-3 flex-col md:flex-row flex-js-s md:flex-jsb-c gap-5 pb-4">
 
-              <div class="w-full relative flex-jc-c">
+              <div class="w-full relative flex-jc-c order-2 md:order-1">
                 <div class="w-full h-1 bg-[#D9D9D9] rounded-[5px] relative flex-js-c">
                   <span class="w-[40%] h-full bg-[#CF301B] rounded-[4px]"></span>
                 </div>
@@ -209,7 +208,7 @@
 
               </div>
 
-              <h5 class="text-[14px] max-[1024px]:mt-[20px]">
+              <h5 class="text-[14px] max-[1024px]:mt-[20px] order-1 md:order-2 flex-jsb-c md:block w-full md:w-auto text-right">
                 <span class="font-medium block text-nowrap">До следующего уровня:</span>
                 23 000 рублей
               </h5>
@@ -220,35 +219,52 @@
 
           <h4 class="text-[24px] font-medium mb-[30px]">История бонусов</h4>
 
-          <div class="w-full grid grid-cols-12 max-[767px]:block">
-            <h5 class="text-[#6E6E6E] col-span-5">
-              12 апреля 2025
-            </h5>
-            <div class="text-[#6E6E6E] text-[20px] flex-jc-c gap-1 col-span-2 max-[767px]:justify-end">
-              + 500
-              <img src="img/icons/fish-min-logo.svg" alt="" class="w-5 h-5">
+           <div class="hidden md:block">
+             <div class="w-full grid grid-cols-12 max-[767px]:block">
+               <h5 class="text-[#6E6E6E] col-span-5">
+                 12 апреля 2025
+               </h5>
+               <div class="text-[#6E6E6E] text-[20px] flex-jc-c gap-1 col-span-2 max-[767px]:justify-end">
+                 + 500
+                 <img src="img/icons/fish-min-logo.svg" alt="" class="w-5 h-5">
+               </div>
+               <h5 class="text-[20px] col-span-5 text-right max-[767px]:text-left">Бонус за покупку</h5>
+             </div>
+             <div class="w-full grid grid-cols-12 max-[767px]:block">
+               <h5 class="text-[#6E6E6E] col-span-5">
+                 8 апреля 2025
+               </h5>
+               <div class="text-[#6E6E6E] text-[20px] flex-jc-c gap-1 col-span-2 max-[767px]:justify-end">
+                 + 100
+                 <img src="img/icons/fish-min-logo.svg" alt="" class="w-5 h-5">
+               </div>
+               <h5 class="text-[20px] col-span-5 text-right max-[767px]:text-left">Праздничный бонус</h5>
+             </div>
+             <div class="w-full grid grid-cols-12 max-[767px]:block">
+               <h5 class="text-[#6E6E6E] col-span-5">
+                 3 апреля 2024
+               </h5>
+               <div class="text-[#6E6E6E] text-[20px] flex-jc-c gap-1 col-span-2 max-[767px]:justify-end">
+                 - 1 000
+                 <img src="img/icons/fish-min-logo.svg" alt="" class="w-5 h-5">
+               </div>
+               <h5 class="text-[20px] col-span-5 text-right max-[767px]:text-left">Списание за покупку</h5>
+             </div>
+           </div>
+
+          <div class="block md:hidden">
+            <div class="w-full flex-jsb-c mb-4" data-for="4">
+              <div>
+                <h5 class="text-[20px] col-span-5 text-right max-[767px]:text-left">Бонус за покупку</h5>
+                <h5 class="text-[#6E6E6E] col-span-5">
+                  12 апреля 2025
+                </h5>
+              </div>
+              <div class="text-[#6E6E6E] text-[20px] flex-jc-c gap-1 col-span-2 max-[767px]:justify-end">
+                + 500
+                <img src="img/icons/fish-min-logo.svg" alt="" class="w-5 h-5">
+              </div>
             </div>
-            <h5 class="text-[20px] col-span-5 text-right max-[767px]:text-left">Бонус за покупку</h5>
-          </div>
-          <div class="w-full grid grid-cols-12 max-[767px]:block">
-            <h5 class="text-[#6E6E6E] col-span-5">
-              8 апреля 2025
-            </h5>
-            <div class="text-[#6E6E6E] text-[20px] flex-jc-c gap-1 col-span-2 max-[767px]:justify-end">
-              + 100
-              <img src="img/icons/fish-min-logo.svg" alt="" class="w-5 h-5">
-            </div>
-            <h5 class="text-[20px] col-span-5 text-right max-[767px]:text-left">Праздничный бонус</h5>
-          </div>
-          <div class="w-full grid grid-cols-12 max-[767px]:block">
-            <h5 class="text-[#6E6E6E] col-span-5">
-              3 апреля 2024
-            </h5>
-            <div class="text-[#6E6E6E] text-[20px] flex-jc-c gap-1 col-span-2 max-[767px]:justify-end">
-              - 1 000
-              <img src="img/icons/fish-min-logo.svg" alt="" class="w-5 h-5">
-            </div>
-            <h5 class="text-[20px] col-span-5 text-right max-[767px]:text-left">Списание за покупку</h5>
           </div>
 
 

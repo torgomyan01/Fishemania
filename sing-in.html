@@ -26,15 +26,15 @@
 <div class="container mt-4">
 
 
-  <ul class="flex-js-c gap-1 mb-7 mt-[80px] sm:mt-0">
+  <ul class="flex-js-c gap-1 mb-7 mt-[60px] sm:mt-0">
     <li>
-      <a href="home.html" class="text-[18px] text-[#6E6E6E] hover:text-blue">Главная</a>
+      <a href="home.html" class="text-[14px] sm:text-[18px] text-[#6E6E6E] hover:text-blue">Главная</a>
     </li>
     <li class="text-[18px] text-[#6E6E6E]">
       •
     </li>
     <li>
-      <a href="catalog.html" class="text-[18px] text-[#6E6E6E] hover:text-blue">Регистрация и вход</a>
+      <a href="catalog.html" class="text-[14px] sm:text-[18px] text-[#6E6E6E] hover:text-blue">Регистрация и вход</a>
     </li>
   </ul>
 
@@ -68,7 +68,7 @@
         <input type="password" placeholder="Пароль" class="h-[54px] w-full mb-4 p-2 border rounded"
                style="border-color: #D9D9D9;"/>
         <a href="#" class="text-[#009FFF] self-start mb-[20px] border-b border-[#009FFF] leading-none">Забыли пароль</a>
-        <button class="w-full max-w-[210px] font-bold text-white py-4 rounded" style="background-color: #CF301B;">
+        <button class="w-full max-w-[210px] font-bold text-white py-4 rounded bg-[#CF301B] hover:bg-[#CF301B]/90 transition">
           Войти
         </button>
       </div>
@@ -92,17 +92,16 @@
             <img src="img/kod-img.png" alt="" class="max-w-[100%] max-h-[100%] mr-[10px] max-[767px]:w-[70%]">
             <img src="img/kod-icon.svg" alt="" class="max-w-[100%] min-w-[24px] max-h-[100%]">
           </div>
-          <div class="border rounded-[8px] py-[15px] px-[20px]  border-[rgba(110,110,110,0.25)]">
-            <span class="text-[#6E6E6E] text-[16px]">Код капчи</span>
-          </div>
+          <input class="border rounded-[8px] py-[15px] px-[20px]  border-[rgba(110,110,110,0.25)]" placeholder="Код капчи" />
         </div>
         <div class="flex items-center max-[767px]:flex-col max-[767px]:items-start">
-          <button class="w-full text-white py-3 rounded" style="background-color: #CF301B;">Регистрация</button>
-          <div class="check-wrap text-[14px] text-[#6E6E6E]  ml-[16px] leading-none
-            max-[767px]:ml-[0] max-[767px]:mt-[12px]">
+          <button class="w-full text-white py-3 rounded bg-[#CF301B] hover:bg-[#CF301B]/90 transition">Регистрация</button>
+
+          <label class="def-checkbox flex-js-s mb-2 text-[14px] mt-4 ml-2">
             <input type="checkbox">
-            Принимаю правила обработки персональных данных и пользовательское соглашение
-          </div>
+            <span class="mr-2 mt-1"></span>
+            <p>Принимаю правила обработки персональных данных и <a href="#" class="underline">пользовательское соглашение</a></p>
+          </label>
         </div>
 
       </div>

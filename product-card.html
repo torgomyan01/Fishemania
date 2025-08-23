@@ -42,7 +42,7 @@
 
 
   <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 2xl:gap-10 mt-6">
-    <div class="w-full flex-js-s xl:flex-jsb-c gap-4 xl:mt-[-150px] flex-col xl:flex-row">
+    <div class="w-full flex-js-s xl:flex-jsb-c gap-4 xl:mt-[-150px] flex-col xl:flex-row z-[-1]">
       <div class="w-[183px] min-w-[183px] hidden xl:block">
 
         <div class="flex-jc-c mb-[-25px]">
@@ -100,6 +100,7 @@
 
       <div class="block xl:hidden">
         <h1 class="text-[32px] font-medium mb-1 tracking-[-0.64px] leading-[32px] max-[1600px]:text-[24px]">Воблер для рыбалки глубоководный Jaxon Diver DR 12 см 28 гр #U</h1>
+      <div class="flex-jsb-e">
 
         <div class="flex-js-c">
           <span class="text-[13px] text-[#707070] mr-5">Артикул 154 245 245</span>
@@ -115,16 +116,15 @@
         </div>
 
 
-        <div class="flex-js-c gap-6 mt-4">
+        <div class="flex-js-c gap-3">
           <div class="flex-js-c gap-2">
-            <img src="img/icons/rating-blue.svg" alt="">
-            К сравнению
+            <img src="img/icons/rating-blue.svg" alt="" width="26">
           </div>
           <div class="flex-js-c gap-2">
-            <img src="img/icons/heard-blue.svg" alt="">
-            В избранное
+            <img src="img/icons/heard-blue.svg" alt="" width="26">
           </div>
         </div>
+      </div>
 
       </div>
 
@@ -367,7 +367,7 @@
               <img src="img/arbuz-esh.png" alt="arbuz-esh" class="w-[42px]">
               <div>
                 <h4 class="text-[14px]"><b>2 х 2500</b> в сплит</h4>
-                <h5 class="text-[14px] text-[#707070]">на 2 месяца без переплаты</h5>
+                <h5 class="text-[14px] text-[#707070]">на 2 Месяцев без переплаты</h5>
               </div>
             </div>
             <div class="flex-je-c gap-2 text-[14px] text-[#323232]">
@@ -376,7 +376,7 @@
             </div>
           </div>
 
-          <div class="w-full h-[36px] px-4 flex-jsb-c bg-[#B1EDD5] rounded-[30px] mt-3 text-[#0C6C38] text-[14px]">
+          <div class="w-full h-[36px] px-4 flex-jsb-c bg-[#B1EDD5] rounded-[30px] mt-3 text-[#0C6C38] max-[360px]:text-[12px] text-[14px]">
             Или на другой срок — до 6 месяцев
             <img src="img/icons/arrow-right-green.svg" alt="arrow-right-green">
           </div>
@@ -389,7 +389,7 @@
 
             <div class="flex-js-c gap-1 mt-2">
               <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo" class="w-[24px]">
-              <span class="text-[16px] text-[#CF301B] font-bold">+555 Кешбэк</span>
+              <span class="text-[16px] text-[#CF301B] font-bold text-nowrap">+555 Кешбэк</span>
             </div>
           </div>
 
@@ -472,30 +472,26 @@
     <div class="w-full mx-auto mt-[30px] mb-[30px]">
       <div class="flex gap-2 max-[767px]:overflow-x-auto overflow-x-auto custom-scrollbar">
         <button
-            class="whitespace-nowrap tab-btn rounded-full px-5 py-2 text-sm transition-all"
+            class="whitespace-nowrap tab-btn rounded-full px-5 py-2 text-sm transition-all bg-[#009FFF] text-[#fff]"
             data-tab="tab1"
-            style="background-color: #009FFF; color: #fff"
         >
           Описание
         </button>
         <button
-            class="whitespace-nowrap tab-btn rounded-full px-5 py-2 text-sm transition-all"
+            class="whitespace-nowrap tab-btn rounded-full px-5 py-2 text-sm transition-all bg-[#F2F2F2] hover:bg-[#aaaaa9b3]/50 text-[#000]"
             data-tab="tab2"
-            style="background-color: #F2F2F2; color: #000"
         >
           Характеристики
         </button>
         <button
-            class="whitespace-nowrap tab-btn rounded-full px-5 py-2 text-sm transition-all"
+            class="whitespace-nowrap tab-btn rounded-full px-5 py-2 text-sm transition-all bg-[#F2F2F2] hover:bg-[#aaaaa9b3]/70 text-[#000]"
             data-tab="tab3"
-            style="background-color: #F2F2F2; color: #000"
         >
           О бренде
         </button>
         <button
-            class="whitespace-nowrap tab-btn rounded-full px-5 py-2 text-sm transition-all"
+            class="whitespace-nowrap tab-btn rounded-full px-5 py-2 text-sm transition-all bg-[#F2F2F2] hover:bg-[#aaaaa9b3]/50 text-[#000]"
             data-tab="tab4"
-            style="background-color: #F2F2F2; color: #000"
         >
           Отзывы
         </button>
@@ -772,436 +768,9 @@
 
     <div class="swiper swiperHeroProduct">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="w-full">
-            <div class="w-full h-[427px] border rounded-[16px] relative">
-              <div class="absolute top-2 right-2 flex-je-c gap-2 z-10">
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
-                  <img src="img/icons/heard-gray.svg" alt="heard-gray">
-                </div>
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
-                  <img src="img/icons/rating-gray.svg" alt="rating-gray">
-                </div>
-              </div>
-
-              <div class="swiper swiperProductItems h-full relative">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product6.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product6.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product6.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                </div>
-                <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
-              </div>
-
-
-            </div>
-            <div class="w-full p-4">
-              <div class="flex-jsb-c">
-                <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
-                  <img src="img/icons/star-yellow.svg" alt="star-yellow">
-                  4.2
-                  <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
-                  29 отзывов
-                </div>
-                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
-              </div>
-
-              <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">Спиннинг Daiwa
-                Ninja X SF 245 см тест 15-50 гр</h3>
-
-
-              <div class="flex-js-c gap-2 text-[#707070] hidden">
-                Производитель
-                <span class="text-[#323232] font-bold">Daiwa</span>
-              </div>
-
-
-              <div class="flex-js-c gap-1 mt-2">
-                <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбэк</span>
-              </div>
-
-
-              <div class="flex-jsb-c mt-2">
-                <h4 class="text-[24px] font-semibold">3 200 ₽</h4>
-                <button
-                    class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-                  В корзину
-                  <img src="img/icons/basket-white.svg" alt="">
-                </button>
-              </div>
-
-
-            </div>
-          </div>
+        <div class="swiper-slide" data-for="5">
+          <component src="./components/product-card.html"></component>
         </div>
-        <div class="swiper-slide">
-          <div class="w-full">
-            <div class="w-full h-[427px] border rounded-[16px] relative">
-              <div class="absolute top-2 right-2 flex-je-c gap-2 z-10">
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
-                  <img src="img/icons/heard-gray.svg" alt="heard-gray">
-                </div>
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
-                  <img src="img/icons/rating-gray.svg" alt="rating-gray">
-                </div>
-              </div>
-
-              <div class="bg-[#FB2FBE] px-[6px] py-[4px] absolute top-2 left-2 text-[14px] text-white rounded-[8px]">
-                Рассрочка 0-0-24
-              </div>
-
-              <div class="swiper swiperProductItems h-full relative">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product7.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product7.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product7.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                </div>
-                <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
-              </div>
-
-
-            </div>
-            <div class="w-full p-4">
-              <div class="flex-jsb-c">
-                <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
-                  <img src="img/icons/star-yellow.svg" alt="star-yellow">
-                  4.2
-                  <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
-                  29 отзывов
-                </div>
-                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
-              </div>
-
-              <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
-                Воблер для рыбалки глубоководный Jaxon Diver DR 12 см 28 гр #U
-              </h3>
-
-
-              <div class="flex-js-c gap-2 text-[#707070] hidden">
-                Производитель
-                <span class="text-[#323232] font-bold">LureMax</span>
-              </div>
-
-
-              <div class="flex-js-c gap-1 mt-2">
-                <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбэк</span>
-              </div>
-
-
-              <div class="flex-jsb-c mt-2">
-                <h4 class="text-[24px] font-semibold">5 045 ₽</h4>
-                <button
-                    class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-                  В корзину
-                  <img src="img/icons/basket-white.svg" alt="">
-                </button>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="w-full">
-            <div class="w-full h-[427px] border rounded-[16px] relative">
-              <div class="absolute top-2 right-2 flex-je-c gap-2 z-10">
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
-                  <img src="img/icons/heard-gray.svg" alt="heard-gray">
-                </div>
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
-                  <img src="img/icons/rating-gray.svg" alt="rating-gray">
-                </div>
-              </div>
-
-              <div class="swiper swiperProductItems h-full relative">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product8.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product8.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product8.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                </div>
-                <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
-              </div>
-
-
-            </div>
-            <div class="w-full p-4">
-              <div class="flex-jsb-c">
-                <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
-                  <img src="img/icons/star-yellow.svg" alt="star-yellow">
-                  4.2
-                  <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
-                  29 отзывов
-                </div>
-                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
-              </div>
-
-              <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
-                Костюм флисовый мужской Alaskan Kenai для рыбалки, охоты, туризма черный
-              </h3>
-
-
-              <div class="flex-js-c gap-2 text-[#707070] hidden">
-                Производитель
-                <span class="text-[#323232] font-bold">Fisher</span>
-              </div>
-
-
-              <div class="flex-js-c gap-1 mt-2">
-                <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбэк</span>
-              </div>
-
-
-              <div class="flex-jsb-c mt-2">
-                <h4 class="text-[24px] font-semibold">320 ₽</h4>
-                <button
-                    class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-                  В корзину
-                  <img src="img/icons/basket-white.svg" alt="">
-                </button>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="w-full">
-            <div class="w-full h-[427px] border rounded-[16px] relative">
-              <div class="absolute top-2 right-2 flex-je-c gap-2 z-10">
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
-                  <img src="img/icons/heard-gray.svg" alt="heard-gray">
-                </div>
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
-                  <img src="img/icons/rating-gray.svg" alt="rating-gray">
-                </div>
-              </div>
-
-              <div class="swiper swiperProductItems h-full relative">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product9.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product9.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product9.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                </div>
-                <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
-              </div>
-
-
-            </div>
-            <div class="w-full p-4">
-              <div class="flex-jsb-c">
-                <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
-                  <img src="img/icons/star-yellow.svg" alt="star-yellow">
-                  4.2
-                  <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
-                  29 отзывов
-                </div>
-                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
-              </div>
-
-              <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
-                Блесна колебалка ультралайт Luremax Iva 34мм 3.8 гр
-              </h3>
-
-
-              <div class="flex-js-c gap-2 text-[#707070] hidden">
-                Производитель
-                <span class="text-[#323232] font-bold">Fisher</span>
-              </div>
-
-
-              <div class="flex-js-c gap-1 mt-2">
-                <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбэк</span>
-              </div>
-
-
-              <div class="flex-jsb-c mt-2">
-                <div>
-                  <div class="flex-jsb-c">
-                    <span class="line-through">7 450 ₽</span>
-                    <span class="px-1 bg-[#16B34B] text-white rounded-[4px] ml-3 text-[13px]">-36%</span>
-                  </div>
-                  <h4 class="text-[24px] font-semibold text-[#CF301B]">5 200 ₽</h4>
-                </div>
-                <button
-                    class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-                  В корзину
-                  <img src="img/icons/basket-white.svg" alt="">
-                </button>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="w-full">
-            <div class="w-full h-[427px] border rounded-[16px] relative">
-              <div class="absolute top-2 right-2 flex-je-c gap-2 z-10">
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
-                  <img src="img/icons/heard-gray.svg" alt="heard-gray">
-                </div>
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
-                  <img src="img/icons/rating-gray.svg" alt="rating-gray">
-                </div>
-              </div>
-
-              <div class="swiper swiperProductItems h-full relative">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product10.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product10.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product10.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                </div>
-                <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
-              </div>
-
-
-            </div>
-            <div class="w-full p-4">
-              <div class="flex-jsb-c">
-                <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
-                  <img src="img/icons/star-yellow.svg" alt="star-yellow">
-                  4.2
-                  <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
-                  29 отзывов
-                </div>
-                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
-              </div>
-
-              <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
-                Костюм зимний Alaskan Russian Mission Old School
-              </h3>
-
-
-              <div class="flex-js-c gap-2 text-[#707070] hidden">
-                Производитель
-                <span class="text-[#323232] font-bold">Fisher</span>
-              </div>
-
-
-              <div class="flex-js-c gap-1 mt-2">
-                <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбэк</span>
-              </div>
-
-
-              <div class="flex-jsb-c mt-2">
-                <h4 class="text-[24px] font-semibold">320 ₽</h4>
-                <button
-                    class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-                  В корзину
-                  <img src="img/icons/basket-white.svg" alt="">
-                </button>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="w-full">
-            <div class="w-full h-[427px] border rounded-[16px] relative">
-              <div class="absolute top-2 right-2 flex-je-c gap-2 z-10">
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
-                  <img src="img/icons/heard-gray.svg" alt="heard-gray">
-                </div>
-                <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
-                  <img src="img/icons/rating-gray.svg" alt="rating-gray">
-                </div>
-              </div>
-
-              <div class="swiper swiperProductItems h-full relative">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product5.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product5.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product5.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                </div>
-                <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
-              </div>
-
-
-            </div>
-            <div class="w-full p-4">
-              <div class="flex-jsb-c">
-                <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
-                  <img src="img/icons/star-yellow.svg" alt="star-yellow">
-                  4.2
-                  <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
-                  29 отзывов
-                </div>
-                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
-              </div>
-
-              <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
-                Блесна колебалка ультралайт Luremax Iva 34мм 3.8 гр
-              </h3>
-
-
-              <div class="flex-js-c gap-2 text-[#707070] hidden">
-                Производитель
-                <span class="text-[#323232] font-bold">Fisher</span>
-              </div>
-
-
-              <div class="flex-js-c gap-1 mt-2">
-                <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбэк</span>
-              </div>
-
-
-              <div class="flex-jsb-c mt-2">
-                <h4 class="text-[24px] font-semibold">345 ₽</h4>
-                <button
-                    class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-                  В корзину
-                  <img src="img/icons/basket-white.svg" alt="">
-                </button>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
 

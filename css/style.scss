@@ -405,6 +405,21 @@ input:checked + .slider-v3 {
   }
 }
 
+.custom-scroll::-webkit-scrollbar {
+  width: 2px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #949596;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.custom-scroll:hover::-webkit-scrollbar-thumb {
+  background-color: #718096;
+}
+
 
 @tailwind base;
 @tailwind components;

@@ -108,85 +108,7 @@
     <div class="swiper swiperHeroProduct">
       <div class="swiper-wrapper">
         <div data-for="5" class="swiper-slide">
-          <div class="w-full">
-            <div class="w-full h-[427px] border rounded-[16px] relative">
-
-              <div class="absolute left-[10px] top-[10px] w-[calc(100%-16px)] flex-jsb-s gap-2 z-10">
-                <div class="flex max-[1700px]:flex-col gap-2 max-[1700px]:items-start">
-                  <div class="py-[4px] px-[10px] bg-[#FB2FBE] rounded-[8px] text-[13px] font-bold
-                 text-[white] mr-[8px]">Рассрочка 0-0-24
-                  </div>
-                  <div class="py-[4px] px-[10px] bg-[#16B34B] rounded-[8px] text-[13px] font-bold
-                  text-[white] ">-36%
-                  </div>
-                </div>
-                <div class=" flex-je-c gap-2">
-                  <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
-                    <img src="img/icons/heard-gray.svg" alt="heard-gray">
-                  </div>
-                  <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
-                    <img src="img/icons/rating-gray.svg" alt="rating-gray">
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="swiper swiperProductItems h-full relative">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                  <div class="swiper-slide px-6 flex-jc-c">
-                    <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-                  </div>
-                </div>
-                <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
-              </div>
-
-
-            </div>
-            <div class="w-full p-4">
-              <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
-                Воблер для рыбалки глубоководный Jaxon Diver DR 12 см 28 гр #U
-              </h3>
-              <div class="flex-jsb-c">
-                <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
-                  <img src="img/icons/star-yellow.svg" alt="star-yellow">
-                  4.2
-                  <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
-                  29 отзывов
-                </div>
-                <span class="text-[#6E6E6E] hidden">арт. 234 345</span>
-              </div>
-
-
-              <div class="flex-js-c gap-2 text-[#707070] hidden">
-                Производитель
-                <span class="text-[#323232] font-bold">Daiwa</span>
-              </div>
-
-
-              <div class="flex-js-c gap-1 mt-2">
-                <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-                <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбэк</span>
-              </div>
-
-
-              <div class="flex-jsb-c mt-2">
-                <h4 class="text-[24px] font-semibold">3 200 ₽</h4>
-                <button
-                    class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-                  В корзину
-                  <img src="img/icons/basket-white.svg" alt="">
-                </button>
-              </div>
-
-
-            </div>
-          </div>
+          <component src="./components/product-card.html"></component>
         </div>
 
       </div>
@@ -211,7 +133,7 @@
           <a href="#" class="w-full group h-[378px] max-[767px]:h-[290px] rounded-[8px] overflow-hidden relative">
             <img src="img/popular-img1.png" alt=""
                  class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
-            <div class="absolute top-0 left-0 w-full h-full bg-black/50 flex-jc-c rounded-[8px]">
+            <div class="absolute top-0 left-0 w-full h-full bg-black/50 group-hover:bg-black/80 transition flex-jc-c rounded-[8px]">
               <span class="absolute text-white text-[40px] max-[767px]:text-[24px] z-10 font-lena ">Ультралайт</span>
             </div>
           </a>
@@ -220,7 +142,7 @@
           <a href="#" class="w-full group h-[378px] max-[767px]:h-[290px] rounded-[8px] overflow-hidden relative">
             <img src="img/popular-img2.png" alt=""
                  class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
-            <div class="absolute top-0 left-0 w-full h-full bg-black/50 flex-jc-c rounded-[8px]">
+            <div class="absolute top-0 left-0 w-full h-full bg-black/50 group-hover:bg-black/80 transition flex-jc-c rounded-[8px]">
               <span class="absolute text-white text-[40px] max-[767px]:text-[24px] z-10 font-lena">На джиг</span>
             </div>
           </a>
@@ -229,7 +151,7 @@
           <a href="#" class="w-full group h-[378px] max-[767px]:h-[290px] rounded-[8px] overflow-hidden relative">
             <img src="img/popular-img3.png" alt=""
                  class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
-            <div class="absolute top-0 left-0 w-full h-full bg-black/50 flex-jc-c rounded-[8px]">
+            <div class="absolute top-0 left-0 w-full h-full bg-black/50 group-hover:bg-black/80 transition flex-jc-c rounded-[8px]">
               <span class="absolute text-white text-[40px] max-[767px]:text-[24px] z-10 font-lena">Троллинг</span>
             </div>
           </a>
@@ -238,7 +160,7 @@
           <a href="#" class="w-full group h-[378px] max-[767px]:h-[290px] rounded-[8px] overflow-hidden relative">
             <img src="img/popular-img4.png" alt=""
                  class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
-            <div class="absolute top-0 left-0 w-full h-full bg-black/50 flex-jc-c rounded-[8px]">
+            <div class="absolute top-0 left-0 w-full h-full bg-black/50 group-hover:bg-black/80 transition flex-jc-c rounded-[8px]">
               <span class="absolute text-white text-[40px] max-[767px]:text-[24px] z-10 font-lena">На поплавок</span>
             </div>
           </a>
@@ -247,7 +169,7 @@
           <a href="#" class="w-full group h-[378px] max-[767px]:h-[290px] rounded-[8px] overflow-hidden relative">
             <img src="img/popular-img5.png" alt=""
                  class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
-            <div class="absolute top-0 left-0 w-full h-full bg-black/50 flex-jc-c rounded-[8px]">
+            <div class="absolute top-0 left-0 w-full h-full bg-black/50 group-hover:bg-black/80 transition flex-jc-c rounded-[8px]">
               <span class="absolute text-white text-[40px] max-[767px]:text-[24px] z-10 font-lena">Фидер</span>
             </div>
           </a>
@@ -256,7 +178,7 @@
           <a href="#" class="w-full group h-[378px] max-[767px]:h-[290px] rounded-[8px] overflow-hidden relative">
             <img src="img/popular-img1.png" alt=""
                  class="w-full transition transform group-hover:scale-[1.05] h-full object-cover">
-            <div class="absolute top-0 left-0 w-full h-full bg-black/50 flex-jc-c rounded-[8px]">
+            <div class="absolute top-0 left-0 w-full h-full bg-black/50 group-hover:bg-black/80 transition flex-jc-c rounded-[8px]">
               <span class="absolute text-white text-[40px] max-[767px]:text-[24px] z-10 font-lena">Фидер</span>
             </div>
           </a>
@@ -1078,42 +1000,42 @@
     <div class="swiper swiperPartners">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="w-full h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
+          <div class="w-full h-[103px] sm:h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
             <img src="img/partners/brand-1.png" alt="brand-1" class="max-w-[100%] max-h-[100%]">
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="w-full h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
+          <div class="w-full h-[103px] sm:h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
             <img src="img/partners/partner-2.png" alt="brand-1" class="max-w-[100%] max-h-[100%]">
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="w-full h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
+          <div class="w-full h-[103px] sm:h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
             <img src="img/partners/partner-3.png" alt="brand-1" class="max-w-[100%] max-h-[100%]">
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="w-full h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
+          <div class="w-full h-[103px] sm:h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
             <img src="img/partners/partnet-4.png" alt="brand-1" class="max-w-[100%] max-h-[100%]">
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="w-full h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
+          <div class="w-full h-[103px] sm:h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
             <img src="img/partners/partner-5.png" alt="brand-1" class="max-w-[100%] max-h-[100%]">
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="w-full h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
+          <div class="w-full h-[103px] sm:h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
             <img src="img/partners/partner-6.png" alt="brand-1" class="max-w-[100%] max-h-[100%]">
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="w-full h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
+          <div class="w-full h-[103px] sm:h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
             <img src="img/partners/partner-7.png" alt="brand-1" class="max-w-[100%] max-h-[100%]">
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="w-full h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
+          <div class="w-full h-[103px] sm:h-[150px] px-4 border rounded-[8px] flex-jc-c transition hover:border-black">
             <img src="img/partners/partner-7.png" alt="brand-1" class="max-w-[100%] max-h-[100%]">
           </div>
         </div>
@@ -1144,7 +1066,7 @@
 
     <div class="flex-js-c gap-4 mb-6">
       <button class="px-6 h-[52px] bg-blue text-white text-[18px] rounded-[30px]">Новости</button>
-      <button class="px-6 h-[52px] bg-[#F0F0F0] text-black text-[18px] rounded-[30px]">Статьи</button>
+      <button class="px-6 h-[52px] bg-[#F0F0F0] hover:bg-[#aaaaa9b3]/70 text-black text-[18px] rounded-[30px] transition">Статьи</button>
     </div>
 
     <div class="swiper swiperNews">

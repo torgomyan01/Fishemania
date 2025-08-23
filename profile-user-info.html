@@ -20,17 +20,17 @@
 <component src="./components/navbar.html"></component>
 
 
-<div class="container w-full mt-6">
+<div class="container w-full mt-4">
 
   <ul class="flex-js-c gap-1 mb-10">
     <li>
-      <a href="home.html" class="text-[18px] text-[#6E6E6E] hover:text-blue">Главная</a>
+      <a href="home.html" class="text-[14px] sm:text-[18px] text-[#6E6E6E] hover:text-blue">Главная</a>
     </li>
     <li class="text-[18px] text-[#6E6E6E]">
       •
     </li>
     <li>
-      <a href="catalog.html" class="text-[18px] text-[#6E6E6E] hover:text-blue">Главная • Регистрация и вход</a>
+      <a href="catalog.html" class="text-[14px] sm:text-[18px] text-[#6E6E6E] hover:text-blue">Личный кабинет</a>
     </li>
   </ul>
 
@@ -151,9 +151,11 @@
 
       <form action="#" class="col-span-9 max-[767px]:col-span-12">
 
-        <h1 class="text-[32px] font-medium mb-[30px]">Мои данные</h1>
-
-        <h4 class="text-[24px] font-medium mb-[30px]">Личная информация</h4>
+        <div class="flex-js-c pb-5 max-[576px]:border-b gap-4">
+          <img src="img/icons/arrow-right.svg" alt="" class="transform rotate-180 opacity-80 max-[576px]:block hidden" width="10">
+          <h1 class="text-[32px] font-medium">Мои данные</h1>
+        </div>
+        <h4 class="text-[24px] font-medium mb-4 mt-5">Личная информация</h4>
 
         <div class="w-full lg:max-w-[670px] mb-[45px] max-[767px]:max-w-[100%]">
           <div class="w-full grid grid-cols-2  gap-x-[30px] gap-y-4 max-[767px]:grid-cols-1">
@@ -212,7 +214,7 @@
             </label>
             <label class="w-full max-[767px]:mb-[12px] max-[767px]:block col-span-2">
               <span class="block text-[#323232] mb-1">Улица</span>
-              <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Улица">
+              <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Введите улицу">
             </label>
 
             <label class="w-full max-[767px]:mb-[12px] max-[767px]:block">
@@ -237,11 +239,11 @@
             </label>
             <label class="w-full max-[767px]:mb-[12px] max-[767px]:block">
               <span class="block text-[#323232] mb-1">Новый пароль</span>
-              <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Индекс*">
+              <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="*********">
             </label>
             <label class="w-full max-[767px]:mb-[12px] max-[767px]:block">
               <span class="block text-[#323232] mb-1">Новый пароль повторно</span>
-              <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Индекс*">
+              <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="*********">
             </label>
           </div>
         </div>
