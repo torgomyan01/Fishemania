@@ -90,8 +90,8 @@ const swiper4 = new Swiper(".catSwiper", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 'auto',
-      spaceBetween: 0,
+      spaceBetween: 10,
+      slidesPerView: 2,
     },
     768: {
       spaceBetween: 20,
@@ -351,7 +351,7 @@ const rangeDay = $('.range-day');
 
 rangeDay.forEach((item) => {
   noUiSlider.create(item, {
-    start: [25, 800],
+    start: [0, 800],
     connect: true,
     step: 15,
     range: {

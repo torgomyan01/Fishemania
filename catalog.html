@@ -53,7 +53,7 @@
 
   <div class="w-full flex-jsb-s gap-6">
     <div
-        class="w-full md:w-[320px] md:min-w-[320px] fixed md:relative top-0 left-0 bg-white z-10 hidden md:block h-[100dvh] md:h-auto overflow-y-auto"
+        class="w-full md:w-[320px] md:min-w-[320px] fixed md:relative top-0 left-0 bg-white z-11 hidden md:block h-[100dvh] md:h-auto overflow-y-auto"
         id="filter-mobile-modal">
 
       <div class="pb-10 md:pb-0">
@@ -67,7 +67,6 @@
 
           <div class="flex-js-s gap-2 text-[#6E6E6E] flex-col px-4 mb-4">
             Сортировать
-
             <select class="bg-[#F4F4F4] border-none text-[#212121]">
               <option value="Хиты продаж" selected="">Хиты продаж</option>
               <option value="Хиты продаж">Хиты продаж 1</option>
@@ -146,7 +145,7 @@
 
         <h3 class="font-semibold mt-5 mb-1">Цена, рублей</h3>
 
-        <div class="border-b hidden lg:block mt-2">
+        <div class="border-b lg:block mt-2">
           <div class="w-full flex-jsb-c gap-2">
             <div class="fle-js-c gap-2 text-[#6E6E6E] w-[48%]">
               от
@@ -548,7 +547,15 @@
         </div>
 
         <a href="#" class="block text-blue underline mt-4">Посмотреть все</a>
-
+        <div class="hidden max-[767px]:grid grid-cols-2 gap-[16px] border-t border-[rgba(110,110,110,0.25)] pt-[24px] mt-[24px]">
+          <a href="#" class="rounded-[8px] border-2 border-[#009FFF] py-[16px] px-[44px] text-[#212121] text-center">
+            Применить
+          </a>
+          <a href="#" class="rounded-[8px] py-[16px] px-[44px] text-[#212121] text-center flex items-center">
+            <img src="img/close.svg" alt="" class="mr-[10px]">
+            Сбросить
+          </a>
+        </div>
       </div>
     </div>
 
@@ -650,9 +657,10 @@
 
         <div class="mt-6">
           <div
-              class="w-full grid grid-cols-1 sm:grid-cols-1 min-[1000px]:grid-cols-1 min-[1100px]:grid-cols-1 min-[1200px]:grid-cols-2 min-[1600px]:grid-cols-4 min-[1500px]:grid-cols-3 gap-6">
+              class="w-full grid grid-cols-1 sm:grid-cols-1 min-[1000px]:grid-cols-1 min-[1100px]:grid-cols-1 
+              min-[1200px]:grid-cols-2 min-[1600px]:grid-cols-4 min-[1500px]:grid-cols-3 gap-6">
             <div data-for="12" class="w-full">
-              <div class="w-full h-[427px] border rounded-[16px] relative">
+              <div class="w-full h-[427px] border rounded-[16px] relative z-[-1]">
                 <div class="absolute top-2 right-2 flex-je-c gap-2 z-10">
                   <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer hover:bg-[#56baf8] transition">
                     <img src="img/icons/heard-gray.svg" alt="heard-gray">
@@ -662,7 +670,7 @@
                   </div>
                 </div>
 
-                <div class="swiper swiperProductItems h-full relative">
+                <div class="swiper swiperProductItems h-full">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide px-6 flex-jc-c">
                       <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
@@ -742,8 +750,8 @@
   </div>
 
 
-  <div class="container mt-[60px]">
-    <h1 class="text-[32px] mb-6">Заголовок СЕО-текста</h1>
+  <div class="container mt-[60px] max-[767px]:mt-[40px] max-[767px]:p-[0]">
+    <h1 class="text-[32px] mb-6 max-[767px]:text-[24px] max-[767px]:mb-[20px]">Заголовок СЕО-текста</h1>
     <div class="w-fill grid grid-cols-2 gap-16 max-[1024px]:block">
       <div>
         Традиционно считается, что переднефрикционные катушки применяются в основном в спиннинговой ловле,
