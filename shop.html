@@ -19,164 +19,34 @@
 </head>
 <body>
 
+<component src="./components/navbar.html"></component>
 
-<div class="w-full h-[50px] bg-[#323232]">
-  <div class="container h-full">
-    <div class="w-full h-full flex items-center justify-between">
-      <div class="text-white flex-js-c gap-2 cursor-pointer">
-        г. Москва
-        <img src="img/icons/down.svg" alt="">
-      </div>
-
-      <div class="flex-je-c gap-6">
-        <span class="text-white">Контакты</span>
-        <div class="text-white flex-js-c gap-2">Покупателям
-          <img src="img/icons/down.svg" alt="">
-        </div>
-        <div class="text-white cursor-pointer flex-js-c gap-2">
-          <img src="img/icons/user-white.svg" alt="user-white.svg">
-          Регистрация и вход
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="w-full py-4">
-  <div class="container">
-    <div class="w-full flex-jsb-c gap-4">
-      <a href="/index.html">
-        <img src="img/logo-header.svg" alt="logo" class="w-full max-w-[273px]">
-      </a>
-
-      <div class="flex-jsb-c gap-4">
-        <button class="bg-blue rounded-[8px] px-6 h-[50px] flex-jsb-c gap-3 text-white hover:bg-blue/80 transition">
-          <img src="img/icons/menu-catalog.svg" alt="menu-catalog">
-          Каталог
-        </button>
-        <form action="#" class="w-[486px] bg-blue rounded-[8px] flex-jsb-c h-[50px] p-[2px]">
-          <label class="w-full h-full bg-white rounded-[6px] overflow-hidden">
-            <input type="text" class="w-full h-full pl-3 placeholder:text-black/80" placeholder="Поиск по сайту">
-          </label>
-          <button class="w-[80px] h-[50px] bg-transparent flex-jc-c" type="submit">
-            <img src="img/icons/search-white.svg" alt="search-white">
-          </button>
-        </form>
-      </div>
-
-
-      <div class="flex-jsb-c gap-8">
-        <div class="flex-js-c gap-4">
-          <div class="flex-js-c gap-4">
-            <img src="img/icons/call-blue.svg" alt="call-blue">
-          </div>
-          <div>
-            <div>
-              <a href="tel: 8 921 903 53 50" class="text-[20px] text-black font-bold">8 921 903 53 50</a>
-            </div>
-            <div class="mt-[-4px]">
-              <a href="#" class="text-blue underline">
-                Обратный звонок
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <a href="#" class="flex-js-c gap-4 text-[18px] text-black text-medium">
-          <img src="img/icons/heard-blue.svg" alt="heard-blue">
-          Избранное
-        </a>
-
-        <a href="#" class="flex-js-c gap-4 text-[18px] text-black text-medium">
-          <img src="img/icons/rows-block.svg" alt="rows-block">
-          Сравнения
-        </a>
-
-        <div class="flex-js-c gap-4 text-[18px] text-black text-medium">
-          <div class="relative w-10 h-10 flex-jc-c">
-            <img src="img/icons/card-blue.svg" alt="card-blue">
-            <span
-                class="w-4 h-4 bg-[#CF301B] rounded-full flex-jc-c absolute top-0 right-0 text-[12px] text-white">2</span>
-          </div>
-          Корзина
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-</div>
-
-<div class="container w-full">
-
-  <div class="w-full h-[67px] bg-[#F4F4F4] rounded-[16px] px-8 flex-jsb-c gap-16">
-    <div class="flex-jsb-c gap-6 h-full w-[40%]">
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        <img src="img/icons/like-blue.svg" alt="like-blue.svg">
-        Подарочные сертификаты
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        <img src="img/icons/percent.svg" alt="percent">
-        Скидки
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        <img src="img/icons/star-lik.svg" alt="star-lik">
-        Новинки
-      </a>
-    </div>
-
-    <div class="min-w-[1px] w-[1px] h-[27px] bg-[#CACACA] mx-8"></div>
-    <div class="flex-jsb-c gap-6 h-full w-[60%]">
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Удилища
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Катушки
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Приманки
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Аксессуары
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Оснастка
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Экипировка
-      </a>
-    </div>
-
-  </div>
-
-</div>
 
 <div class="container mt-4">
 
 
-  <ul class="flex-js-c gap-1 mb-7">
+  <ul class="flex-js-c gap-1 mb-7 mt-[80px] sm:mt-0">
     <li>
-      <a href="index.html" class="text-[15px] text-[#6E6E6E]">Главная</a>
+      <a href="home.html" class="text-[14px] sm:text-[18px] text-[#6E6E6E] hover:text-blue">Главная</a>
     </li>
-    <li class="text-[15px] text-[#6E6E6E]">
+    <li class="text-[18px] text-[#6E6E6E]">
       •
     </li>
     <li>
-      <a href="catalog.html" class="text-[15px] text-[#6E6E6E]">Покупателям</a>
+      <a href="catalog.html" class="text-[14px] sm:text-[15px] text-[#6E6E6E] hover:text-blue">Покупателям</a>
     </li>
-    <li class="text-[15px] text-[#6E6E6E]">
+    <li class="text-[18px] text-[#6E6E6E]">
         •
       </li>
     <li>
-      <a href="catalog.html" class="text-[15px] text-[#6E6E6E]">О магазине</a>
+      <a href="catalog.html" class="text-[14px] sm:text-[18px] text-[#6E6E6E] hover:text-blue">О магазине</a>
     </li>
   </ul>
 
-  <h2 class="font-medium text-[#212121] text-[32px] mb-[30px]">О магазине</h2>
+  <h2 class="font-medium text-[#212121] text-[32px] mb-[30px] max-[767px]:text-[24px] max-[767px]:mb-[20px]">О магазине</h2>
 
-  <div class="flex">
-    <div class="max-w-[670px] w-full mr-[80px]">
+  <div class="flex max-[1400px]:flex-col-reverse">
+    <div class="max-w-[670px] w-full mr-[80px] max-[1400px]:max-w-[100%] max-[1400px]:mr-[0]">
         <p class="text-[16px] text-[#323232] mb-[30px]">С самого первого дня, мы уделили самое пристальное внимание дизайну, логистике, и сервису в нашем магазине. Над разработками дизайна сайта, трудились одни из самых перспективных на то время WEB-дизайнеры. И по сей день работают с нашей компанией, и со многими крупными компаниями не только нашего города но и столицы, и имеют очень большой спрос и опыт в своем деле. </p>
         <p class="text-[16px] text-[#323232] mb-[30px]">Так же, мы пригласили большое количество специалистов в сфере IT разработок для создания самого сайта, но не просто сайта, а страницы которая будет интуитивно проста и понятна любому посетителю, будь это продвинутый пользователь, или же человек, который только начал осваивать азы интернета. Команда которую мы собрали работала очень слажено и профессионально. </p>
         <p class="text-[16px] text-[#323232] mb-[30px]">Благодаря этим двум компонентам нам удалось запустить и развить нашу интернет площадку, на уровень одного из самых узнаваемых интернет-магазинов в сфере охоты, рыбалки, и туризма. </p>
@@ -186,200 +56,14 @@
         <p class="text-[16px] text-[#323232] mb-[30px]">Благодаря таким партнерам, мы можем с уверенностью заявлять, что продаем качественный товар, и даем большие гарантии качества на его эксплуатацию нашим покупателям, которые в свое время остаются довольными своей покупкой. На протяжении 11 лет работы, мы каждый день и месяц стараемся быть нужными для вас, и совершенствуем свои методы и знания в интернет торговли. </p>
         <p class="text-[16px] text-[#323232] mb-[30px]">За все это время, мы ни когда не забывали про наших покупателей и всегда старались отблагодарить их за свой выбор, в нашу пользу. Именно поэтому интернет-магазин Фишемания является одним из самых лучших выборов, который вы когда-либо делали.</p>
     </div>
-    <div class="flex rounded-[12px] self-start">
-        <img src="img/shop-img.png" alt="" class="max-w-[100%] max-h-[100%]">
+    <div class="flex rounded-[12px] self-start max-[1400px]:mb-[20px] max-[1400px]:w-full">
+        <img src="img/shop-img.png" alt="" class="max-w-[100%] max-h-[100%] max-[1400px]:w-full">
       </div>
   </div>
 </div>
 
 
-<footer class="bg-[#262626] mt-[250px]">
-  <div class="container">
-    <div class="w-full h-[320px] relative transform translate-y-[-50%]">
-      <img src="img/contact-me-bg.png" alt="contact-me-bg" class="w-full h-full object-cover rounded-[16px]">
-      <img src="img/message-ilustriator.png" alt="message-ilustriator" class="absolute left-[17%] top-[-100px]">
-      <div class="absolute top-[50%] right-[70px] transform translate-y-[-50%]">
-        <h3 class="font-light text-[64px] text-white">Подпишись на рассылку</h3>
-        <p class="text-white">Получай наши новости, акции, советы и рекомендации экспертов</p>
-        <form action="#" class="w-full flex-jsb-c gap-4 mt-4">
-          <label class="w-full h-[54px] bg-white overflow-hidden rounded-[8px]">
-            <input type="text" placeholder="Ваша почта" class="w-full h-full pl-6 border-none">
-          </label>
-          <button
-              class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-            Подписаться
-          </button>
-        </form>
-      </div>
-    </div>
-
-
-    <div class="w-full grid grid-cols-12 gap-10 mt-[-60px]">
-      <div class="col-span-2">
-        <img src="img/logo-footer.svg" alt="logo-footer" class="mt-[-20px]">
-        <div class="flex-js-c gap-2 text-white mt-4">
-          Ваш город
-          <img src="img/icons/location.svg" alt="location">
-          <div class="text-white flex-js-c gap-2 cursor-pointer">
-            г. Москва
-            <img src="img/icons/down.svg" alt="">
-          </div>
-        </div>
-        <div class="flex-js-c gap-4 mt-4">
-          <a href="#">
-            <img src="img/icons/whats-app.svg" alt="whats-app">
-          </a>
-          <a href="#">
-            <img src="img/icons/tg.svg" alt="tg">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-span-4">
-        <h4 class="text-white text-[20px] mb-4">Каталог</h4>
-        <div class="flex-jsb-s gap-[60px]">
-          <ul>
-            <li>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Удилища
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Катушки
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Приманки
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Оснастка
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Зимняя рыбалка
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Одежда и обувь
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Электроника
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Аксессуары
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Туризм
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Скидки
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Сертификаты
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-span-2">
-        <h4 class="text-white text-[20px] mb-4">Сервис</h4>
-        <div class="flex-jsb-s gap-[60px]">
-          <ul>
-            <li>
-              <a href="#" class="text-white opacity-80 mb-2">
-                О магазине
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Доставка и оплата
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Подарочные карты
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Скидки
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Новости
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Сервис и гарантии
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-
-      <div class="col-span-2">
-
-        <ul>
-          <li>
-            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
-              <img src="img/icons/favorite.svg" alt="favorite" class="mr-2">
-              Избранное
-            </a>
-            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
-              <img src="img/icons/rows-white.svg" alt="rows-white" class="mr-2">
-              Сравнения
-            </a>
-            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
-              <img src="img/icons/basket-white.svg" alt="basket-white" class="mr-2">
-              Корзина
-            </a>
-            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
-              <img src="img/icons/login-account.svg" alt="login-account" class="mr-2">
-              Регистрация и вход
-            </a>
-          </li>
-        </ul>
-
-      </div>
-
-
-      <div class="col-span-2">
-        <h4 class="text-white text-[20px] mb-4">Контакты</h4>
-
-        <a href="tel: 8 (800) 101-86-53" class="text-white font-bold">
-          8 (800) 101-86-53
-        </a>
-        <a href="tel: 8 (800) 101-86-53" class="text-white font-bold mb-4">
-          8 (921) 903-53-50
-        </a>
-
-        <button
-            class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2 mb-4">
-          Обратный звонок
-        </button>
-
-        <a href="mailto: fishemania777@yandex.ru" class="text-blue underline mb-4">
-          fishemania777@yandex.ru
-        </a>
-
-        <p class="text-[14px] text-white opacity-80">
-          пн-пт, 10:00 - 20:00, прием заказов на сайте круглосуточно
-        </p>
-      </div>
-
-
-    </div>
-
-
-  </div>
-
-  <div class="w-full h-[1px] bg-white mt-6"></div>
-
-  <div class="container">
-    <div class="w-full h-[54px] flex-jsb-c">
-      <p class="text-[14px] text-white opacity-80">Информация, размещенная на сайте, не является публичной офертой.</p>
-      <p class="text-[14px] text-white opacity-80">© 2005–2025. Все права защищены</p>
-    </div>
-  </div>
-
-</footer>
+  <component src="./components/footer.html"></component>
 
 
 <script src="js/script.js"></script>

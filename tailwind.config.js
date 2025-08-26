@@ -73,7 +73,7 @@ const flexClasses = {
 
 module.exports = {
   mode: 'jit',
-  content: ["./*.html"],
+  content: ["./*.html", './components/*.html'],
   theme: {
     extend: {
       colors: {

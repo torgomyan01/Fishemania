@@ -18,172 +18,45 @@
 <body>
 
 
-<div class="w-full h-[50px] bg-[#323232]">
-  <div class="container h-full">
-    <div class="w-full h-full flex items-center justify-between">
-      <div class="text-white flex-js-c gap-2 cursor-pointer">
-        г. Москва
-        <img src="img/icons/down.svg" alt="">
-      </div>
+<component src="./components/navbar.html"></component>
 
-      <div class="flex-je-c gap-6">
-        <span class="text-white">Контакты</span>
-        <div class="text-white flex-js-c gap-2">Покупателям
-          <img src="img/icons/down.svg" alt="">
-        </div>
-        <div class="text-white cursor-pointer flex-js-c gap-2">
-          <img src="img/icons/user-white.svg" alt="user-white.svg">
-          Регистрация и вход
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="w-full py-4">
-  <div class="container">
-    <div class="w-full flex-jsb-c gap-4">
-      <a href="/index.html">
-        <img src="img/logo-header.svg" alt="logo" class="w-full max-w-[273px]">
-      </a>
-
-      <div class="flex-jsb-c gap-4">
-        <button class="bg-blue rounded-[8px] px-6 h-[50px] flex-jsb-c gap-3 text-white hover:bg-blue/80 transition">
-          <img src="img/icons/menu-catalog.svg" alt="menu-catalog">
-          Каталог
-        </button>
-        <form action="#" class="w-[486px] bg-blue rounded-[8px] flex-jsb-c h-[50px] p-[2px]">
-          <label class="w-full h-full bg-white rounded-[6px] overflow-hidden">
-            <input type="text" class="w-full h-full pl-3 placeholder:text-black/80" placeholder="Поиск по сайту">
-          </label>
-          <button class="w-[80px] h-[50px] bg-transparent flex-jc-c" type="submit">
-            <img src="img/icons/search-white.svg" alt="search-white">
-          </button>
-        </form>
-      </div>
-
-
-      <div class="flex-jsb-c gap-8">
-        <div class="flex-js-c gap-4">
-          <div class="flex-js-c gap-4">
-            <img src="img/icons/call-blue.svg" alt="call-blue">
-          </div>
-          <div>
-            <div>
-              <a href="tel: 8 921 903 53 50" class="text-[20px] text-black font-bold">8 921 903 53 50</a>
-            </div>
-            <div class="mt-[-4px]">
-              <a href="#" class="text-blue underline">
-                Обратный звонок
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <a href="#" class="flex-js-c gap-4 text-[18px] text-black text-medium">
-          <img src="img/icons/heard-blue.svg" alt="heard-blue">
-          Избранное
-        </a>
-
-        <a href="#" class="flex-js-c gap-4 text-[18px] text-black text-medium">
-          <img src="img/icons/rows-block.svg" alt="rows-block">
-          Сравнения
-        </a>
-
-        <div class="flex-js-c gap-4 text-[18px] text-black text-medium">
-          <div class="relative w-10 h-10 flex-jc-c">
-            <img src="img/icons/card-blue.svg" alt="card-blue">
-            <span
-                class="w-4 h-4 bg-[#CF301B] rounded-full flex-jc-c absolute top-0 right-0 text-[12px] text-white">2</span>
-          </div>
-          Корзина
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-</div>
-
-
-<div class="container w-full">
-
-  <div class="w-full h-[67px] bg-[#F4F4F4] rounded-[16px] px-8 flex-jsb-c gap-16">
-    <div class="flex-jsb-c gap-6 h-full w-[40%]">
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        <img src="img/icons/like-blue.svg" alt="like-blue.svg">
-        Подарочные сертификаты
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        <img src="img/icons/percent.svg" alt="percent">
-        Скидки
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        <img src="img/icons/star-lik.svg" alt="star-lik">
-        Новинки
-      </a>
-    </div>
-
-    <div class="min-w-[1px] w-[1px] h-[27px] bg-[#CACACA] mx-8"></div>
-    <div class="flex-jsb-c gap-6 h-full w-[60%]">
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Удилища
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Катушки
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Приманки
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Аксессуары
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Оснастка
-      </a>
-      <a href="#" class="flex-js-c gap-2 text-black text-[18px] font-medium">
-        Экипировка
-      </a>
-    </div>
-
-  </div>
-
-</div>
 
 <div class="container w-full mt-6">
 
   <ul class="flex-js-c gap-1 mb-10">
     <li>
-      <a href="index.html" class="text-[15px] text-[#6E6E6E]">Главная</a>
+      <a href="home.html" class="text-[18px] text-[#6E6E6E] hover:text-blue">Главная</a>
     </li>
-    <li class="text-[15px] text-[#6E6E6E]">
+    <li class="text-[18px] text-[#6E6E6E]">
       •
     </li>
     <li>
-      <a href="catalog.html" class="text-[15px] text-[#6E6E6E]">Оформление заказа</a>
+      <a href="catalog.html" class="text-[18px] text-[#6E6E6E] hover:text-blue">Оформление заказа</a>
     </li>
   </ul>
 
 
   <div class="w-full mt-6">
-    <h1 class="text-[32px] font-medium mb-[30px] tracking-[-0.64px]">Оформление заказа</h1>
+    <h1 class="text-[32px] font-medium mb-[30px] tracking-[-0.64px] max-[767px]:text-[24px] max-[767px]:mb-[20px]">Оформление заказа</h1>
 
-    <div class="w-full grid grid-cols-12 gap-[138px]">
+    <div class="w-full grid grid-cols-12 gap-[138px] max-[1600px]:flex max-[1600px]:flex-col max-[1024px]:gap-[50px]">
       <div class="col-span-7">
 
-        <div class="w-full flex-js-c text-[18px] p-6 bg-[#F4F4F4] rounded-[16px]">
+        <div class="w-full flex-js-s lg:flex-js-c text-[16px] sm:text-[18px] p-4 sm:p-6 bg-[#F4F4F4] rounded-[16px] gap-2">
           <img src="img/icons/user-blue.svg" alt="user-blue">
-          <a href="#" class="text-blue underline">Авторизуйтесь</a>, чтобы увидеть персональные условия доставки и отслеживать заказы
+          <p>
+            <a href="#" class="text-blue underline">Авторизуйтесь</a> чтобы увидеть персональные условия доставки и отслеживать заказы
+          </p>
         </div>
 
-        <h3 class="text-[24px] mt-8 font-medium">Кто заберет заказ</h3>
+        <h3 class="text-[26px] mt-8 font-semibold">Ваш город доставки</h3>
+        <p class="text-[#323232] text-[18px]">Доставить в <a href="#" class="text-[#009fff] text-[18px] underline">Санкт-Петербург</a> </p>
+        <h3 class="text-[26px] mt-8 font-semibold">Кто заберет заказ</h3>
 
         <p class="mt-4">* — обязательно</p>
 
         <form action="#">
-          <div class="w-full grid grid-cols-2 gap-6 mt-6">
+          <div class="w-full grid grid-cols-2 gap-4 sm:gap-6 mt-6 max-[767px]:grid-cols-1">
             <label class="w-full">
               <span class="block text-[#323232] mb-1">Ваше имя</span>
               <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Введите имя">
@@ -208,14 +81,14 @@
           </label>
 
 
-          <div class="w-full mt-[60px]">
-            <h4 class="text-[24px] font-medium mb-6">Как доставить заказ</h4>
+          <div class="w-full mt-[60px] max-[767px]:mt-[30px]">
+            <h4 class="text-[24px] mb-6 font-semibold">Как доставить заказ</h4>
             
-            <div class="w-full grid grid-cols-3 gap-6">
+            <div class="w-full grid grid-cols-3 gap-4 sm:gap-6 max-[767px]:grid-cols-1">
               <label class="w-full relative">
-                <input type="radio" name="order" class="peer hidden">
+                <input type="radio" name="order" class="peer hidden" checked>
                 <span class="w-[18px] h-[18px] transition border-[2px] border-[#DBDBDB] absolute top-3 left-3 rounded-full peer-checked:border-[5px] peer-checked:border-[#009FFF]"></span>
-                <div class="border border-[#6E6E6E40] h-[220px] rounded-[16px] relative p-6 peer-checked:border-blue transition">
+                <div class="border hover:border-[#009FFF] border-[#6E6E6E40] h-[220px] rounded-[16px] relative p-6 peer-checked:border-blue transition">
                   <div class="flex-jc-c flex-col absolute left-1/2 top-1/2 transform translate-x-[-50%] translate-y-[-50%] w-[90%]">
                     <img src="img/icons/shipped-blue-car.svg" alt="shipped-blue-car">
                     <h5 class="text-[18px] font-medium mt-2 text-center">Курьер</h5>
@@ -228,7 +101,7 @@
               <label class="w-full relative">
                 <input type="radio" name="order" class="peer hidden">
                 <span class="w-[18px] h-[18px] transition border-[2px] border-[#DBDBDB] absolute top-3 left-3 rounded-full peer-checked:border-[5px] peer-checked:border-[#009FFF]"></span>
-                <div class="border border-[#6E6E6E40] h-[220px] rounded-[16px] relative p-6 peer-checked:border-blue transition">
+                <div class="border hover:border-[#009FFF] border-[#6E6E6E40] h-[220px] rounded-[16px] relative p-6 peer-checked:border-blue transition">
                   <div class="flex-jc-c flex-col absolute left-1/2 top-1/2 transform translate-x-[-50%] translate-y-[-50%] w-[90%]">
                     <img src="img/icons/cdek-logo.png" alt="shipped-blue-car">
                     <h5 class="text-[18px] font-medium mt-2 text-center">СДЭК. Самовывоз</h5>
@@ -241,7 +114,7 @@
               <label class="w-full relative">
                 <input type="radio" name="order" class="peer hidden">
                 <span class="w-[18px] h-[18px] transition border-[2px] border-[#DBDBDB] absolute top-3 left-3 rounded-full peer-checked:border-[5px] peer-checked:border-[#009FFF]"></span>
-                <div class="border border-[#6E6E6E40] h-[220px] rounded-[16px] relative p-6 peer-checked:border-blue transition">
+                <div class="border hover:border-[#009FFF] border-[#6E6E6E40] h-[220px] rounded-[16px] relative p-6 peer-checked:border-blue transition">
                   <div class="flex-jc-c flex-col absolute left-1/2 top-1/2 transform translate-x-[-50%] translate-y-[-50%] w-[90%]">
                     <img src="img/icons/pickup-blue.svg" alt="shipped-blue-car">
                     <h5 class="text-[18px] font-medium mt-2 text-center"> Самовывоз</h5>
@@ -256,24 +129,24 @@
             
           </div>
 
-          <h3 class="text-[24px] mt-[60px] font-medium">Адрес доставки</h3>
+          <h3 class="text-[24px] mt-[60px] font-medium max-[767px]:mt-[30px]">Адрес доставки</h3>
 
-          <div class="w-full grid grid-cols-2 gap-6 mt-6">
+          <div class="w-full grid grid-cols-2 gap-4 sm:gap-6 mt-6 max-[767px]:grid-cols-1">
             <label class="w-full">
               <span class="block text-[#323232] mb-1">Город доставки*</span>
               <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Введите город">
             </label>
             <label class="w-full">
               <span class="block text-[#323232] mb-1">Индекс*</span>
-              <input type="text" class="w-full max-w-[252px] pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Введите индекс">
+              <input type="text" class="w-full max-w-[252px] max-[767px]:max-w-[100%] pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Введите индекс">
             </label>
             <label class="w-full">
               <span class="block text-[#323232] mb-1">Улица*</span>
               <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Введите улицу">
             </label>
             <label class="w-full">
-              <span class="block text-[#323232] mb-1">Номер квартиры*</span>
-              <input type="text" class="w-full pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Введите номер">
+              <span class="block text-[#323232] ">Номер квартиры*</span>
+              <input type="text" class="w-full mb-1 max-w-[252px] max-[767px]:max-w-[100%] pl-2 h-[54px] rounded-[8px] border border-[#6E6E6E40]" placeholder="Введите номер">
             </label>
             <label class="w-full">
               <span class="block text-[#323232] mb-1">Этаж</span>
@@ -282,14 +155,14 @@
           </div>
 
 
-          <div class="w-full mt-[60px]">
+          <div class="w-full mt-[60px] max-[767px]:mt-[30px]">
             <h4 class="text-[24px] font-medium mb-6">Как будете оплачивать?</h4>
 
-            <div class="w-full grid grid-cols-4 gap-6">
+            <div class="w-full grid grid-cols-4 gap-6 max-[767px]:grid-cols-1">
               <label class="w-full relative">
-                <input type="radio" name="card" class="peer hidden">
+                <input type="radio" name="card" class="peer hidden" checked>
                 <span class="w-[18px] h-[18px] transition border-[2px] border-[#DBDBDB] absolute top-3 left-3 rounded-full peer-checked:border-[5px] peer-checked:border-[#009FFF]"></span>
-                <div class="border border-[#6E6E6E40] h-[184px] rounded-[16px] relative p-6 peer-checked:border-blue transition">
+                <div class="border border-[#6E6E6E40] h-[184px] rounded-[16px] relative p-6 peer-checked:border-blue hover:border-[#009FFF] transition">
                   <div class="flex-jc-c flex-col absolute left-1/2 top-1/2 transform translate-x-[-50%] translate-y-[-50%] w-[90%]">
                     <img src="img/icons/card-blue.svg" alt="shipped-blue-car">
                     <h5 class="text-[18px] font-medium mt-2 text-center">Картой на сайте</h5>
@@ -299,7 +172,7 @@
               <label class="w-full relative">
                 <input type="radio" name="card" class="peer hidden">
                 <span class="w-[18px] h-[18px] transition border-[2px] border-[#DBDBDB] absolute top-3 left-3 rounded-full peer-checked:border-[5px] peer-checked:border-[#009FFF]"></span>
-                <div class="border border-[#6E6E6E40] h-[184px] rounded-[16px] relative p-6 peer-checked:border-blue transition">
+                <div class="border border-[#6E6E6E40] h-[184px] rounded-[16px] relative p-6 peer-checked:border-blue hover:border-[#009FFF] transition">
                   <div class="flex-jc-c flex-col absolute left-1/2 top-1/2 transform translate-x-[-50%] translate-y-[-50%] w-[90%]">
                     <img src="img/icons/after-get-blue.svg" alt="shipped-blue-car">
                     <h5 class="text-[18px] font-medium mt-2 text-center">Картой при получении</h5>
@@ -309,7 +182,7 @@
               <label class="w-full relative">
                 <input type="radio" name="card" class="peer hidden">
                 <span class="w-[18px] h-[18px] transition border-[2px] border-[#DBDBDB] absolute top-3 left-3 rounded-full peer-checked:border-[5px] peer-checked:border-[#009FFF]"></span>
-                <div class="border border-[#6E6E6E40] h-[184px] rounded-[16px] relative p-6 peer-checked:border-blue transition">
+                <div class="border border-[#6E6E6E40] h-[184px] rounded-[16px] relative p-6 peer-checked:border-blue hover:border-[#009FFF] transition">
                   <div class="flex-jc-c flex-col absolute left-1/2 top-1/2 transform translate-x-[-50%] translate-y-[-50%] w-[90%]">
                     <img src="img/icons/before-blue.svg" alt="shipped-blue-car">
                     <h5 class="text-[18px] font-medium mt-2 text-center">Наличными при получении</h5>
@@ -319,7 +192,7 @@
               <label class="w-full relative">
                 <input type="radio" name="card" class="peer hidden">
                 <span class="w-[18px] h-[18px] transition border-[2px] border-[#DBDBDB] absolute top-3 left-3 rounded-full peer-checked:border-[5px] peer-checked:border-[#009FFF]"></span>
-                <div class="border border-[#6E6E6E40] h-[184px] rounded-[16px] relative p-6 peer-checked:border-blue transition">
+                <div class="border border-[#6E6E6E40] h-[184px] rounded-[16px] relative p-6 peer-checked:border-blue hover:border-[#009FFF] transition">
                   <div class="flex-jc-c flex-col absolute left-1/2 top-1/2 transform translate-x-[-50%] translate-y-[-50%] w-[90%]">
                     <img src="img/icons/bspb.png" alt="shipped-blue-car">
                     <h5 class="text-[18px] font-medium mt-2 text-center">Через СПБ</h5>
@@ -331,36 +204,29 @@
 
           </div>
 
-          <h3 class="text-[24px] mt-[60px] font-medium">Дополнительно</h3>
+          <h3 class="text-[24px] mt-[60px] font-medium max-[767px]:mt-[30px]">Дополнительно</h3>
 
           <label class="w-full max-w-[670px] mt-6 block">
             <span class="block text-[#323232] mb-1">Комментарии к заказу</span>
             <textarea type="text" class="w-full pl-2 rounded-[8px] border border-[#6E6E6E40] resize-none h-[162px]" placeholder="Введите имя"></textarea>
           </label>
-
-
-
-
-
-
-
         </form>
 
 
       </div>
 
       <div class="col-span-5">
-        <div class="w-full bg-[#F4F4F4] rounded-[24px] p-10 sticky top-4">
+        <div class="w-full bg-[#F4F4F4] rounded-[24px] p-10 sticky top-4 max-[767px]:p-[20px]">
           <h3 class="text-[#212121] text-[24px] font-semibold mb-6">Итоговый заказ</h3>
 
 
-          <div class="w-full pb-4 border-b">
-            <div class="w-full gap-2 flex-jsb-s mb-3">
+          <div class="w-full pb-4 border-b max-[767px]:border-none">
+            <div class="w-full gap-2 flex-jsb-s mb-3 max-[767px]:pb-[50px] max-[767px]:relative max-[767px]:border-b max-[767px]:border-[rgba(110,110,110,0.25)]">
               <div class="w-full flex-js-s gap-4">
-                <h3 class="text-[18px] w-full max-w-[238px]">
+                <h3 class="text-[18px] w-full max-w-[238px] max-[767px]:text-[16px]">
                   Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр
                 </h3>
-                <div class="flex-jsb-c gap-2">
+                <div class="flex-jsb-c gap-2 max-[767px]:absolute max-[767px]:bottom-[10px] max-[767px]:left-[0]">
                   <button class="w-8 h-8 bg-white rounded-[8px] flex-jc-c">
                     -
                   </button>
@@ -371,15 +237,15 @@
                 </div>
               </div>
 
-              <h5 class="w-[115px] text-[#6E6E6E]">350 руб</h5>
+              <h5 class="w-[115px] text-[#6E6E6E] text-right">350 руб</h5>
             </div>
 
-            <div class="w-full gap-2 flex-jsb-s">
+            <div class="w-full gap-2 flex-jsb-s mb-3 max-[767px]:pb-[50px] max-[767px]:relative max-[767px]:border-b max-[767px]:border-[rgba(110,110,110,0.25)]">
               <div class="w-full flex-js-s gap-4">
-                <h3 class="text-[18px] w-full max-w-[238px]">
+                <h3 class="text-[18px] w-full max-w-[238px] max-[767px]:text-[16px]">
                   Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр
                 </h3>
-                <div class="flex-jsb-c gap-2">
+                <div class="flex-jsb-c gap-2 max-[767px]:absolute max-[767px]:bottom-[10px] max-[767px]:left-[0]">
                   <button class="w-8 h-8 bg-white rounded-[8px] flex-jc-c">
                     -
                   </button>
@@ -390,12 +256,12 @@
                 </div>
               </div>
 
-              <h5 class="w-[115px] text-[#6E6E6E]">350 руб</h5>
+              <h5 class="w-[115px] text-[#6E6E6E] text-right">350 руб</h5>
             </div>
           </div>
 
 
-          <ul class="w-full border-b pb-4 mt-4">
+          <ul class="w-full border-b pb-4 mt-4 max-[767px]:mt-[0]">
             <li class="w-fill flex-jsb-c">
               <span class="">Сумма товаров:</span>
               <span class="text-[#6E6E6E]">700 руб</span>
@@ -416,7 +282,7 @@
           </div>
 
 
-          <div class="w-full flex-jsb-c gap-4 mt-6">
+          <div class="w-full flex-jsb-c gap-4 mt-6 max-[767px]:flex-col">
             <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 min-w-[212px] transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
               Оформить заказ
             </button>
@@ -434,193 +300,7 @@
 </div>
 
 
-<footer class="bg-[#262626] mt-[250px]">
-  <div class="container">
-    <div class="w-full h-[320px] relative transform translate-y-[-50%]">
-      <img src="img/contact-me-bg.png" alt="contact-me-bg" class="w-full h-full object-cover rounded-[16px]">
-      <img src="img/message-ilustriator.png" alt="message-ilustriator" class="absolute left-[17%] top-[-100px]">
-      <div class="absolute top-[50%] right-[70px] transform translate-y-[-50%]">
-        <h3 class="font-light text-[64px] text-white">Подпишись на рассылку</h3>
-        <p class="text-white">Получай наши новости, акции, советы и рекомендации экспертов</p>
-        <form action="#" class="w-full flex-jsb-c gap-4 mt-4">
-          <label class="w-full h-[54px] bg-white overflow-hidden rounded-[8px]">
-            <input type="text" placeholder="Ваша почта" class="w-full h-full pl-6">
-          </label>
-          <button
-              class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-            Подписаться
-          </button>
-        </form>
-      </div>
-    </div>
-
-
-    <div class="w-full grid grid-cols-12 gap-10 mt-[-60px]">
-      <div class="col-span-2">
-        <img src="img/logo-footer.svg" alt="logo-footer" class="mt-[-20px]">
-        <div class="flex-js-c gap-2 text-white mt-4">
-          Ваш город
-          <img src="img/icons/location.svg" alt="location">
-          <div class="text-white flex-js-c gap-2 cursor-pointer">
-            г. Москва
-            <img src="img/icons/down.svg" alt="">
-          </div>
-        </div>
-        <div class="flex-js-c gap-4 mt-4">
-          <a href="#">
-            <img src="img/icons/whats-app.svg" alt="whats-app">
-          </a>
-          <a href="#">
-            <img src="img/icons/tg.svg" alt="tg">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-span-4">
-        <h4 class="text-white text-[20px] mb-4">Каталог</h4>
-        <div class="flex-jsb-s gap-[60px]">
-          <ul>
-            <li>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Удилища
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Катушки
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Приманки
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Оснастка
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Зимняя рыбалка
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Одежда и обувь
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Электроника
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Аксессуары
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Туризм
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Скидки
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Сертификаты
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-span-2">
-        <h4 class="text-white text-[20px] mb-4">Сервис</h4>
-        <div class="flex-jsb-s gap-[60px]">
-          <ul>
-            <li>
-              <a href="#" class="text-white opacity-80 mb-2">
-                О магазине
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Доставка и оплата
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Подарочные карты
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Скидки
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Новости
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Сервис и гарантии
-              </a>
-              <a href="#" class="text-white opacity-80 mb-2">
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-
-      <div class="col-span-2">
-
-        <ul>
-          <li>
-            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
-              <img src="img/icons/favorite.svg" alt="favorite" class="mr-2">
-              Избранное
-            </a>
-            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
-              <img src="img/icons/rows-white.svg" alt="rows-white" class="mr-2">
-              Сравнения
-            </a>
-            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
-              <img src="img/icons/basket-white.svg" alt="basket-white" class="mr-2">
-              Корзина
-            </a>
-            <a href="#" class="text-white opacity-80 mb-2 flex-js-c">
-              <img src="img/icons/login-account.svg" alt="login-account" class="mr-2">
-              Регистрация и вход
-            </a>
-          </li>
-        </ul>
-
-      </div>
-
-
-      <div class="col-span-2">
-        <h4 class="text-white text-[20px] mb-4">Контакты</h4>
-
-        <a href="tel: 8 (800) 101-86-53" class="text-white font-bold">
-          8 (800) 101-86-53
-        </a>
-        <a href="tel: 8 (800) 101-86-53" class="text-white font-bold mb-4">
-          8 (921) 903-53-50
-        </a>
-
-        <button
-            class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2 mb-4">
-          Обратный звонок
-        </button>
-
-        <a href="mailto: fishemania777@yandex.ru" class="text-blue underline mb-4">
-          fishemania777@yandex.ru
-        </a>
-
-        <p class="text-[14px] text-white opacity-80">
-          пн-пт, 10:00 - 20:00, прием заказов на сайте круглосуточно
-        </p>
-      </div>
-
-
-    </div>
-
-
-  </div>
-
-  <div class="w-full h-[1px] bg-white mt-6"></div>
-
-  <div class="container">
-    <div class="w-full h-[54px] flex-jsb-c">
-      <p class="text-[14px] text-white opacity-80">Информация, размещенная на сайте, не является публичной офертой.</p>
-      <p class="text-[14px] text-white opacity-80">© 2005–2025. Все права защищены</p>
-    </div>
-  </div>
-
-</footer>
+  <component src="./components/footer.html"></component>
 
 
 <script src="js/script.js"></script>
