@@ -169,10 +169,14 @@
 
   <h2 class="font-medium text-[#212121] text-[32px] mb-[30px]">Избранное</h2>
 
-  <div class="flex items-center mb-[30px]">
+  <div class="w-full h-[48px] bg-[#F4F4F4] rounded-[12px] flex-jsb-c px-4 mb-[30px]">
+    <h3 class="font-bold">Фильтр</h3>
+    <img src="img/icons/arrow-right.svg" alt="">
+  </div>
+
+  <div class="items-center mb-[30px] hidden md:flex">
     <span class="mr-[16px] text-[#6E6E6E] text-[16px]">Сортировать</span>
-    <select class="bg-[#F4F4F4] border-[none] border-0 
-    cursor-pointer focus:outline-none focus:border-0">
+    <select class="bg-[#F4F4F4] border-[none] border-0 cursor-pointer focus:outline-none focus:border-0">
         <option value="1">Хиты продаж</option>
         <option value="2">Хиты продаж 2</option>
         <option value="3">Хиты продаж 3</option>
@@ -188,10 +192,10 @@
     </div>
   </div>
 
-  <div class="grid grid-cols-5 gap-[20px]">
+  <div class="grid grid-cols-2 lg:grid-cols-3 min-[1550px]:grid-cols-5 gap-[20px]">
     <div class="w-full">
-        <div class="w-full h-[427px] border rounded-[16px] relative">
-          <div class="absolute top-2 right-2 flex-je-c gap-2">
+        <div class="w-full h-[217px] md:h-[427px] border rounded-[16px] relative">
+          <div class="absolute top-2 right-2 flex-je-c gap-2 hidden md:block">
             <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
               <img src="img/icons/heard-gray.svg" alt="heard-gray">
             </div>
@@ -217,21 +221,27 @@
 
 
         </div>
-        <div class="w-full p-4">
-          <div class="flex-jsb-c">
-            <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
+        <div class="w-full pt-2 md:p-4 ">
+          <h3 class="md:text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] block md:hidden">
+            Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр
+          </h3>
+
+          <div class="flex-jsb-c flex-wrap">
+            <div class="flex-js-c text-[#6E6E6E] gap-[5px] text-[14px] md:text-[16px]">
               <img src="img/icons/star-yellow.svg" alt="star-yellow">
               4.2
               <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
               29 отзывов
             </div>
-            <span class="text-[#6E6E6E]">арт. 234 345</span>
+            <span class="text-[#6E6E6E] text-[14px] md:text-[16px]">арт. 234 345</span>
           </div>
 
-          <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
+          <h3 class="md:text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px] hidden md:block">
+            Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр
+          </h3>
 
 
-          <div class="flex-js-c gap-2 text-[#707070]">
+          <div class="flex-js-c gap-2 text-[#707070] text-[14px] md:text-[16px]">
             Производитель
             <span class="text-[#323232] font-bold">Daiwa</span>
           </div>
@@ -244,146 +254,185 @@
 
 
           <div class="flex-jsb-c mt-2">
-            <h4 class="text-[24px] font-semibold">3 200 ₽</h4>
+            <h4 class="text-[24px] font-semibold hidden md:block">3 200 ₽</h4>
             <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-              В корзину
+              <span class="hidden md:block">В корзину</span>
               <img src="img/icons/basket-white.svg" alt="">
             </button>
+            <div class="flex-je-c gap-2 flex md:hidden">
+              <div class="w-[40px] h-[32px] flex-jc-c rounded-[8px]">
+                <img src="img/icons/heard-gray.svg" alt="heard-gray">
+              </div>
+              <div class="w-[40px] h-[32px] flex-jc-c rounded-[8px]">
+                <img src="img/icons/rating-gray.svg" alt="rating-gray">
+              </div>
+            </div>
+
           </div>
 
 
         </div>
+    </div>
+    <div class="w-full">
+      <div class="w-full h-[217px] md:h-[427px] border rounded-[16px] relative">
+        <div class="absolute top-2 right-2 flex-je-c gap-2 hidden md:block">
+          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+            <img src="img/icons/heard-gray.svg" alt="heard-gray">
+          </div>
+          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+            <img src="img/icons/rating-gray.svg" alt="rating-gray">
+          </div>
+        </div>
+
+        <div class="swiper swiperProductItems h-full relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide px-6 flex-jc-c">
+              <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
+            </div>
+            <div class="swiper-slide px-6 flex-jc-c">
+              <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
+            </div>
+            <div class="swiper-slide px-6 flex-jc-c">
+              <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
+            </div>
+          </div>
+          <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
+        </div>
+
+
       </div>
-      <div class="w-full">
-        <div class="w-full h-[427px] border rounded-[16px] relative">
-          <div class="absolute top-2 right-2 flex-je-c gap-2">
-            <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+      <div class="w-full pt-2 md:p-4 ">
+        <h3 class="md:text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] block md:hidden">
+          Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр
+        </h3>
+
+        <div class="flex-jsb-c flex-wrap">
+          <div class="flex-js-c text-[#6E6E6E] gap-[5px] text-[14px] md:text-[16px]">
+            <img src="img/icons/star-yellow.svg" alt="star-yellow">
+            4.2
+            <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
+            29 отзывов
+          </div>
+          <span class="text-[#6E6E6E] text-[14px] md:text-[16px]">арт. 234 345</span>
+        </div>
+
+        <h3 class="md:text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px] hidden md:block">
+          Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр
+        </h3>
+
+
+        <div class="flex-js-c gap-2 text-[#707070] text-[14px] md:text-[16px]">
+          Производитель
+          <span class="text-[#323232] font-bold">Daiwa</span>
+        </div>
+
+
+        <div class="flex-js-c gap-1 mt-2">
+          <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
+          <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+        </div>
+
+
+        <div class="flex-jsb-c mt-2">
+          <h4 class="text-[24px] font-semibold hidden md:block">3 200 ₽</h4>
+          <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
+            <span class="hidden md:block">В корзину</span>
+            <img src="img/icons/basket-white.svg" alt="">
+          </button>
+          <div class="flex-je-c gap-2 flex md:hidden">
+            <div class="w-[40px] h-[32px] flex-jc-c rounded-[8px]">
               <img src="img/icons/heard-gray.svg" alt="heard-gray">
             </div>
-            <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+            <div class="w-[40px] h-[32px] flex-jc-c rounded-[8px]">
               <img src="img/icons/rating-gray.svg" alt="rating-gray">
             </div>
           </div>
 
-          <div class="swiper swiperProductItems h-full relative">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide px-6 flex-jc-c">
-                <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-              </div>
-              <div class="swiper-slide px-6 flex-jc-c">
-                <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-              </div>
-              <div class="swiper-slide px-6 flex-jc-c">
-                <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-              </div>
-            </div>
-            <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
-          </div>
-
-
         </div>
-        <div class="w-full p-4">
-          <div class="flex-jsb-c">
-            <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
-              <img src="img/icons/star-yellow.svg" alt="star-yellow">
-              4.2
-              <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
-              29 отзывов
-            </div>
-            <span class="text-[#6E6E6E]">арт. 234 345</span>
-          </div>
-
-          <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
 
 
-          <div class="flex-js-c gap-2 text-[#707070]">
-            Производитель
-            <span class="text-[#323232] font-bold">Daiwa</span>
-          </div>
-
-
-          <div class="flex-js-c gap-1 mt-2">
-            <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-            <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
-          </div>
-
-
-          <div class="flex-jsb-c mt-2">
-            <h4 class="text-[24px] font-semibold">3 200 ₽</h4>
-            <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-              В корзину
-              <img src="img/icons/basket-white.svg" alt="">
-            </button>
-          </div>
-
-
-        </div>
       </div>
-      <div class="w-full">
-        <div class="w-full h-[427px] border rounded-[16px] relative">
-          <div class="absolute top-2 right-2 flex-je-c gap-2">
-            <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+    </div>
+    <div class="w-full">
+      <div class="w-full h-[217px] md:h-[427px] border rounded-[16px] relative">
+        <div class="absolute top-2 right-2 flex-je-c gap-2 hidden md:block">
+          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+            <img src="img/icons/heard-gray.svg" alt="heard-gray">
+          </div>
+          <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+            <img src="img/icons/rating-gray.svg" alt="rating-gray">
+          </div>
+        </div>
+
+        <div class="swiper swiperProductItems h-full relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide px-6 flex-jc-c">
+              <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
+            </div>
+            <div class="swiper-slide px-6 flex-jc-c">
+              <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
+            </div>
+            <div class="swiper-slide px-6 flex-jc-c">
+              <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
+            </div>
+          </div>
+          <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
+        </div>
+
+
+      </div>
+      <div class="w-full pt-2 md:p-4 ">
+        <h3 class="md:text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] block md:hidden">
+          Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр
+        </h3>
+
+        <div class="flex-jsb-c flex-wrap">
+          <div class="flex-js-c text-[#6E6E6E] gap-[5px] text-[14px] md:text-[16px]">
+            <img src="img/icons/star-yellow.svg" alt="star-yellow">
+            4.2
+            <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
+            29 отзывов
+          </div>
+          <span class="text-[#6E6E6E] text-[14px] md:text-[16px]">арт. 234 345</span>
+        </div>
+
+        <h3 class="md:text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px] hidden md:block">
+          Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр
+        </h3>
+
+
+        <div class="flex-js-c gap-2 text-[#707070] text-[14px] md:text-[16px]">
+          Производитель
+          <span class="text-[#323232] font-bold">Daiwa</span>
+        </div>
+
+
+        <div class="flex-js-c gap-1 mt-2">
+          <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
+          <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
+        </div>
+
+
+        <div class="flex-jsb-c mt-2">
+          <h4 class="text-[24px] font-semibold hidden md:block">3 200 ₽</h4>
+          <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
+            <span class="hidden md:block">В корзину</span>
+            <img src="img/icons/basket-white.svg" alt="">
+          </button>
+          <div class="flex-je-c gap-2 flex md:hidden">
+            <div class="w-[40px] h-[32px] flex-jc-c rounded-[8px]">
               <img src="img/icons/heard-gray.svg" alt="heard-gray">
             </div>
-            <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px]">
+            <div class="w-[40px] h-[32px] flex-jc-c rounded-[8px]">
               <img src="img/icons/rating-gray.svg" alt="rating-gray">
             </div>
           </div>
 
-          <div class="swiper swiperProductItems h-full relative">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide px-6 flex-jc-c">
-                <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-              </div>
-              <div class="swiper-slide px-6 flex-jc-c">
-                <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-              </div>
-              <div class="swiper-slide px-6 flex-jc-c">
-                <img src="img/products/product1.png" alt="product1" class="w-full h-ful object-contain">
-              </div>
-            </div>
-            <div class="swiper-pagination-inner flex-jc-c absolute left-0 !bottom-6 z-[100000]"></div>
-          </div>
-
-
         </div>
-        <div class="w-full p-4">
-          <div class="flex-jsb-c">
-            <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
-              <img src="img/icons/star-yellow.svg" alt="star-yellow">
-              4.2
-              <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
-              29 отзывов
-            </div>
-            <span class="text-[#6E6E6E]">арт. 234 345</span>
-          </div>
-
-          <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">Спиннинг Daiwa Ninja X SF 245 см тест 15-50 гр</h3>
 
 
-          <div class="flex-js-c gap-2 text-[#707070]">
-            Производитель
-            <span class="text-[#323232] font-bold">Daiwa</span>
-          </div>
-
-
-          <div class="flex-js-c gap-1 mt-2">
-            <img src="img/icons/fish-min-logo.svg" alt="fish-min-logo">
-            <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбек</span>
-          </div>
-
-
-          <div class="flex-jsb-c mt-2">
-            <h4 class="text-[24px] font-semibold">3 200 ₽</h4>
-            <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-              В корзину
-              <img src="img/icons/basket-white.svg" alt="">
-            </button>
-          </div>
-
-
-        </div>
       </div>
+    </div>
   </div>
 </div>
 
