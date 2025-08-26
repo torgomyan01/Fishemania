@@ -6,22 +6,20 @@ function $el(target) {
   return document.querySelector(target);
 }
 
-function processComponents() {
-  const components = $('component');
+async function processComponents() {
+  const component = document.querySelector('component');
+  if (!component) return; // այլևս component չկա
 
-  if (components.length === 0) return; // այլևս component չկա
+  const src = component.getAttribute('src');
+  const response = await fetch(src);
+  const html = await response.text();
 
-  components.forEach(component => {
-    const src = component.getAttribute('src');
+  // փոխարինում՝ առանց outerHTML-ի, որ parent չպահանջվի
+  component.insertAdjacentHTML('afterend', html);
+  component.remove();
 
-    fetch(src)
-      .then(response => response.text())
-      .then((text) => {
-        component.outerHTML = text;
-        // երբ HTML-ը դրվեց, նորից ստուգում ենք՝ նոր component կա՞
-        processComponents();
-      });
-  });
+  // նորից ստուգում ենք՝ գուցե ներսում էլ component-ներ կան
+  processComponents();
 }
 
 function processDataFor() {
@@ -48,6 +46,49 @@ processDataFor();
 
 
 window.addEventListener('load', () => {
+
+
+  const mobileMenuItem = $('.mobile-menu-item');
+
+
+  mobileMenuItem.forEach((item) => {
+    item.addEventListener('click', function () {
+
+      this.parentElement.classList.toggle('active');
+
+    });
+  })
+
+  const menuItems = $el('#menu-items');
+  const menuItemsChildren = $el('#menu-items-children');
+  const goBackMenu = $el('#go-back-menu');
+
+  const itemForOpenChilds = $el('#item-for-open-childs');
+
+  const openMenuMobile = $el('#open-menu-mobile');
+  const mobileMenu = $el('#mobile-menu');
+  const closeMobileMenu = $el('#close-mobile-menu');
+
+
+  itemForOpenChilds.addEventListener('click', function (){
+    menuItems.classList.add('hidden');
+    menuItemsChildren.classList.remove('hidden');
+  })
+
+  goBackMenu.addEventListener('click', function (){
+    menuItems.classList.remove('hidden');
+    menuItemsChildren.classList.add('hidden');
+  })
+
+  openMenuMobile.addEventListener('click', function(){
+    mobileMenu.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  })
+
+  closeMobileMenu.addEventListener('click', function(){
+    mobileMenu.classList.remove('active');
+    document.body.style.overflow = null;
+  })
 
   AOS.init({
     duration: 1000
