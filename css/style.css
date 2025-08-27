@@ -8,28 +8,6 @@
   font-family: lena;
 }
 
-::-webkit-scrollbar {
-  width: 3px;
-  height: 8px;
-  border-radius: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: white;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background: #000;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #181818;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -339,10 +317,6 @@ input:checked + .slider-v3 {
 .scroll-gray::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background: rgb(146, 146, 146);
-}
-
-.custom-scroll::-webkit-scrollbar {
-  width: 2px;
 }
 
 .custom-scroll::-webkit-scrollbar-track {
