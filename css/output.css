@@ -1942,6 +1942,14 @@ select{
   margin-top: auto;
 }
 
+.mb-\[120px\]{
+  margin-bottom: 120px;
+}
+
+.mb-\[140px\]{
+  margin-bottom: 140px;
+}
+
 .block{
   display: block;
 }
@@ -5069,6 +5077,10 @@ select{
 
   .sm\:mt-\[20px\]{
     margin-top: 20px;
+  }
+
+  .sm\:mt-\[100px\]{
+    margin-top: 100px;
   }
 
   .sm\:\!block{
