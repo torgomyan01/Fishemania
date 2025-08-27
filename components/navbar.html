@@ -125,7 +125,7 @@
 
   </div>
 
-  <div class="flex-je-c gap-1">
+  <div class="flex-je-c gap-1" id="open-menu-mobile">
     Меню
     <img src="img/icons/mobile-menu.svg" alt="mobile-menu">
   </div>
@@ -173,5 +173,364 @@
         </a>
       </div>
     </div>
+  </div>
+</div>
+
+
+
+
+
+<div id="mobile-menu" class="fixed top-0 left-0 w-full h-[100dvh] bg-black/20 backdrop-blur-[2px] z-[1000] opacity-0 invisible !transition-all translate-x-[100%] [&.active]:opacity-100 [&.active]:translate-x-[0] [&.active]:visible">
+  <div class="absolute right-0 top-0 w-[90%] bg-white h-full flex-js-s flex-col">
+    <div class="w-full min-h-[56px] border-b px-4 flex-jsb-c">
+      <div class="flex-js-c gap-1">
+        <img src="img/icons/location-blue.svg" alt="location-blue">
+        г. Москва
+        <img src="img/icons/arrow-down.svg" alt="arrow-down">
+      </div>
+
+      <img src="img/icons/xmark.svg" alt="" width="30" id="close-mobile-menu">
+    </div>
+
+    <div id="menu-items" class="w-full flex-grow overflow-y-auto custom-scroll">
+      <div class="group">
+        <div class="w-full h-11 px-4 border-b text-[18px] text-[#6E6E6E] flex-jsb-c uppercase">
+          Контакты
+        </div>
+      </div>
+      <div class="group">
+        <div class="w-full h-11 px-4 border-b text-[18px] text-[#6E6E6E] flex-jsb-c uppercase">
+          Покупателям
+          <img src="img/icons/arrow-right.svg" alt="">
+        </div>
+      </div>
+      <div class="group">
+        <div class="w-full h-11 px-4 border-b text-[18px] text-[#6E6E6E] flex-jsb-c uppercase mobile-menu-item">
+          Каталог
+          <img src="img/icons/arrow-right.svg" alt="" class="transition transform group-[.active]:rotate-[-90deg]">
+        </div>
+
+        <div class="hidden group-[.active]:block">
+          <div class="w-full h-8 bg-[#E9E9E9] pl-8 pr-4 text-[#6E6E6E] flex-js-c">
+            По категориям
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c" id="item-for-open-childs">
+            Удилища
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Аксессуары
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Катушки
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Зимняя рыбалка
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Оснастка
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Приманки
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Экипировка
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Электроника
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Туризм
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+
+          <div class="w-full h-8 bg-[#E9E9E9] pl-8 pr-4 text-[#6E6E6E] flex-js-c">
+            По типу ловли
+          </div>
+
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Джиг
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Ультралайт
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Пелагическая ловля
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Бигбейлы
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Ловля форели
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Фидер, карп и поплавок
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+
+          <div class="w-full h-8 bg-[#E9E9E9] pl-8 pr-4 text-[#6E6E6E] flex-js-c">
+            По виду рыбы
+          </div>
+
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Карп
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Сазан
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Язь
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Сом
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Карась
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+          <div class="w-full h-10 pl-8 pr-4  flex-jsb-c">
+            Щука
+            <img src="img/icons/arrow-right.svg" alt="">
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+      <div class="w-full h-3 bg-[#E9E9E9] min-h-3"></div>
+
+      <div class="w-full">
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          <div class="flex-js-s gap-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 19.25C8 19.25 4.75 16 4.75 12C4.75 8 8 4.75 12 4.75C16 4.75 19.25 8 19.25 12C19.25 16 16 19.25 12 19.25ZM12 6.25C8.83 6.25 6.25 8.83 6.25 12C6.25 15.17 8.83 17.75 12 17.75C15.17 17.75 17.75 15.17 17.75 12C17.75 8.83 15.17 6.25 12 6.25Z" fill="#323232"/>
+              <path d="M12 22.96C11.45 22.96 11 22.55 11 22V21.92C11 21.37 11.45 20.92 12 20.92C12.55 20.92 13 21.37 13 21.92C13 22.47 12.55 22.96 12 22.96ZM19.14 20.14C18.88 20.14 18.63 20.04 18.43 19.85L18.3 19.72C17.91 19.33 17.91 18.7 18.3 18.31C18.69 17.92 19.32 17.92 19.71 18.31L19.84 18.44C20.23 18.83 20.23 19.46 19.84 19.85C19.65 20.04 19.4 20.14 19.14 20.14ZM4.86 20.14C4.6 20.14 4.35 20.04 4.15 19.85C3.76 19.46 3.76 18.83 4.15 18.44L4.28 18.31C4.67 17.92 5.3 17.92 5.69 18.31C6.08 18.7 6.08 19.33 5.69 19.72L5.56 19.85C5.37 20.04 5.11 20.14 4.86 20.14ZM22 13H21.92C21.37 13 20.92 12.55 20.92 12C20.92 11.45 21.37 11 21.92 11C22.47 11 22.96 11.45 22.96 12C22.96 12.55 22.55 13 22 13ZM2.08 13H2C1.45 13 1 12.55 1 12C1 11.45 1.45 11 2 11C2.55 11 3.04 11.45 3.04 12C3.04 12.55 2.63 13 2.08 13ZM19.01 5.99C18.75 5.99 18.5 5.89 18.3 5.7C17.91 5.31 17.91 4.68 18.3 4.29L18.43 4.16C18.82 3.77 19.45 3.77 19.84 4.16C20.23 4.55 20.23 5.18 19.84 5.57L19.71 5.7C19.52 5.89 19.27 5.99 19.01 5.99ZM4.99 5.99C4.73 5.99 4.48 5.89 4.28 5.7L4.15 5.56C3.76 5.17 3.76 4.54 4.15 4.15C4.54 3.76 5.17 3.76 5.56 4.15L5.69 4.28C6.08 4.67 6.08 5.3 5.69 5.69C5.5 5.89 5.24 5.99 4.99 5.99ZM12 3.04C11.45 3.04 11 2.63 11 2.08V2C11 1.45 11.45 1 12 1C12.55 1 13 1.45 13 2C13 2.55 12.55 3.04 12 3.04Z" fill="#323232"/>
+            </svg>
+            Бренды
+          </div>
+          <img src="img/icons/arrow-right.svg" alt="">
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          <div class="flex-js-s gap-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.80602 19.71H6.47102C5.26702 19.71 4.29002 18.734 4.29002 17.529V16.097C4.29002 15.519 4.06002 14.964 3.65102 14.555L2.63802 13.542C1.78602 12.69 1.78602 11.31 2.63802 10.458L3.65102 9.44502C4.06002 9.03602 4.29002 8.48202 4.29002 7.90302V6.47102C4.29002 5.26702 5.26602 4.29002 6.47102 4.29002H7.90302C8.48102 4.29002 9.03602 4.06002 9.44502 3.65102L10.458 2.63802C11.31 1.78602 12.69 1.78602 13.542 2.63802L14.555 3.65102C14.964 4.06002 15.519 4.29002 16.097 4.29002H17.529C18.733 4.29002 19.71 5.26602 19.71 6.47102V7.90302C19.71 8.48102 19.94 9.03602 20.349 9.44502L21.362 10.458C22.214 11.31 22.214 12.69 21.362 13.542L20.349 14.555C19.94 14.964 19.71 15.519 19.71 16.097V17.529C19.71 18.733 18.734 19.71 17.529 19.71H16.097C15.519 19.71 14.964 19.94 14.555 20.349L13.542 21.362C12.69 22.214 11.31 22.214 10.458 21.362L8.80602 19.71Z" stroke="#CF301B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9 15L15 9" stroke="#CF301B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.249 9C9.111 9 8.999 9.112 9 9.25C9 9.388 9.112 9.5 9.25 9.5C9.388 9.5 9.5 9.388 9.5 9.25C9.5 9.112 9.388 9 9.249 9" stroke="#CF301B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14.749 14.5C14.611 14.5 14.499 14.612 14.5 14.75C14.5 14.888 14.612 15 14.75 15C14.888 15 15 14.888 15 14.75C15 14.612 14.888 14.5 14.749 14.5" stroke="#CF301B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Распродажа
+          </div>
+          <img src="img/icons/arrow-right.svg" alt="">
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          <div class="flex-js-s gap-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 17.0021V17.0021C12.159 17.002 12.2932 16.8844 12.3143 16.727L12.4623 15.6205C12.6817 13.9756 13.9757 12.6815 15.6206 12.4622L16.7271 12.3141C16.8845 12.2931 17.0021 12.1588 17.0022 12V12C17.0021 11.8412 16.8845 11.7069 16.7271 11.6859L15.6206 11.5378C13.9757 11.3185 12.6817 10.0244 12.4623 8.3795L12.3143 7.27304C12.2932 7.11561 12.159 6.99803 12.0001 6.99792V6.99792C11.8413 6.99803 11.707 7.11561 11.686 7.27304L11.5379 8.3795C11.3186 10.0244 10.0245 11.3185 8.37962 11.5378L7.27316 11.6859C7.11573 11.7069 6.99815 11.8412 6.99805 12V12C6.99815 12.1588 7.11573 12.2931 7.27316 12.3141L8.37962 12.4622C10.0245 12.6815 11.3186 13.9756 11.5379 15.6205L11.686 16.727C11.707 16.8844 11.8413 17.002 12.0001 17.0021V17.0021Z" stroke="#336B46" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.7209 5.27925C22.432 8.99092 22.4317 15.0082 18.7202 18.7196C15.0087 22.4309 8.99139 22.4309 5.2799 18.7196C1.56841 15.0082 1.56812 8.99092 5.27925 5.27925C7.06163 3.49661 9.47921 2.49512 12.0001 2.49512C14.5209 2.49512 16.9385 3.49661 18.7209 5.27925" stroke="#336B46" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            Новинки
+          </div>
+          <img src="img/icons/arrow-right.svg" alt="">
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          <div class="flex-js-s gap-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.0041 12C21.0041 16.9726 16.973 21.0037 12.0003 21.0037C7.0277 21.0037 2.99658 16.9726 2.99658 12C2.99658 7.02733 7.0277 2.99622 12.0003 2.99622" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3429 2.38796C18.4748 2.14645 18.728 1.99622 19.0032 1.99622C19.2784 1.99622 19.5316 2.14645 19.6635 2.38796L20.2467 3.4534C20.3159 3.58014 20.4201 3.68432 20.5469 3.75353L21.6123 4.33577C21.8543 4.4675 22.005 4.721 22.005 4.99654C22.005 5.27209 21.8543 5.52559 21.6123 5.65732L20.5469 6.24056C20.4198 6.30935 20.3155 6.41364 20.2467 6.54069L19.6635 7.60513C19.5316 7.84664 19.2784 7.99687 19.0032 7.99687C18.728 7.99687 18.4748 7.84664 18.3429 7.60513L17.7597 6.53969C17.6909 6.41264 17.5866 6.30835 17.4596 6.23956L16.3941 5.65732C16.1521 5.52559 16.0015 5.27209 16.0015 4.99654C16.0015 4.721 16.1521 4.4675 16.3941 4.33577L17.4596 3.75353C17.5863 3.68432 17.6905 3.58014 17.7597 3.4534L18.3429 2.38796Z" stroke="#009FFF" stroke-width="1.5"/>
+              <path d="M8.99874 9.32886V10.3293" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15.0012 9.32886V10.3293" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15.2435 14.6591C13.4521 16.449 10.5492 16.449 8.75781 14.6591" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            Подарочные сертификаты
+          </div>
+          <img src="img/icons/arrow-right.svg" alt="">
+        </div>
+      </div>
+
+      <div class="w-full h-3 bg-[#E9E9E9] min-h-3"></div>
+
+      <div class="w-full">
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          <div class="flex-js-s gap-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0585 18.1206C14.9587 18.1206 18.1205 14.9588 18.1205 11.0586C18.1205 7.15844 14.9587 3.9967 11.0585 3.9967C7.15832 3.9967 3.99658 7.15844 3.99658 11.0586C3.99658 14.9588 7.15832 18.1206 11.0585 18.1206Z" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20.0034 20.0033L16.0518 16.0516" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            Поиск
+          </div>
+          <img src="img/icons/arrow-right.svg" alt="">
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          <div class="flex-js-s gap-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.871 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.129 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            Избранное
+          </div>
+          <img src="img/icons/arrow-right.svg" alt="">
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          <div class="flex-js-s gap-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.335 20L14.335 8L18.0043 8C18.5567 8 19.005 8.448 19.005 9L19.005 20L14.335 20Z" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.66504 20L9.66504 4.88889C9.66504 4.39822 10.1133 4 10.6657 4L13.3344 4C13.8868 4 14.335 4.39822 14.335 4.88889L14.335 20L9.66504 20Z" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.99512 20L4.99512 10.6667C4.99512 10.2987 5.4434 10 5.99576 10L9.66512 10L9.66512 20L4.99512 20Z" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            Сравнение
+          </div>
+          <img src="img/icons/arrow-right.svg" alt="">
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          <div class="flex-js-s gap-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.96905 6.625L5.30205 3.625H3.37305" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73124 14.835L5.96924 6.625H18.6272C19.2642 6.625 19.7382 7.212 19.6052 7.835L18.1032 14.835C18.0042 15.296 17.5972 15.625 17.1252 15.625H8.70824C8.23724 15.625 7.83024 15.296 7.73124 14.835Z" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17.4648 19.25C17.2578 19.25 17.0898 19.418 17.0918 19.625C17.0918 19.832 17.2598 20 17.4668 20C17.6738 20 17.8418 19.832 17.8418 19.625C17.8408 19.418 17.6728 19.25 17.4648 19.25" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.85593 19.25C8.64893 19.25 8.48093 19.418 8.48293 19.625C8.48193 19.832 8.64993 20 8.85693 20C9.06393 20 9.23193 19.832 9.23193 19.625C9.23193 19.418 9.06393 19.25 8.85593 19.25" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            Корзина
+          </div>
+          <img src="img/icons/arrow-right.svg" alt="">
+        </div>
+      </div>
+
+      <div class="w-full h-3 bg-[#E9E9E9] min-h-3"></div>
+
+      <div class="w-full p-4">
+        <a href="tel: 8 (800) 101-86-53" class="text-[24px] font-medium">8 (800) 101-86-53</a>
+        <a href="tel: 8 (800) 101-86-53" class="text-[24px] font-medium">8 (921) 903-53-50</a>
+
+        <a href="mailto: fishemania777@yandex.ru" class="text-blue underline">fishemania777@yandex.ru</a>
+        <p class="text-[14px] text-[#212121] mt-2">
+          Пн-Пт : с 10:00 до 18:00 <br>
+          Сб-Вс : Выходные
+        </p>
+        <button class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition mt-3 h-[54px] px-6 rounded-[8px] text-white font-bold w-full">
+          Обратный звонок
+        </button>
+
+
+      </div>
+
+    </div>
+
+    <div id="menu-items-children" class="w-full flex-grow overflow-y-auto custom-scroll hidden">
+      <div class="w-full py-2 flex-js-c px-6 gap-2 text-[24px] font-medium" id="go-back-menu">
+        <img src="img/icons/arrow-right.svg" alt="arrow-right" class="transform rotate-180 opacity-70">
+        Удилища
+      </div>
+      <div class="">
+        <div class="w-full h-8 bg-[#E9E9E9] px-4 text-[#6E6E6E] flex-js-c">
+          Категории
+        </div>
+
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Спиннинги
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Удочки
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Вершинки для удилищ
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Удилища маховые
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Удилища болонские
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Спиннинги ультралайт
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Спиннинги джиговые
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Спиннинги кастинговые
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Спиннинги Maximus
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Удилища фидерные
+        </div>
+
+        <div class="w-full h-8 bg-[#E9E9E9] px-4 text-[#6E6E6E] flex-js-c">
+          Популярные разделы
+        </div>
+
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Спиннинги ультралайт
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Фидерные удилища
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Троллинговые удилища
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Болонское удилище
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Маховая удочка
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Спининг универсальный
+        </div>
+        <div class="w-full h-10 px-4  flex-jsb-c">
+          Спининг для джига
+        </div>
+
+        <div class="w-full h-8 bg-[#E9E9E9] px-4 text-[#6E6E6E] flex-js-c">
+          Бренды
+        </div>
+
+        <div class="w-full p-4 grid grid-cols-2 gap-4">
+          <div class="w-full flex-jc-c px-4 py-2 border rounded-[6px]">
+            <img src="img/brand-img1.png">
+          </div>
+          <div class="w-full flex-jc-c px-4 py-2 border rounded-[6px]">
+            <img src="img/brand-img2.png">
+          </div>
+          <div class="w-full flex-jc-c px-4 py-2 border rounded-[6px]">
+            <img src="img/brand-img3.png">
+          </div>
+          <div class="w-full flex-jc-c px-4 py-2 border rounded-[6px]">
+            <img src="img/brand-img4.png">
+          </div>
+        </div>
+
+       <div class="p-4 mt-4">
+         <img src="img/banner-mobile-menu.png" alt="banner-mobile-menu.png" class="w-full">
+       </div>
+
+
+      </div>
+    </div>
+
   </div>
 </div>

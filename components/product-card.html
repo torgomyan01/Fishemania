@@ -1,5 +1,5 @@
-<div class="w-full">
-  <div class="w-full h-[427px] border rounded-[16px] relative">
+<div class="w-full md:transition transform hover:scale-[1.01] product-item-hover rounded-[10px] group">
+  <div class="w-full h-[217px] md:h-[427px] border rounded-[16px] relative transition md:group-hover:border-transparent">
 
     <div class="absolute left-[10px] top-[10px] w-[calc(100%-16px)] flex-jsb-s gap-2 z-10">
       <div class="flex max-[1700px]:flex-col gap-2 max-[1700px]:items-start">
@@ -10,7 +10,7 @@
                   text-[white] ">-36%
         </div>
       </div>
-      <div class=" flex-je-c gap-2">
+      <div class=" flex-je-c gap-2 hidden md:flex">
         <div class="w-[40px] h-[32px] flex-jc-c bg-black/10 rounded-[8px] cursor-pointer">
           <img src="img/icons/heard-gray.svg" alt="heard-gray">
         </div>
@@ -38,12 +38,12 @@
 
 
   </div>
-  <div class="w-full p-4">
-    <h3 class="text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] h-[72px]">
+  <div class="w-full sm:p-4">
+    <h3 class="sm:text-[18px] text-[#212121] mt-1 tracking-[-0.18px] leading-[24px] md:h-[72px] mb-2 md:mb-0">
       Воблер для рыбалки глубоководный Jaxon Diver DR 12 см 28 гр #U
     </h3>
     <div class="flex-jsb-c">
-      <div class="flex-js-c text-[#6E6E6E] gap-[5px]">
+      <div class="flex-js-c text-[#6E6E6E] gap-[5px] text-[14px] md:text-[16px]">
         <img src="img/icons/star-yellow.svg" alt="star-yellow">
         4.2
         <span class="min-w-[4px] max-w-[4px] w-[4px] h-[4px] rounded-full bg-[#6E6E6E] mx-1"></span>
@@ -64,14 +64,26 @@
       <span class="text-[14px] text-[#CF301B] font-bold">+555 Кешбэк</span>
     </div>
 
+    <h4 class="text-[20px] font-semibold block md:hidden text-[#CF301B]">3 200 ₽</h4>
+    <h4 class="text-[14px] block md:hidden line-through">400 ₽</h4>
 
     <div class="flex-jsb-c mt-2">
-      <h4 class="text-[24px] font-semibold">3 200 ₽</h4>
+      <h4 class="text-[24px] font-semibold hidden md:block">3 200 ₽</h4>
       <button
           class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2">
-        В корзину
+        <span class="hidden sm:inline-block text-white">В корзину</span>
         <img src="img/icons/basket-white.svg" alt="">
       </button>
+
+
+      <div class=" flex-je-c gap-2 flex md:hidden">
+        <div class="w-[40px] h-[32px] flex-jc-c  rounded-[8px] cursor-pointer">
+          <img src="img/icons/heard-gray.svg" alt="heard-gray">
+        </div>
+        <div class="w-[40px] h-[32px] flex-jc-c  rounded-[8px] cursor-pointer">
+          <img src="img/icons/rating-gray.svg" alt="rating-gray">
+        </div>
+      </div>
     </div>
 
 

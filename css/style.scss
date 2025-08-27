@@ -423,6 +423,19 @@ input:checked + .slider-v3 {
 }
 
 
+.product-item-hover{
+  &:hover{
+    @media (min-width: 768px) {
+      box-shadow: 0 32px 36.4px -4px rgba(0, 0, 0, 0.20);
+    }
+
+    @media (max-width: 767px) {
+      transform: scale(1) !important;
+    }
+  }
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
