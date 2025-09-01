@@ -6,13 +6,26 @@
       </h3>
       <div class="w-full md:w-1/2">
         <p class="text-white">Получай наши новости, акции, советы и рекомендации экспертов</p>
-        <form action="#" class="w-full flex-jsb-c max-[431px]:flex-col gap-4 mt-4">
-          <label class="w-full h-[54px] bg-white overflow-hidden rounded-[8px]">
+        <form action="#" class="w-full flex-jsb-c max-[431px]:flex-col gap-4 mt-4" id="footer-form">
+          <label class="w-full h-[54px] bg-white overflow-hidden rounded-[8px] relative">
             <input type="text" placeholder="Ваша почта" class="w-full h-full pl-6">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 class="absolute top-1/2 right-3 transform translate-y-[-50%]" style="display: none" id="icon-success">
+              <rect width="24" height="24" rx="8" fill="#2FAF6F"/>
+              <path d="M8.50183 12.5L11.0018 15L16.0018 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </label>
           <button
-              class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2 max-[431px]:w-full">
+              class="bg-[#CF301B] hover:bg-[#CF301B]/90 transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2 max-[431px]:w-full" id="footer-submit-btn">
             Подписаться
+          </button>
+          <button
+              class="bg-[#2FAF6F] transition h-[54px] px-6 rounded-[8px] text-white text-nowrap font-bold flex-jc-c gap-2 max-[431px]:w-full" id="footer-submit-success" style="display: none" type="button">
+            Подписка  успешно оформлена
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.50183 12.5L11.0018 15L16.0018 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
           </button>
         </form>
       </div>
@@ -46,7 +59,7 @@
 
       <div class="col-span-2 min-[1300px]:col-span-3 lg:pr-4">
         <h4 class="text-white text-[20px] mb-4">Каталог</h4>
-        <div class="flex-jsb-s min-[1300px]:gap-[60px] max-[1300px]:flex-col">
+        <div class="flex-js-s min-[1300px]:gap-[60px] max-[1300px]:flex-col">
           <ul>
             <li>
               <a href="#" class="text-white opacity-80 mb-2 hover:text-blue">

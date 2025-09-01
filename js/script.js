@@ -20,6 +20,21 @@ async function processComponents() {
 
   // նորից ստուգում ենք՝ գուցե ներսում էլ component-ներ կան
   processComponents();
+
+
+
+  const footerForm = document.getElementById("footer-form");
+
+
+  footerForm?.addEventListener('submit', function (e){
+    e.preventDefault();
+
+    $el('#footer-submit-btn').style.display = 'none';
+    $el('#footer-submit-success').style.display = 'flex';
+    $el('#icon-success').style.display = 'block';
+
+    console.log('fff')
+  })
 }
 
 function processDataFor() {
@@ -38,6 +53,10 @@ function processDataFor() {
 
   // data-for-ից հետո կարող են նոր component հայտնվել
   processComponents();
+
+
+
+
 }
 
 // նախ աշխատում է data-for
@@ -457,5 +476,10 @@ window.addEventListener('load', () => {
 
 
 
+
+
+
 })
+
+
 
