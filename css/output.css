@@ -2410,10 +2410,6 @@ select{
   width: 100%;
 }
 
-.w-7{
-  width: 1.75rem;
-}
-
 .min-w-10{
   min-width: 2.5rem;
 }
@@ -3960,6 +3956,11 @@ select{
   color: rgb(255 255 255 / 0.8);
 }
 
+.\!text-white{
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1)) !important;
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -5287,10 +5288,6 @@ select{
 
   .md\:w-auto{
     width: auto;
-  }
-
-  .md\:w-7{
-    width: 1.75rem;
   }
 
   .md\:min-w-\[320px\]{
