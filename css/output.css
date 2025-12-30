@@ -4349,10 +4349,6 @@ select{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .max-\[1600px\]\:flex-col{
-    flex-direction: column;
-  }
-
   .max-\[1600px\]\:gap-\[50px\]{
     gap: 50px;
   }
@@ -4489,8 +4485,20 @@ select{
 }
 
 @media (max-width: 1200px){
-  .max-\[1200px\]\:flex-col{
-    flex-direction: column;
+  .max-\[1200px\]\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .max-\[1200px\]\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .max-\[1200px\]\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .max-\[1200px\]\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
@@ -4593,10 +4601,6 @@ select{
 
   .max-\[1024px\]\:gap-\[12px\]{
     gap: 12px;
-  }
-
-  .max-\[1024px\]\:gap-\[50px\]{
-    gap: 50px;
   }
 
   .max-\[1024px\]\:p-\[0px\]{
@@ -4811,6 +4815,10 @@ select{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .max-\[767px\]\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .max-\[767px\]\:flex-col{
     flex-direction: column;
   }
@@ -4988,6 +4996,10 @@ select{
 
   .max-\[576px\]\:block{
     display: block;
+  }
+
+  .max-\[576px\]\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .max-\[576px\]\:border-b{
@@ -5452,6 +5464,10 @@ select{
 
   .lg\:max-w-\[670px\]{
     max-width: 670px;
+  }
+
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:gap-8{
