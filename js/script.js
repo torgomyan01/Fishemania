@@ -94,7 +94,7 @@ window.addEventListener('load', () => {
     menuItemsChildren.classList.remove('hidden');
   })
 
-  goBackMenu.addEventListener('click', function (){
+  goBackMenu?.addEventListener('click', function (){
     menuItems.classList.remove('hidden');
     menuItemsChildren.classList.add('hidden');
   })
