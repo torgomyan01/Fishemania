@@ -94,7 +94,7 @@ window.addEventListener('load', () => {
     menuItemsChildren.classList.remove('hidden');
   })
 
-  goBackMenu.addEventListener('click', function (){
+  goBackMenu?.addEventListener('click', function (){
     menuItems.classList.remove('hidden');
     menuItemsChildren.classList.add('hidden');
   })
@@ -134,7 +134,7 @@ window.addEventListener('load', () => {
       },
       1600: {
         slidesPerView: 5, // ключевой момент!
-        spaceBetween: 30,
+        spaceBetween: 15,
       },
     },
   });
@@ -292,7 +292,7 @@ window.addEventListener('load', () => {
   const swiperProduct = new Swiper('.swiperHeroProduct', {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 20,
     nested: true,
     navigation: {
       nextEl: '.swiper-button-next.product',
