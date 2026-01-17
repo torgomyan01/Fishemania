@@ -474,6 +474,98 @@ window.addEventListener('load', () => {
     document.body.classList.remove('overflow-hidden')
   })
 
+  // Catalog menu functionality
+  const catalogMenuBtn = $el('#catalog-menu-btn');
+  const catalogMenuBtnMobile = $el('#catalog-menu-btn-mobile');
+  const catalogMenuCloseBtn = $el('#catalog-menu-close-btn');
+  const catalogMenuCloseBtnMobile = $el('#catalog-menu-close-btn-mobile');
+  const catalogMenuOverlay = $el('#catalog-menu-overlay');
+  const catalogMenuContent = $el('#catalog-menu-content');
+  const catalogMenuDetails = $el('#catalog-menu-details');
+
+  function openCatalogMenu() {
+    // Set body overflow hidden and scroll to top
+    document.body.style.overflow = 'hidden';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    // Show overlay with animation
+    catalogMenuOverlay.classList.remove('opacity-0', 'invisible');
+    catalogMenuOverlay.classList.add('opacity-100', 'visible');
+    
+    // Show menu content with slide animation
+    catalogMenuContent.classList.remove('-translate-x-full');
+    catalogMenuContent.classList.add('translate-x-0');
+    
+    // Show details panel with fade animation
+    catalogMenuDetails.classList.remove('opacity-0', 'invisible');
+    catalogMenuDetails.classList.add('opacity-100', 'visible');
+    
+    // Switch buttons: hide open buttons, show close buttons
+    catalogMenuBtn?.classList.add('hidden');
+    catalogMenuBtnMobile?.classList.add('hidden');
+    catalogMenuCloseBtn?.classList.remove('hidden');
+    catalogMenuCloseBtnMobile?.classList.remove('hidden');
+  }
+
+  function closeCatalogMenu() {
+    // Hide details panel
+    catalogMenuDetails.classList.remove('opacity-100', 'visible');
+    catalogMenuDetails.classList.add('opacity-0', 'invisible');
+    
+    // Hide menu content
+    catalogMenuContent.classList.remove('translate-x-0');
+    catalogMenuContent.classList.add('-translate-x-full');
+    
+    // Hide overlay
+    catalogMenuOverlay.classList.remove('opacity-100', 'visible');
+    catalogMenuOverlay.classList.add('opacity-0', 'invisible');
+    
+    // Restore body overflow
+    document.body.style.overflow = '';
+    
+    // Switch buttons: show open buttons, hide close buttons
+    catalogMenuBtn?.classList.remove('hidden');
+    catalogMenuBtnMobile?.classList.remove('hidden');
+    catalogMenuCloseBtn?.classList.add('hidden');
+    catalogMenuCloseBtnMobile?.classList.add('hidden');
+  }
+
+  // Open menu on button click (desktop and mobile)
+  catalogMenuBtn?.addEventListener('click', function(e) {
+    e.preventDefault();
+    openCatalogMenu();
+  });
+
+  catalogMenuBtnMobile?.addEventListener('click', function(e) {
+    e.preventDefault();
+    openCatalogMenu();
+  });
+
+  // Close menu on overlay click
+  catalogMenuOverlay?.addEventListener('click', function(e) {
+    if (e.target === catalogMenuOverlay) {
+      closeCatalogMenu();
+    }
+  });
+
+  // Close menu on close button click
+  catalogMenuCloseBtn?.addEventListener('click', function(e) {
+    e.preventDefault();
+    closeCatalogMenu();
+  });
+
+  catalogMenuCloseBtnMobile?.addEventListener('click', function(e) {
+    e.preventDefault();
+    closeCatalogMenu();
+  });
+
+  // Close menu on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && !catalogMenuOverlay.classList.contains('invisible')) {
+      closeCatalogMenu();
+    }
+  });
+
 
 
 

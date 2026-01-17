@@ -36,7 +36,7 @@
 </div>
 
 
-<div class="w-full py-4 hidden sm:!block">
+<div class="w-full py-4 hidden sm:!block relative">
   <div class="container">
     <div class="w-full flex-jsb-c gap-4">
       <div class="flex-js-c gap-4">
@@ -46,18 +46,32 @@
         </a>
 
         <button
-            class="bg-blue rounded-[8px] px-4 h-[50px] flex-js-c min-w-[915pox]:flex-jsb-c gap-3 text-white
+            id="catalog-menu-btn-mobile"
+            class="catalog-btn-open bg-blue rounded-[8px] px-4 h-[50px] flex-js-c min-w-[915pox]:flex-jsb-c gap-3 text-white
              hover:bg-blue/80 transition min-w-[150px] flex min-[640px]:hidden text-[14px]">
           <img src="img/icons/menu-catalog.svg" alt="menu-catalog">
+          Каталог
+        </button>
+        <button
+            id="catalog-menu-close-btn-mobile"
+            class="catalog-btn-close bg-[#CF301B] rounded-[8px] px-6 h-[50px] flex-jsb-c gap-3 text-white hover:bg-[#CF301B]/80 transition min-w-[150px] hidden min-[640px]:hidden text-[14px]">
+          <img src="img/icons/xmark.svg" alt="menu-catalog" class="brightness-[9]">
           Каталог
         </button>
       </div>
 
       <div class="flex-jsb-c gap-4 min-[640px]:flex flex-grow">
         <button
-            class="bg-blue rounded-[8px] px-4 h-[42px] flex-js-c min-w-[640px]:flex-jsb-c gap-3 text-white text-[14px]
+            id="catalog-menu-btn"
+            class="catalog-btn-open bg-blue rounded-[8px] px-4 h-[42px] flex-js-c min-w-[640px]:flex-jsb-c gap-3 text-white text-[14px]
              hover:bg-blue/80 transition min-w-[130px] flex max-[640px]:hidden">
           <img src="img/icons/menu-catalog.svg" alt="menu-catalog">
+          Каталог
+        </button>
+        <button
+            id="catalog-menu-close-btn"
+            class="catalog-btn-close bg-[#CF301B] rounded-[8px] px-6 h-[42px] flex-jsb-c gap-3 text-white hover:bg-[#CF301B]/80 transition min-w-[130px] hidden max-[640px]:hidden text-[14px]">
+          <img src="img/icons/xmark.svg" alt="menu-catalog" class="brightness-[9]">
           Каталог
         </button>
         <form action="#" class="w-full min-[1328px]:mr-9 bg-blue rounded-[8px] flex-jsb-c h-[42px] p-[2px] hidden min-[640px]:flex">
@@ -99,6 +113,360 @@
     </div>
 
   </div>
+
+
+  <div id="catalog-menu-overlay" class="w-full h-[calc(100dvh-140px)] absolute left-0 top-[100%] bg-black/50 z-[10000] opacity-0 invisible transition-all duration-300"></div>
+
+  <div id="catalog-menu-content" class="w-[350px] xl:w-[489px] h-[calc(100dvh-140px)] bg-white absolute left-0 top-[100%]
+   pl-6 xl:pl-[100px] overflow-y-auto custom-scroll pb-[100px] border-r border-r-[#D7DBDF] z-[10001] transform -translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="w-full text-[#6E6E6E] pt-6 pb-3 border-b">
+      По категориям
+    </div>
+
+    <ul class="w-full">
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Удилища
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Аксессуары
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Катушки
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Зимняя рыбалка
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Оснастка
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Приманки
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Экипировка
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Туризм
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+    </ul>
+
+    <div class="w-full text-[#6E6E6E] pt-6 pb-3 border-b">
+      По типу ловли
+    </div>
+
+    <ul class="w-full">
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Джиг
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Ультралайт
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Пелагическая ловля
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Бигбейлы
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Ловля форели
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Ловля лосося
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Фидер, карп и поплавок
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+    </ul>
+
+    <div class="w-full text-[#6E6E6E] pt-6 pb-3 border-b">
+      По виду рыбы
+    </div>
+
+    <ul class="w-full">
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Карп
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Сазан
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Язь
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Сом
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Карась
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          Щука
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+    </ul>
+
+    <div class="w-full text-[#6E6E6E] pt-6 pb-3 border-b">
+    </div>
+
+    <ul class="w-full">
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          <div class="flex-js-c gap-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 19.25C8 19.25 4.75 16 4.75 12C4.75 8 8 4.75 12 4.75C16 4.75 19.25 8 19.25 12C19.25 16 16 19.25 12 19.25ZM12 6.25C8.83 6.25 6.25 8.83 6.25 12C6.25 15.17 8.83 17.75 12 17.75C15.17 17.75 17.75 15.17 17.75 12C17.75 8.83 15.17 6.25 12 6.25Z" fill="#323232"></path>
+              <path d="M12 22.96C11.45 22.96 11 22.55 11 22V21.92C11 21.37 11.45 20.92 12 20.92C12.55 20.92 13 21.37 13 21.92C13 22.47 12.55 22.96 12 22.96ZM19.14 20.14C18.88 20.14 18.63 20.04 18.43 19.85L18.3 19.72C17.91 19.33 17.91 18.7 18.3 18.31C18.69 17.92 19.32 17.92 19.71 18.31L19.84 18.44C20.23 18.83 20.23 19.46 19.84 19.85C19.65 20.04 19.4 20.14 19.14 20.14ZM4.86 20.14C4.6 20.14 4.35 20.04 4.15 19.85C3.76 19.46 3.76 18.83 4.15 18.44L4.28 18.31C4.67 17.92 5.3 17.92 5.69 18.31C6.08 18.7 6.08 19.33 5.69 19.72L5.56 19.85C5.37 20.04 5.11 20.14 4.86 20.14ZM22 13H21.92C21.37 13 20.92 12.55 20.92 12C20.92 11.45 21.37 11 21.92 11C22.47 11 22.96 11.45 22.96 12C22.96 12.55 22.55 13 22 13ZM2.08 13H2C1.45 13 1 12.55 1 12C1 11.45 1.45 11 2 11C2.55 11 3.04 11.45 3.04 12C3.04 12.55 2.63 13 2.08 13ZM19.01 5.99C18.75 5.99 18.5 5.89 18.3 5.7C17.91 5.31 17.91 4.68 18.3 4.29L18.43 4.16C18.82 3.77 19.45 3.77 19.84 4.16C20.23 4.55 20.23 5.18 19.84 5.57L19.71 5.7C19.52 5.89 19.27 5.99 19.01 5.99ZM4.99 5.99C4.73 5.99 4.48 5.89 4.28 5.7L4.15 5.56C3.76 5.17 3.76 4.54 4.15 4.15C4.54 3.76 5.17 3.76 5.56 4.15L5.69 4.28C6.08 4.67 6.08 5.3 5.69 5.69C5.5 5.89 5.24 5.99 4.99 5.99ZM12 3.04C11.45 3.04 11 2.63 11 2.08V2C11 1.45 11.45 1 12 1C12.55 1 13 1.45 13 2C13 2.55 12.55 3.04 12 3.04Z" fill="#323232"></path>
+            </svg>
+
+            Бренды
+          </div>
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          <div class="flex-js-c gap-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.80602 19.71H6.47102C5.26702 19.71 4.29002 18.734 4.29002 17.529V16.097C4.29002 15.519 4.06002 14.964 3.65102 14.555L2.63802 13.542C1.78602 12.69 1.78602 11.31 2.63802 10.458L3.65102 9.44502C4.06002 9.03602 4.29002 8.48202 4.29002 7.90302V6.47102C4.29002 5.26702 5.26602 4.29002 6.47102 4.29002H7.90302C8.48102 4.29002 9.03602 4.06002 9.44502 3.65102L10.458 2.63802C11.31 1.78602 12.69 1.78602 13.542 2.63802L14.555 3.65102C14.964 4.06002 15.519 4.29002 16.097 4.29002H17.529C18.733 4.29002 19.71 5.26602 19.71 6.47102V7.90302C19.71 8.48102 19.94 9.03602 20.349 9.44502L21.362 10.458C22.214 11.31 22.214 12.69 21.362 13.542L20.349 14.555C19.94 14.964 19.71 15.519 19.71 16.097V17.529C19.71 18.733 18.734 19.71 17.529 19.71H16.097C15.519 19.71 14.964 19.94 14.555 20.349L13.542 21.362C12.69 22.214 11.31 22.214 10.458 21.362L8.80602 19.71Z" stroke="#CF301B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M9 15L15 9" stroke="#CF301B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M9.249 9C9.111 9 8.999 9.112 9 9.25C9 9.388 9.112 9.5 9.25 9.5C9.388 9.5 9.5 9.388 9.5 9.25C9.5 9.112 9.388 9 9.249 9" stroke="#CF301B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M14.749 14.5C14.611 14.5 14.499 14.612 14.5 14.75C14.5 14.888 14.612 15 14.75 15C14.888 15 15 14.888 15 14.75C15 14.612 14.888 14.5 14.749 14.5" stroke="#CF301B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+
+            Распродажа
+          </div>
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          <div class="flex-js-c gap-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 17.0021V17.0021C12.159 17.002 12.2932 16.8844 12.3143 16.727L12.4623 15.6205C12.6817 13.9756 13.9757 12.6815 15.6206 12.4622L16.7271 12.3141C16.8845 12.2931 17.0021 12.1588 17.0022 12V12C17.0021 11.8412 16.8845 11.7069 16.7271 11.6859L15.6206 11.5378C13.9757 11.3185 12.6817 10.0244 12.4623 8.3795L12.3143 7.27304C12.2932 7.11561 12.159 6.99803 12.0001 6.99792V6.99792C11.8413 6.99803 11.707 7.11561 11.686 7.27304L11.5379 8.3795C11.3186 10.0244 10.0245 11.3185 8.37962 11.5378L7.27316 11.6859C7.11573 11.7069 6.99815 11.8412 6.99805 12V12C6.99815 12.1588 7.11573 12.2931 7.27316 12.3141L8.37962 12.4622C10.0245 12.6815 11.3186 13.9756 11.5379 15.6205L11.686 16.727C11.707 16.8844 11.8413 17.002 12.0001 17.0021V17.0021Z" stroke="#336B46" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M18.7209 5.27925C22.432 8.99092 22.4317 15.0082 18.7202 18.7196C15.0087 22.4309 8.99139 22.4309 5.2799 18.7196C1.56841 15.0082 1.56812 8.99092 5.27925 5.27925C7.06163 3.49661 9.47921 2.49512 12.0001 2.49512C14.5209 2.49512 16.9385 3.49661 18.7209 5.27925" stroke="#336B46" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+
+            Новинки
+          </div>
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+      <li class="w-full">
+        <a href="#" class="w-full flex-jsb-c pr-6 h-[48px] transition hover:text-blue">
+          <div class="flex-js-c gap-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.0038 12C21.0038 16.9726 16.9727 21.0037 12.0001 21.0037C7.02745 21.0037 2.99634 16.9726 2.99634 12C2.99634 7.02733 7.02745 2.99622 12.0001 2.99622" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3427 2.38796C18.4746 2.14645 18.7278 1.99622 19.003 1.99622C19.2781 1.99622 19.5314 2.14645 19.6632 2.38796L20.2465 3.4534C20.3157 3.58014 20.4199 3.68432 20.5466 3.75353L21.6121 4.33577C21.8541 4.4675 22.0047 4.721 22.0047 4.99654C22.0047 5.27209 21.8541 5.52559 21.6121 5.65732L20.5466 6.24056C20.4196 6.30935 20.3153 6.41364 20.2465 6.54069L19.6632 7.60513C19.5314 7.84664 19.2781 7.99687 19.003 7.99687C18.7278 7.99687 18.4746 7.84664 18.3427 7.60513L17.7594 6.53969C17.6907 6.41264 17.5864 6.30835 17.4593 6.23956L16.3939 5.65732C16.1519 5.52559 16.0012 5.27209 16.0012 4.99654C16.0012 4.721 16.1519 4.4675 16.3939 4.33577L17.4593 3.75353C17.5861 3.68432 17.6902 3.58014 17.7594 3.4534L18.3427 2.38796Z" stroke="#009FFF" stroke-width="1.5"></path>
+              <path d="M8.99899 9.32886V10.3293" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15.0014 9.32886V10.3293" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15.2435 14.6591C13.4521 16.449 10.5492 16.449 8.75781 14.6591" stroke="#009FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+
+            Подарочные сертификаты
+          </div>
+          <img src="img/icons/arrow-right.svg" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="catalog-menu-details" class="w-[calc(100%-350px)] xl:w-[calc(100%-480px)] xxl:min-w-[600px] max-h-[calc(100dvh-130px)] overflow-y-auto  bg-white absolute left-[350px] xl:left-[489px] top-[80px] p-8 z-[10001] opacity-0 invisible transition-opacity duration-300 delay-100">
+    <h4 class="text-[32px] font-medium">Удилища</h4>
+    <div class="w-full flex-jsb-s mt-6 gap-4 xl:gap-8 flex-wrap ">
+      <ul class="min-w-[264px]">
+        <li class="font-bold border-b pb-4 mb-3 text-[20px]">
+          Категории
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Спиннинги
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Удочки
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Вершинки для удилищ
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Удилища маховые
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Удилища болонские
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Спиннинги ультралайт
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Спиннинги джиговые
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Спиннинги кастинговые
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Спиннинги Maximus
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Удилища фидерные
+          </a>
+        </li>
+      </ul>
+      <ul class="min-w-[264px]">
+        <li class="font-bold border-b pb-4 mb-3 text-[20px]">
+          Популярные разделы
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Спиннинги ультралайт
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Фидерные удилища
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Троллинговые удилища
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Болонское удилище
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Маховая удочка
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Спининг универсальный
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="transition hover:text-blue">
+            Спининг для джига
+          </a>
+        </li>
+      </ul>
+      <div class="min-w-[200px]">
+        <h4 class="font-bold border-b pb-4 mb-3 text-[20px]">
+          Бренды
+        </h4>
+        <div class="w-full flex-js-c gap-2 flex-col">
+          <div class="w-full flex-jc-c px-4 py-2 border">
+              <img src="img/brand-img1.png">  
+          </div>
+          <div class="w-full flex-jc-c px-4 py-2 border">
+            <img src="img/brand-img2.png">  
+          </div>
+          <div class="w-full flex-jc-c px-4 py-2 border">
+            <img src="img/brand-img3.png">  
+          </div>
+          <div class="w-full flex-jc-c px-4 py-2 border">
+            <img src="img/brand-img4.png">  
+          </div>
+        </div>
+      </div>
+
+      <div class="w-[443px] h-[353px] hidden min-[1800px]:block overflow-hidden rounded-[16px] p-8 relative">
+        <img src="img/menu-banner.png" alt="menu-banner.png" class="w-full h-full object-cover absolute left-0 top-0">
+
+        <div class="relative z-10">
+          <h3 class="w-full max-w-[292px] font-lena mb-3 text-white text-[30px] tracking-[-0.601px] leading-[26.272px]">Палатки для настойщих рыбаков!</h3>
+          <p class="text-[12px] w-full max-w-[286px] text-white">
+            Летний сезон в самом разгаре, это значит стартует наша акция. Купи товаров на 25 000 рублей и получи скидку 10% на следующую покупку
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
 </div>
 
 <div
@@ -544,6 +912,13 @@
 
       </div>
     </div>
+
+
+
+
+
+
+
 
   </div>
 </div>

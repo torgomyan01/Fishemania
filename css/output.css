@@ -1437,6 +1437,18 @@ select{
   top: calc(100% + 6px);
 }
 
+.top-\[90px\]{
+  top: 90px;
+}
+
+.top-\[80px\]{
+  top: 80px;
+}
+
+.left-\[350px\]{
+  left: 350px;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -1463,6 +1475,22 @@ select{
 
 .z-\[100\]{
   z-index: 100;
+}
+
+.z-\[1001\]{
+  z-index: 1001;
+}
+
+.z-\[10000\]{
+  z-index: 10000;
+}
+
+.z-\[10001\]{
+  z-index: 10001;
+}
+
+.z-\[100001\]{
+  z-index: 100001;
 }
 
 .order-1{
@@ -2381,6 +2409,34 @@ select{
   height: 100%;
 }
 
+.h-\[calc\(100dvh-150px\)\]{
+  height: calc(100dvh - 150px);
+}
+
+.h-\[calc\(100dvh-140px\)\]{
+  height: calc(100dvh - 140px);
+}
+
+.h-\[\]{
+  height: ;
+}
+
+.h-\[cal\]{
+  height: cal;
+}
+
+.h-\[calx\(\)\]{
+  height: calx();
+}
+
+.h-\[calx\(100vh-\)\]{
+  height: calx(100vh-);
+}
+
+.h-\[calx\(100vh-200px\)\]{
+  height: calx(100vh-200px);
+}
+
 .max-h-80{
   max-height: 20rem;
 }
@@ -2395,6 +2451,22 @@ select{
 
 .max-h-\[80\%\]{
   max-height: 80%;
+}
+
+.max-h-\[calx\(100vh-200px\)\]{
+  max-height: calx(100vh-200px);
+}
+
+.max-h-\[calc\(100dvh-140px\)\]{
+  max-height: calc(100dvh - 140px);
+}
+
+.max-h-\[calc\(100dvh-150px\)\]{
+  max-height: calc(100dvh - 150px);
+}
+
+.max-h-\[calc\(100dvh-130px\)\]{
+  max-height: calc(100dvh - 130px);
 }
 
 .min-h-3{
@@ -2611,6 +2683,38 @@ select{
 
 .w-full{
   width: 100%;
+}
+
+.w-\[calc\(1\)\]{
+  width: calc(1);
+}
+
+.w-\[calc\(100\)\]{
+  width: calc(100);
+}
+
+.w-\[calc\(100\%\)\]{
+  width: calc(100%);
+}
+
+.w-\[calc\(100\%-\)\]{
+  width: calc(100% - );
+}
+
+.w-\[calc\(100\%-500px\)\]{
+  width: calc(100% - 500px);
+}
+
+.w-\[calc\(100\%-480px\)\]{
+  width: calc(100% - 480px);
+}
+
+.w-\[350px\]{
+  width: 350px;
+}
+
+.w-\[calc\(100\%-350px\)\]{
+  width: calc(100% - 350px);
 }
 
 .min-w-10{
@@ -2891,6 +2995,11 @@ select{
 
 .translate-y-\[-50\%\]{
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-full{
+  --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -3392,6 +3501,11 @@ select{
 
 .border-t-\[rgba\(33\2c 33\2c 33\2c 0\.25\)\]{
   border-top-color: rgba(33,33,33,0.25);
+}
+
+.border-b-\[\#D7DBDF\]{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(215 219 223 / var(--tw-border-opacity, 1));
 }
 
 .\!bg-transparent{
@@ -4448,8 +4562,28 @@ select{
   transition-duration: 300ms;
 }
 
+.transition-transform{
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.transition-opacity{
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.delay-100{
+  transition-delay: 100ms;
+}
+
 .duration-300{
   transition-duration: 300ms;
+}
+
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 420px){
@@ -4616,6 +4750,10 @@ select{
   background-color: rgb(255 255 255 / 0.8);
 }
 
+.hover\:bg-\[\#CF301B\]\/80:hover{
+  background-color: rgb(207 48 27 / 0.8);
+}
+
 .hover\:\!text-blue:hover{
   --tw-text-opacity: 1 !important;
   color: rgb(0 159 255 / var(--tw-text-opacity, 1)) !important;
@@ -4771,6 +4909,18 @@ select{
 
   .max-\[1280px\]\:w-\[16vw\]{
     width: 16vw;
+  }
+
+  .max-\[1280px\]\:w-\[11vw\]{
+    width: 11vw;
+  }
+
+  .max-\[1280px\]\:w-\[300px\]{
+    width: 300px;
+  }
+
+  .max-\[1280px\]\:w-\[14vw\]{
+    width: 14vw;
   }
 
   .max-\[1280px\]\:grid-cols-4{
@@ -6038,6 +6188,10 @@ select{
 }
 
 @media (min-width: 1280px){
+  .xl\:left-\[489px\]{
+    left: 489px;
+  }
+
   .xl\:mt-\[-120px\]{
     margin-top: -120px;
   }
@@ -6062,6 +6216,14 @@ select{
     height: 869px;
   }
 
+  .xl\:w-\[489px\]{
+    width: 489px;
+  }
+
+  .xl\:w-\[calc\(100\%-480px\)\]{
+    width: calc(100% - 480px);
+  }
+
   .xl\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -6076,6 +6238,14 @@ select{
 
   .xl\:flex-row{
     flex-direction: row;
+  }
+
+  .xl\:gap-8{
+    gap: 2rem;
+  }
+
+  .xl\:pl-\[100px\]{
+    padding-left: 100px;
   }
 
   .xl\:text-\[85px\]{
