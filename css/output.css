@@ -2961,6 +2961,18 @@ select{
   max-width: 28rem;
 }
 
+.max-w-\[\]{
+  max-width: ;
+}
+
+.max-w-\[900px\]{
+  max-width: 900px;
+}
+
+.max-w-\[1340px\]{
+  max-width: 1340px;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -6138,6 +6150,10 @@ select{
 
   .lg\:flex{
     display: flex;
+  }
+
+  .lg\:w-\[443px\]{
+    width: 443px;
   }
 
   .lg\:max-w-\[536px\]{
