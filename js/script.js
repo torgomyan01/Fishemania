@@ -306,11 +306,10 @@ window.addEventListener('load', () => {
       992: {
         slidesPerView: 3,
       },
-      1190: {
-        slidesPerView: 4,
+      1250: {
+        slidesPerView: 5,
       },
     }
-
   });
 
   const productItemSlider = new Swiper('.product-item-slider', {
