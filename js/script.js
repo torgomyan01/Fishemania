@@ -315,7 +315,7 @@ window.addEventListener('load', () => {
   const productItemSlider = new Swiper('.product-item-slider', {
     loop: true,
     direction: "vertical",
-    slidesPerView: 4,
+    slidesPerView: 5,
     spaceBetween: 8,
     navigation: {
       nextEl: '#product-items-next',
