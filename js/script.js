@@ -337,7 +337,7 @@ window.addEventListener('load', () => {
   if(window.innerWidth < 1280){
     const productItemSliderMobile = new Swiper('.product-item-slider-mobile', {
       loop: true,
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 16,
       nested: true,
       navigation: {
@@ -355,12 +355,14 @@ window.addEventListener('load', () => {
         }
       },
       breakpoints: {
-        768: {
-          slidesPerView: 2,
-        },
-        1200: {
+        585: {
           slidesPerView: 4,
         },
+
+        375: {
+          slidesPerView: 2,
+        },
+        
       }
 
     });
