@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/nouislider.min.css">
+  <link rel="stylesheet" href="css/output.css">
+
+  <script src="js/aos.js"></script>
+  <script src="js/nouislider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <title>Catalog</title>
+</head>
+<body>
+
+<component src="./components/navbar.html"></component>
+
+
+
+<div class="container mt-4">
+
+  <ul class="flex-js-c gap-1 mb-7 max-[767px]:mb-[10px] max-[767px]:hidden">
+    <li>
+      <a href="home.html" class="text-[14px] sm: text-[#6E6E6E] hover:text-blue">Главная</a>
+    </li>
+    <li class=" text-[#6E6E6E]">
+      •
+    </li>
+    <li>
+      <a href="question-answer.html" class="text-[14px] sm: text-[#6E6E6E] hover:text-blue">Информационная страница </a>
+    </li>
+    <li class=" text-[#6E6E6E]">
+      •
+    </li>
+    <li>
+      <a href="question-answer.html" class="text-[14px] sm: text-[#6E6E6E] hover:text-blue">Сделать заказ</a>
+    </li>
+  </ul>
+
+  <div class="flex gap-[30px] max-[1300px]:gap-[16px] max-[1024px]:flex-col-reverse">
+    <div class="hide-navigation min-w-[300px] max-[1300px]:min-w-[240px] pt-[20px] border-r border-r-[rgba(110,110,110,0.25)] pr-[50px]
+        max-[1300px]:pr-[20px] max-[1024px]:fixed max-[1024px]:top-0 max-[1024px]:left-0 
+        max-[1024px]:w-full max-[1024px]:h-[100vh] max-[1024px]:bg-white max-[1024px]:z-[1111] max-[1024px]:px-[15px] 
+        max-[1024px]:py-[30px] transform transition duration-300 scale-0 lg:scale-100">
+
+        <div class="hidden max-[1024px]:flex items-center justify-between mb-[30px]">
+            <span class="text-[24px] text-[#212121] font-medium">Навигация по разделу</span>
+            <div class="close-menu-btn">
+                <img src="img/close.svg" alt="">
+            </div>
+            
+        </div>
+
+        <a href="#" class="block pl-[28px] text-[20px] text-[#323232] mb-[20px] max-[1024px]:pl-[0]
+        max-[1024px]:pb-[8px] max-[1024px]:mb-[8px] max-[1024px]:border-b max-[1024px]:border-b-[rgba(110,110,110,0.25)]">Главная</a>
+      
+        <div class="mb-[20px] max-[1024px]:pb-[8px] max-[1024px]:mb-[8px] max-[1024px]:border-b max-[1024px]:border-b-[rgba(110,110,110,0.25)]" id="accordion">
+      
+          <div class="">
+            <button class="accordion-btn flex items-center max-[1024px]:flex-row-reverse max-[1024px]:justify-between max-[1024px]:w-[100%]">
+                <span class="arrow transition-transform duration-300 mr-[16px]">
+                    <img src="img/arrow-down.svg" alt="" class="min-w-[10px]">
+                </span>
+                <span class="text-[20px] text-[#323232] text-left max-[1300px]:text-[18px]">Заказы</span>
+            </button>
+      
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out pl-[28px] max-[1024px]:pl-[0]">
+              <div class="py-2 space-y-1">
+                <a href="#" class="block text-[#323232] hover:underline">Сделать заказ</a>
+                <a href="#" class="block text-[#323232] hover:underline">Редактировать заказ</a>
+                <a href="#" class="block text-[#323232] hover:underline">Отменить заказ</a>
+              </div>
+            </div>
+          </div>
+      
+      
+        </div>
+        <div class="mb-[20px] max-[1024px]:pb-[8px] max-[1024px]:mb-[8px] max-[1024px]:border-b max-[1024px]:border-b-[rgba(110,110,110,0.25)]" id="accordion">
+      
+            <div class="">
+              <button class="accordion-btn flex items-center max-[1024px]:flex-row-reverse max-[1024px]:justify-between max-[1024px]:w-[100%]">
+                  <span class="arrow transition-transform duration-300 mr-[16px]">
+                    <img src="img/arrow-down.svg" alt="" class="min-w-[10px]">
+                  </span>
+                  <span class="text-[20px] text-[#323232] text-left max-[1300px]:text-[18px]">Возвраты и отмены</span>
+              </button>
+        
+              <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out pl-[28px] max-[1024px]:pl-[0]">
+                <div class="py-2 space-y-1">
+                  <a href="#" class="block text-[#323232] hover:underline">Сделать заказ</a>
+                  <a href="#" class="block text-[#323232] hover:underline">Редактировать заказ</a>
+                  <a href="#" class="block text-[#323232] hover:underline">Отменить заказ</a>
+                </div>
+              </div>
+            </div>
+        
+        
+          </div>
+          <div class="mb-[20px] max-[1024px]:pb-[8px] max-[1024px]:mb-[8px] max-[1024px]:border-b max-[1024px]:border-b-[rgba(110,110,110,0.25)]" id="accordion">
+      
+            <div class="">
+              <button class="accordion-btn flex items-center max-[1024px]:flex-row-reverse max-[1024px]:justify-between max-[1024px]:w-[100%]">
+                  <span class="arrow transition-transform duration-300 mr-[16px]">
+                    <img src="img/arrow-down.svg" alt="" class="min-w-[10px]">
+                  </span>
+                  <span class="text-[20px] text-[#323232] text-left max-[1300px]:text-[18px]">Доставка</span>
+              </button>
+        
+              <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out pl-[28px] max-[1024px]:pl-[0]">
+                <div class="py-2 space-y-1">
+                  <a href="#" class="block text-[#323232] hover:underline">Сделать заказ</a>
+                  <a href="#" class="block text-[#323232] hover:underline">Редактировать заказ</a>
+                  <a href="#" class="block text-[#323232] hover:underline">Отменить заказ</a>
+                </div>
+              </div>
+            </div>
+        
+        
+          </div>
+          <div class="mb-[20px] max-[1024px]:pb-[8px] max-[1024px]:mb-[8px] max-[1024px]:border-b max-[1024px]:border-b-[rgba(110,110,110,0.25)]" id="accordion">
+      
+            <div class="">
+              <button class="accordion-btn flex items-center max-[1024px]:flex-row-reverse max-[1024px]:justify-between max-[1024px]:w-[100%]">
+                  <span class="arrow transition-transform duration-300 mr-[16px]">
+                    <img src="img/arrow-down.svg" alt="" class="min-w-[10px]">
+                  </span>
+                  <span class="text-[20px] text-[#323232] text-left max-[1300px]:text-[18px]">Оплата</span>
+              </button>
+        
+              <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out pl-[28px] max-[1024px]:pl-[0]">
+                <div class="py-2 space-y-1">
+                  <a href="#" class="block text-[#323232] hover:underline">Сделать заказ</a>
+                  <a href="#" class="block text-[#323232] hover:underline">Редактировать заказ</a>
+                  <a href="#" class="block text-[#323232] hover:underline">Отменить заказ</a>
+                </div>
+              </div>
+            </div>
+        
+        
+          </div>
+          <div class="mb-[20px] max-[1024px]:pb-[8px] max-[1024px]:mb-[8px] max-[1024px]:border-b max-[1024px]:border-b-[rgba(110,110,110,0.25)]" id="accordion">
+      
+            <div class="">
+              <button class="accordion-btn flex items-center max-[1024px]:flex-row-reverse max-[1024px]:justify-between max-[1024px]:w-[100%]">
+                  <span class="arrow transition-transform duration-300 mr-[16px]">
+                    <img src="img/arrow-down.svg" alt="" class="min-w-[10px]">
+                  </span>
+                  <span class="text-[20px] text-[#323232] text-left max-[1300px]:text-[18px]">Товары</span>
+              </button>
+        
+              <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out pl-[28px] max-[1024px]:pl-[0]">
+                <div class="py-2 space-y-1">
+                  <a href="#" class="block text-[#323232] hover:underline">Сделать заказ</a>
+                  <a href="#" class="block text-[#323232] hover:underline">Редактировать заказ</a>
+                  <a href="#" class="block text-[#323232] hover:underline">Отменить заказ</a>
+                </div>
+              </div>
+            </div>
+        
+        
+          </div>
+          <div class="mb-[20px] max-[1024px]:pb-[8px] max-[1024px]:mb-[8px] max-[1024px]:border-b max-[1024px]:border-b-[rgba(110,110,110,0.25)]" id="accordion">
+      
+            <div class="">
+              <button class="accordion-btn flex items-center max-[1024px]:flex-row-reverse max-[1024px]:justify-between max-[1024px]:w-[100%]">
+                  <span class="arrow transition-transform duration-300 mr-[16px]">
+                    <img src="img/arrow-down.svg" alt="" class="min-w-[10px]">
+                  </span>
+                  <span class="text-[20px] text-[#323232] text-left">Настройки Личного Кабинета</span>
+              </button>
+        
+              <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out pl-[28px] max-[1024px]:pl-[0]">
+                <div class="py-2 space-y-1">
+                  <a href="#" class="block text-[#323232] hover:underline">Сделать заказ</a>
+                  <a href="#" class="block text-[#323232] hover:underline">Редактировать заказ</a>
+                  <a href="#" class="block text-[#323232] hover:underline">Отменить заказ</a>
+                </div>
+              </div>
+            </div>
+        
+        
+          </div>
+          <div class="mb-[20px] max-[1024px]:pb-[8px] max-[1024px]:mb-[8px] max-[1024px]:border-b max-[1024px]:border-b-[rgba(110,110,110,0.25)]" id="accordion">
+      
+            <div class="">
+              <button class="accordion-btn flex items-center max-[1024px]:flex-row-reverse max-[1024px]:justify-between max-[1024px]:w-[100%]">
+                  <span class="arrow transition-transform duration-300 mr-[16px]">
+                    <img src="img/arrow-down.svg" alt="" class="min-w-[10px]">
+                  </span>
+                  <span class="text-[20px] text-[#323232] text-left max-[1300px]:text-[18px]">Акции</span>
+              </button>
+        
+              <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out pl-[28px] max-[1024px]:pl-[0]">
+                <div class="py-2 space-y-1">
+                  <a href="#" class="block text-[#323232] hover:underline">Сделать заказ</a>
+                  <a href="#" class="block text-[#323232] hover:underline">Редактировать заказ</a>
+                  <a href="#" class="block text-[#323232] hover:underline">Отменить заказ</a>
+                </div>
+              </div>
+            </div>
+        
+        
+          </div>
+    </div>
+    <div class="">
+        <h2 class="mb-[24px] text-[#212121] font-medium text-[32px] max-[1024px]:hidden">Сделать заказ</h2>
+        <p class="text-[16px] text-[#323232] mb-[20px]">
+            Все для рыбалки – в интернет-магазине Фишемания.Уважаемые любители рыбной ловли! Компания Фишемания предлагает вам широкий ассортимент товаров для рыбалки по самым привлекательным ценам. Почти 10 лет – начиная с 2002 года, мы работаем для вас, предлагая продукцию только проверенных временем брендов, среди которых давно полюбившиеся вам Shimano, Humminbird, Rapala, G.Loomis, Plano и многие другие.
+        </p>
+        <p class="text-[16px] text-[#323232]">
+            ЗАО «Нормарк», владеющее этими торговыми марками, является нашим официальным торговым партнером. Приобрести все для рыбалки вы сможете в двух наших рыболовных магазинах в Санкт-Петербурге, а также в нашем рыболовном интернет-магазине, работающем 24 часа в сутки.
+        </p>
+        <h4 class="my-[16px] font-medium leading-[120%] text-[#323232] text-[20px]">
+            В пользу покупки товаров для рыбалки в наших рыболовных магазинах говорят следующие факты:
+        </h4>
+        <ul class="pl-[20px] mb-[30px]">
+            <li class="list-disc">
+                высокое качество товара обеспечивается благодаря работе только с проверенными временем брендами, хорошо зарекомендовавшими себя на российском рынке товаров для рыбной ловли;
+            </li>
+            <li class="list-disc">
+                работа напрямую с официальными представителями компаний-производителей позволяет нам устанавливать самые доступные цены на все линейки товаров в наших рыболовных магазинах в СПб и интернет-магазине;
+            </li>
+            <li class="list-disc">
+                вы получите квалифицированную консультацию у специалистов наших магазинов или по телефону в отношении любого интересующего вас товара;
+            </li>
+            <li class="list-disc">
+                наш рыболовный интернет-магазин позволяет вам делать заказ в любое время суток, а оплатить выбранный товар вы можете любым удобным способом (посредством оплаты электронными деньгами или через платежные терминалы);
+            </li>
+            <li class="list-disc">
+                мы осуществляем оперативную доставку товара по любому адресу в самое удобное для вас время.
+            </li>
+            <li class="list-disc">
+                Вы можете заказать и оплатить понравившийся товар в рыболовном интернет-магазине в любое удобное для вас время.
+            </li>
+        </ul>
+        <h4 class="my-[16px] font-medium leading-[120%] text-[#323232] text-[20px]">
+            В пользу покупки товаров для рыбалки в наших рыболовных магазинах говорят следующие факты:
+        </h4>
+        <p class="text-[16px] text-[#323232]">
+            Почему мы? Быстро, удобно и выгодно купить товары для рыбалки в СПБ вы сможете в наших магазинах в Санкт-Петербурге.
+        </p>
+    </div>
+    <div class="rounded-[16px] min-w-[300px] max-[1300px]:min-w-[240px] bg-[#F4F4F4] p-[24px] self-start mt-[20px]
+    max-[1024px]:mt-[0] max-[1024px]:min-w-[100%]">
+        <b class="block font-bold text-[#323232] mb-[10px]">Оглавление</b>
+        <a href="#" class="text-[#323232] block underline mb-[5px]">На сайте</a>
+        <a href="#" class="text-[#323232] block underline mb-[5px]">В мобильном приложении</a>
+        <a href="#" class="text-[#323232] block underline mb-[5px]">Через VK Маркет</a>
+        <a href="#" class="text-[#323232] block underline mb-[5px]">Забронировать в аптеке</a>
+        <a href="#" class="text-[#323232] block underline">В разделе «Билеты, отели, туры»</a>
+    </div>
+    <button class="click-mobile hidden max-[1024px]:flex justify-between items-center text-[#212121] font-semibold rounded-[12px] bg-[#F4F4F4] p-[14px]">Навигация по разделу <img src="img/arrow-down.svg" alt=""></button>
+
+    <h2 class="hidden max-[1024px]:block text-[#212121] font-medium text-[32px]">Сделать заказ</h2>
+  </div>
+
+</div>
+
+  <component src="./components/footer.html"></component>
+
+
+<script src="js/script.js"></script>
+
+  <script>
+    const buttons = document.querySelectorAll('.accordion-btn');
+  
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const arrow = btn.querySelector('.arrow');
+  
+        const isOpen = content.style.maxHeight;
+  
+        // закрываем все
+        document.querySelectorAll('.accordion-content').forEach(el => {
+          el.style.maxHeight = null;
+        });
+  
+        document.querySelectorAll('.arrow').forEach(el => {
+          el.classList.remove('rotate-180');
+        });
+  
+        // если был закрыт — открываем
+        if (!isOpen) {
+          content.style.maxHeight = content.scrollHeight + "px";
+          arrow.classList.add('rotate-180');
+        }
+      });
+    });
+  </script>
+
+  <script>
+    const openBtn = document.querySelector('.click-mobile');
+    const closeBtn = document.querySelector('.close-menu-btn');
+    const nav = document.querySelector('.hide-navigation');
+    const body = document.body;
+
+    // открыть
+    openBtn.addEventListener('click', () => {
+      nav.classList.remove('scale-0');
+      nav.classList.add('scale-100');
+      body.classList.add('overflow-hidden');
+    });
+
+    // закрыть
+    closeBtn.addEventListener('click', () => {
+      nav.classList.remove('scale-100');
+      nav.classList.add('scale-0');
+      body.classList.remove('overflow-hidden');
+    });
+  </script>
+
+</body>
+</html>
