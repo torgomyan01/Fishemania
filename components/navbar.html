@@ -74,15 +74,33 @@
           <img src="img/icons/xmark.svg" alt="menu-catalog" class="brightness-[9]">
           Каталог
         </button>
-        <form action="#" class="w-full min-[1328px]:mr-4 bg-blue rounded-[8px] flex-jsb-c h-[42px] p-[2px] hidden min-[640px]:flex">
-          <label class="w-full h-full bg-white rounded-[6px] overflow-hidden">
-            <input type="text" class="w-full h-full pl-3 placeholder:text-black/80 rounded-[6px] border-none text-[14px]"
-                   placeholder="Поиск по сайту">
-          </label>
-          <button class="w-[80px] h-[42px] bg-transparent flex-jc-c" type="submit">
-            <img src="img/icons/search-white.svg" alt="search-white">
-          </button>
-        </form>
+        <div class="header-search-root relative flex-1 min-w-0 min-h-[46px] hidden min-[640px]:block">
+          <div class="header-search-overlay fixed inset-0 z-[10050] bg-black/45 opacity-0 invisible pointer-events-none"
+               aria-hidden="true"></div>
+          <div class="header-search-panel absolute left-0 right-0 top-0 z-[1] w-full min-[1328px]:mr-4">
+            <div class="relative w-full">
+              <form class="header-search-form w-full bg-blue rounded-[8px] flex-jsb-c h-[42px] p-[2px]" action="#" autocomplete="off">
+                <label class="w-full h-full bg-white rounded-[6px] overflow-hidden">
+                  <input class="header-search-input w-full h-full pl-3 placeholder:text-black/80 rounded-[6px] border-none text-[14px]"
+                         type="search" name="q" placeholder="Поиск по сайту" autocomplete="off">
+                </label>
+                <button class="w-[80px] h-[42px] bg-transparent flex-jc-c shrink-0" type="submit" aria-label="Поиск">
+                  <img src="img/icons/search-white.svg" alt="">
+                </button>
+              </form>
+              <div class="header-search-results hidden absolute left-0 right-0 top-full mt-1 bg-white rounded-[10px] shadow-[0_16px_48px_rgba(0,0,0,0.12)] border border-[#E5E7EB] max-h-[min(70vh,860px)] overflow-y-auto custom-scroll p-3 sm:p-4 md:p-6 z-10">
+                <h2 class="text-[18px] sm:text-[20px] mb-3 sm:mb-4 font-medium leading-snug tracking-[-0.4px]">Результаты поиска</h2>
+                <div class="header-search-results-grid grid grid-cols-1 min-[400px]:grid-cols-2 md:grid-cols-3 min-[1100px]:grid-cols-5 gap-2 sm:gap-3 min-w-0">
+                  <component src="./components/product-card.html"></component>
+                  <component src="./components/product-card.html"></component>
+                  <component src="./components/product-card.html"></component>
+                  <component src="./components/product-card.html"></component>
+                  <component src="./components/product-card.html"></component>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
 
@@ -501,14 +519,33 @@
   </div>
 
 
-  <form action="#" class="w-full min-[1328px]:mr-9 bg-blue rounded-[8px] flex-jsb-c h-[42px] p-[2px]">
-    <label class="w-full h-full bg-white rounded-[6px] overflow-hidden">
-      <input type="text" class="w-full h-full pl-3 placeholder:text-black/80 rounded-[6px] border-none" placeholder="Поиск по сайту">
-    </label>
-    <button class="w-[80px] h-[42px] bg-transparent flex-jc-c" type="submit">
-      <img src="img/icons/search-white.svg" alt="search-white">
-    </button>
-  </form>
+  <div class="header-search-root relative w-full mt-2 block sm:hidden">
+    <div class="header-search-overlay fixed inset-0 z-[10050] bg-black/45 opacity-0 invisible pointer-events-none"
+         aria-hidden="true"></div>
+    <div class="header-search-panel relative left-0 right-0 top-0 z-[1] w-full">
+      <div class="relative w-full">
+        <form class="header-search-form w-full bg-blue rounded-[8px] flex-jsb-c h-[42px] p-[2px]" action="#" autocomplete="off">
+          <label class="w-full h-full bg-white rounded-[6px] overflow-hidden min-w-0">
+            <input class="header-search-input w-full h-full min-w-0 pl-3 placeholder:text-black/80 rounded-[6px] border-none text-[14px]"
+                   type="search" name="q" placeholder="Поиск по сайту" autocomplete="off" enterkeyhint="search">
+          </label>
+          <button class="w-[56px] min-[360px]:w-[80px] h-[42px] bg-transparent flex-jc-c shrink-0" type="submit" aria-label="Поиск">
+            <img src="img/icons/search-white.svg" alt="">
+          </button>
+        </form>
+        <div class="header-search-results hidden absolute left-0 right-0 top-full mt-1 bg-white rounded-[10px] shadow-[0_16px_48px_rgba(0,0,0,0.12)] border border-[#E5E7EB] max-h-[min(65vh,720px)] overflow-y-auto custom-scroll p-3 z-10">
+          <h2 class="text-[18px] mb-3 font-medium leading-snug tracking-[-0.4px]">Результаты поиска</h2>
+          <div class="header-search-results-grid grid grid-cols-1 min-[400px]:grid-cols-2 md:grid-cols-3 min-[1100px]:grid-cols-5 gap-2 sm:gap-3 min-w-0">
+            <component src="./components/product-card.html"></component>
+            <component src="./components/product-card.html"></component>
+            <component src="./components/product-card.html"></component>
+            <component src="./components/product-card.html"></component>
+            <component src="./components/product-card.html"></component>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
 <div class="mb-[140px] block sm:hidden"></div>

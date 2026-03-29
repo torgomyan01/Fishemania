@@ -66,6 +66,7 @@ processDataFor();
 
 window.addEventListener('load', () => {
 
+  let headerSearchCloseTimer = null;
 
   const mobileMenuItem = $('.mobile-menu-item');
 
@@ -475,6 +476,145 @@ window.addEventListener('load', () => {
     document.body.classList.remove('overflow-hidden')
   })
 
+  function headerSearchRoots() {
+    return document.querySelectorAll('.header-search-root');
+  }
+
+  function initHeaderSearchResultSwipers() {
+    if (typeof Swiper === 'undefined') return;
+    document.querySelectorAll('.header-search-results .swiperProductItems').forEach((innerEl) => {
+      if (innerEl.classList.contains('swiper-initialized')) return;
+      const pag = innerEl.querySelector('.swiper-pagination-inner');
+      if (!pag) return;
+      new Swiper(innerEl, {
+        loop: true,
+        nested: true,
+        slidesPerView: 1,
+        pagination: {
+          el: pag,
+          clickable: true,
+        },
+      });
+    });
+  }
+
+  function finishCloseHeaderSearch() {
+    if (headerSearchCloseTimer) {
+      clearTimeout(headerSearchCloseTimer);
+      headerSearchCloseTimer = null;
+    }
+    headerSearchRoots().forEach(function (root) {
+      const panel = root.querySelector('.header-search-panel');
+      const overlay = root.querySelector('.header-search-overlay');
+      const results = root.querySelector('.header-search-results');
+      if (panel) {
+        panel.classList.remove('header-search-panel--expanded', 'header-search-panel--closing');
+        panel.style.removeProperty('--header-search-top');
+      }
+      if (overlay) {
+        overlay.classList.remove(
+          'header-search-overlay--ready',
+          'opacity-100',
+          'visible',
+          'pointer-events-auto',
+        );
+        overlay.classList.add('opacity-0', 'invisible', 'pointer-events-none');
+      }
+      if (results) results.classList.add('hidden');
+    });
+    document.querySelectorAll('.header-search-input').forEach(function (inp) {
+      inp.blur();
+    });
+    const catOverlay = $el('#catalog-menu-overlay');
+    const catalogOpen = catOverlay && !catOverlay.classList.contains('invisible');
+    document.body.style.overflow = catalogOpen ? 'hidden' : '';
+  }
+
+  function openHeaderSearch(e) {
+    if (headerSearchCloseTimer) {
+      clearTimeout(headerSearchCloseTimer);
+      headerSearchCloseTimer = null;
+    }
+    document.querySelectorAll('.header-search-panel').forEach(function (p) {
+      p.classList.remove('header-search-panel--closing');
+    });
+    const input = e.target && e.target.closest ? e.target.closest('.header-search-input') : null;
+    const root = input ? input.closest('.header-search-root') : null;
+    if (!root) return;
+    const panel = root.querySelector('.header-search-panel');
+    const overlay = root.querySelector('.header-search-overlay');
+    if (!panel || !overlay) return;
+    const rect = panel.getBoundingClientRect();
+    panel.style.setProperty('--header-search-top', `${Math.max(8, rect.top)}px`);
+    panel.classList.add('header-search-panel--expanded');
+    overlay.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
+    overlay.classList.add('opacity-100', 'visible', 'pointer-events-auto', 'header-search-overlay--ready');
+    document.body.style.overflow = 'hidden';
+    initHeaderSearchResultSwipers();
+  }
+
+  function closeHeaderSearch() {
+    const hasExpanded = document.querySelector('.header-search-panel.header-search-panel--expanded');
+    if (!hasExpanded) {
+      finishCloseHeaderSearch();
+      return;
+    }
+    document.querySelectorAll('.header-search-panel.header-search-panel--expanded').forEach(function (p) {
+      p.classList.add('header-search-panel--closing');
+    });
+    document.querySelectorAll('.header-search-root .header-search-overlay').forEach(function (o) {
+      o.classList.remove(
+        'header-search-overlay--ready',
+        'opacity-100',
+        'visible',
+        'pointer-events-auto',
+      );
+      o.classList.add('opacity-0', 'invisible', 'pointer-events-none');
+    });
+    if (headerSearchCloseTimer) clearTimeout(headerSearchCloseTimer);
+    headerSearchCloseTimer = setTimeout(finishCloseHeaderSearch, 300);
+  }
+
+  function syncHeaderSearchResults(e) {
+    const raw = e && e.target && e.target.value !== undefined
+      ? e.target.value
+      : (document.querySelector('.header-search-input') && document.querySelector('.header-search-input').value);
+    const val = raw === undefined ? '' : raw;
+    document.querySelectorAll('.header-search-input').forEach(function (inp) {
+      inp.value = val;
+    });
+    const show = String(val).trim().length > 0;
+    document.querySelectorAll('.header-search-results').forEach(function (box) {
+      box.classList.toggle('hidden', !show);
+    });
+  }
+
+  headerSearchRoots().forEach(function (root) {
+    const input = root.querySelector('.header-search-input');
+    const form = root.querySelector('.header-search-form');
+    const overlay = root.querySelector('.header-search-overlay');
+    if (input) {
+      input.addEventListener('focus', openHeaderSearch);
+      input.addEventListener('input', syncHeaderSearchResults);
+    }
+    if (form) {
+      form.addEventListener('submit', function (ev) {
+        ev.preventDefault();
+        syncHeaderSearchResults({ target: input });
+      });
+    }
+    if (overlay) {
+      overlay.addEventListener('click', closeHeaderSearch);
+    }
+    root.addEventListener('focusout', function () {
+      setTimeout(function () {
+        if (!root.contains(document.activeElement)) {
+          closeHeaderSearch();
+        }
+      }, 0);
+    });
+  });
+
   // Catalog menu functionality
   const catalogMenuBtn = $el('#catalog-menu-btn');
   const catalogMenuBtnMobile = $el('#catalog-menu-btn-mobile');
@@ -560,9 +700,14 @@ window.addEventListener('load', () => {
     closeCatalogMenu();
   });
 
-  // Close menu on Escape key
+  // Close menu / header search on Escape key
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && !catalogMenuOverlay.classList.contains('invisible')) {
+    if (e.key !== 'Escape') return;
+    if (document.querySelector('.header-search-panel.header-search-panel--expanded')) {
+      closeHeaderSearch();
+      return;
+    }
+    if (catalogMenuOverlay && !catalogMenuOverlay.classList.contains('invisible')) {
       closeCatalogMenu();
     }
   });
